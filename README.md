@@ -10,8 +10,8 @@ thesis-repo/
 │   ├── raw/               # Raw data sources: allusion texts, annotations, original XML, etc.
 │   └── processed/         # Processed data: TEI-XML/JSON formatted data for subsequent analysis
 │
-├── docs/                  # Project documentation and design instructions
-│   └── thesis_structure.md  # Document comparing the thesis structure with the project architecture
+├── docs/                  # Documentation: Comprehensive Dissertation and Supplementary Appendices
+│   └── dissertation.md    # Complete Dissertation Document Detailing Thesis Objectives, Methodology, and Findings
 │
 ├── notebooks/             # Jupyter notebooks for exploratory analysis and rapid experiments
 │   └── exploratory.ipynb
