@@ -46,32 +46,31 @@ thesis-repo/
 
 ```mermaid
 flowchart TD
-    A[Start: main.py Entry Point] --> B[Load Configuration<br/>(config.py)]
-    B --> C[Read Raw Data<br/>(data/raw)]
-    C --> D[Data Processing<br/>(data_processing.py)]
-    D --> E[Store Processed Data<br/>(data/processed)]
-    E --> F[Analysis Modules]
-    F --> G[Knowledge Graph Construction<br/>(knowledge_graph.py)]
-    F --> H[Syntactic Analysis<br/>(syntactic_analysis.py)]
-    F --> I[Paragraph Analysis<br/>(paragraph_analysis.py)]
-    F --> J[Discourse Analysis<br/>(discourse_analysis.py)]
-    F --> K[Semantic Drift Analysis<br/>(semantic_drift.py)]
-    G --> L[Visualization<br/>(visualization.py)]
+    A["Start: main.py Entry Point"] --> B["Load Configuration (config.py)"]
+    B --> C["Read Raw Data (data/raw)"]
+    C --> D["Data Processing (data_processing.py)"]
+    D --> E["Store Processed Data (data/processed)"]
+    E --> F["Analysis Modules"]
+    F --> G["Knowledge Graph Construction (knowledge_graph.py)"]
+    F --> H["Syntactic Analysis (syntactic_analysis.py)"]
+    F --> I["Paragraph Analysis (paragraph_analysis.py)"]
+    F --> J["Discourse Analysis (discourse_analysis.py)"]
+    F --> K["Semantic Drift Analysis (semantic_drift.py)"]
+    G --> L["Visualization (visualization.py)"]
     H --> L
     I --> L
     J --> L
     K --> L
-    L --> M[Output Results & Visualizations]
-    M --> N[End]
+    L --> M["Output Results & Visualizations"]
+    M --> N["End"]
 
-    %% Optional branches for testing and探索性分析
-    subgraph UnitTests [Unit Testing]
-      T1[Test data_processing.py]
-      T2[Test knowledge_graph.py]
-      T3[Test syntactic_analysis.py]
-      T4[Test paragraph_analysis.py]
-      T5[Test discourse_analysis.py]
-      T6[Test semantic_drift.py]
+    subgraph UnitTests["Unit Testing"]
+      T1["Test data_processing.py"]
+      T2["Test knowledge_graph.py"]
+      T3["Test syntactic_analysis.py"]
+      T4["Test paragraph_analysis.py"]
+      T5["Test discourse_analysis.py"]
+      T6["Test semantic_drift.py"]
     end
     M --> T1
     M --> T2
@@ -80,56 +79,34 @@ flowchart TD
     M --> T5
     M --> T6
 
-    P[Optional: Exploratory Analysis<br/>(notebooks/exploratory.ipynb)] -.-> A
+    P["Optional: Exploratory Analysis (notebooks/exploratory.ipynb)"] -.-> A
 ```
 
 1. Module Division and Correspondence with Thesis Chapters
 
-* data_processing.py:
+* data_processing.py: Corresponds to the research methodology and data sources in Chapter 1. It handles data collection, cleaning, and format conversion (TEI-XML/JSON), ensuring a consistent and standardized input for subsequent analysis.
 
-Corresponds to the research methodology and data sources in Chapter 1. It handles data collection, cleaning, and format conversion (TEI-XML/JSON), ensuring a consistent and standardized input for subsequent analysis.
+* knowledge_graph.py: Based on the content of Chapter 2, it constructs the knowledge graph of allusions. This module performs node classification and relationship design while providing visualization interfaces.
 
-* knowledge_graph.py:
+* syntactic_analysis.py: In accordance with Chapter 3, it analyzes the syntactic roles, dependency structures, and part-of-speech conversions of allusions within sentences.
 
-Based on the content of Chapter 2, it constructs the knowledge graph of allusions. This module performs node classification and relationship design while providing visualization interfaces.
+* paragraph_analysis.py: Corresponds to Chapter 4 by analyzing allusion density, semantic themes, and rhetorical functions at the paragraph level.
 
-* syntactic_analysis.py:
+* discourse_analysis.py: Derived from Chapter 5’s discourse structure analysis, this module explores the mechanisms of linking and responses between internal and external allusions.
 
-In accordance with Chapter 3, it analyzes the syntactic roles, dependency structures, and part-of-speech conversions of allusions within sentences.
+* semantic_drift.py: Corresponds to Chapter 6 by focusing on allusion substitutions, context transformations, and semantic drifts in works on the same subject.
 
-* paragraph_analysis.py:
-
-Corresponds to Chapter 4 by analyzing allusion density, semantic themes, and rhetorical functions at the paragraph level.
-
-* discourse_analysis.py:
-
-Derived from Chapter 5’s discourse structure analysis, this module explores the mechanisms of linking and responses between internal and external allusions.
-
-* semantic_drift.py:
-
-Corresponds to Chapter 6 by focusing on allusion substitutions, context transformations, and semantic drifts in works on the same subject.
-
-* visualization.py:
-
-Manages all visualization requirements uniformly, including the generation of knowledge graphs and statistical charts, making the presentation of results more intuitive.
+* visualization.py: Manages all visualization requirements uniformly, including the generation of knowledge graphs and statistical charts, making the presentation of results more intuitive.
 
 1. Simplicity of Structure and Maintainability
 
-* Clear Layering:
+* Clear Layering: Separates data, code, documentation, and tests, which aligns with best practices and ensures that modifications in one area do not interfere with others.
 
-Separates data, code, documentation, and tests, which aligns with best practices and ensures that modifications in one area do not interfere with others.
+* Modular Design: Each analysis module corresponds to a major chapter of the thesis, covering all stages of the research while facilitating future expansion or adjustments.
 
-* Modular Design:
+* Unit Testing: A dedicated tests folder ensures that every module is covered by unit tests, promoting continuous integration and easy maintenance.
 
-Each analysis module corresponds to a major chapter of the thesis, covering all stages of the research while facilitating future expansion or adjustments.
-
-* Unit Testing:
-
-A dedicated tests folder ensures that every module is covered by unit tests, promoting continuous integration and easy maintenance.
-
-* Configuration and Documentation:
-
-The config.py file along with the docs/ folder provides centralized parameters and explanations, making the project easy to understand and configure.
+* Configuration and Documentation: The config.py file along with the docs/ folder provides centralized parameters and explanations, making the project easy to understand and configure.
 
 # Arrangement Explanation
 
