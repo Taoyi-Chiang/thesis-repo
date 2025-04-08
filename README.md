@@ -1,127 +1,227 @@
 # Project Structure
 
 ```
-thesis-repo/
-├── README.md              # Project Overview, User Guide, and Environment Setup
+project/
+├── README.md              # Project Overview & Thesis Correspondence
 ├── requirements.txt       # List of all Python package dependencies
-├── setup.py               # Setup script for packaging and installation configuration
+├── setup.py               # Project packaging and installation configuration
 │
-├── data/                  # Data-related folder
-│   ├── raw/               # Raw data sources: allusion texts, annotations, original XML, etc.
-│   └── processed/         # Processed data: TEI-XML/JSON formatted data for subsequent analysis
+├── data/                  # Data directory
+│   ├── raw/               # Raw data: allusion texts, annotations, original XML, etc.
+│   └── processed/         # Processed data: formatted TEI-XML/JSON for analysis
 │
-├── docs/                  # Documentation: Comprehensive Dissertation and Supplementary Appendices
-│   └── dissertation.md    # Complete Dissertation Document Detailing Thesis Objectives, Methodology, and Findings
+├── output/                # Automatically generated outputs
+│   ├── tables/            # Automatically generated tables with analysis results
+│   └── figures/           # Visualization results (charts, knowledge graphs, etc.)
 │
-├── notebooks/             # Jupyter notebooks for exploratory analysis and rapid experiments
+├── thesis/                # Dissertation and related documents
+│   ├── chapter1.md
+│   ├── chapter2.md
+│   ├── chapter3.md
+│   ├── chapter4.md
+│   ├── chapter5.md
+│   ├── chapter6.md
+│   └── chapter7.md
+│
+├── notebooks/             # Jupyter notebooks for exploratory analysis
 │   └── exploratory.ipynb
 │
 ├── src/                   # Main project source code
 │   ├── __init__.py
-│   ├── main.py            # Main entry point, integrates various modules to control the workflow
-│   ├── config.py          # Configuration file for centralized management of paths, parameters, constants, etc.
-│   ├── data_processing.py # Data collection, cleaning, and format conversion (e.g., XML and JSON interfaces)
-│   ├── knowledge_graph.py # Construction of the allusion knowledge graph: node classification, relationship design, and visualization (corresponds to Chapter 2)
-│   ├── syntactic_analysis.py  
-│   │     # Analysis of allusion syntactic roles, dependency parsing, and part-of-speech conversion (corresponds to Chapter 3)
-│   ├── paragraph_analysis.py  
-│   │     # Analysis of allusion density at the paragraph level, thematic elements, and rhetorical functions (corresponds to Chapter 4)
-│   ├── discourse_analysis.py  
-│   │     # Analysis of allusion presentation within discourse structures, internal and external allusion relationships, and responsiveness (corresponds to Chapter 5)
-│   ├── semantic_drift.py  
-│   │     # Analysis of allusion substitution, context transformation, and semantic drift in works on the same subject (corresponds to Chapter 6)
-│   └── visualization.py   # Implementation of static and interactive visualizations: knowledge graphs and statistical charts
+│   ├── main.py
+│   ├── config.py
+│   ├── chapter1/
+│   │       ├── data_processing.py
+│   │       └── methods.py
+│   ├── chapter2/
+│   │       ├── knowledge_graph.py
+│   │       └── format_design.py
+│   ├── chapter3/
+│   │       ├── syntactic_analysis.py
+│   │       └── pos_conversion.py
+│   ├── chapter4/
+│   │       ├── paragraph_analysis.py
+│   │       └── rhetorical_analysis.py
+│   ├── chapter5/
+│   │       ├── discourse_analysis.py
+│   │       └── integration.py
+│   ├── chapter6/
+│   │       ├── semantic_drift.py
+│   │       └── context_transformation.py
+│   ├── chapter7/
+│   │       └── conclusion.py
+│   └── visualization.py
 │
-└── tests/                 # Unit tests to ensure the functionality of each module
-    ├── test_data_processing.py
-    ├── test_knowledge_graph.py
-    ├── test_syntactic_analysis.py
-    ├── test_paragraph_analysis.py
-    ├── test_discourse_analysis.py
-    └── test_semantic_drift.py
+└── tests/                 # Unit tests ensuring module functionality
+    ├── test_chapter1.py
+    ├── test_chapter2.py
+    ├── test_chapter3.py
+    ├── test_chapter4.py
+    ├── test_chapter5.py
+    ├── test_chapter6.py
+    └── test_visualization.py
 
 ```
 
-  # Arrangement Explanation
+# Arrangement Explanation
 
 ```mermaid
 flowchart TD
     A["Start: main.py Entry Point"] --> B["Load Configuration (config.py)"]
     B --> C["Read Raw Data (data/raw)"]
-    C --> D["Data Processing (data_processing.py)"]
-    D --> E["Store Processed Data (data/processed)"]
-    E --> F["Analysis Modules"]
-    F --> G["Knowledge Graph Construction (knowledge_graph.py)"]
-    F --> H["Syntactic Analysis (syntactic_analysis.py)"]
-    F --> I["Paragraph Analysis (paragraph_analysis.py)"]
-    F --> J["Discourse Analysis (discourse_analysis.py)"]
-    F --> K["Semantic Drift Analysis (semantic_drift.py)"]
-    G --> L["Visualization (visualization.py)"]
-    H --> L
-    I --> L
-    J --> L
-    K --> L
-    L --> M["Output Results & Visualizations"]
-    M --> N["End"]
+    C --> D["Data Preprocessing\n(src/chapter1/data_processing.py)"]
+    D --> E["Store Processed Data\n(data/processed)"]
+    E --> F["Execute Chapter Modules"]
+    
+    subgraph Chapters[Chapter Modules]
+      F1["Chapter 1: Research Methods\n(src/chapter1/methods.py)"]
+      F2["Chapter 2: Knowledge Graph\n(src/chapter2/knowledge_graph.py & format_design.py)"]
+      F3["Chapter 3: Syntactic Analysis\n(src/chapter3/syntactic_analysis.py & pos_conversion.py)"]
+      F4["Chapter 4: Paragraph Analysis\n(src/chapter4/paragraph_analysis.py & rhetorical_analysis.py)"]
+      F5["Chapter 5: Discourse Analysis\n(src/chapter5/discourse_analysis.py & integration.py)"]
+      F6["Chapter 6: Semantic Drift\n(src/chapter6/semantic_drift.py & context_transformation.py)"]
+      F7["Chapter 7: Conclusion\n(src/chapter7/conclusion.py)"]
+    end
+    
+    F --> F1
+    F --> F2
+    F --> F3
+    F --> F4
+    F --> F5
+    F --> F6
+    F --> F7
+
+    F1 & F2 & F3 & F4 & F5 & F6 & F7 --> G["Generate Visualizations\n(src/visualization.py)"]
+    G --> H["Save Outputs to:\noutput/figures & output/tables"]
+    H --> I["Integrate into Thesis Document\n(thesis/)"]
+    I --> J["End"]
 
     subgraph UnitTests["Unit Testing"]
-      T1["Test data_processing.py"]
-      T2["Test knowledge_graph.py"]
-      T3["Test syntactic_analysis.py"]
-      T4["Test paragraph_analysis.py"]
-      T5["Test discourse_analysis.py"]
-      T6["Test semantic_drift.py"]
+      T1["Test Chapter 1 Modules"]
+      T2["Test Chapter 2 Modules"]
+      T3["Test Chapter 3 Modules"]
+      T4["Test Chapter 4 Modules"]
+      T5["Test Chapter 5 Modules"]
+      T6["Test Chapter 6 Modules"]
+      T7["Test Visualization Module"]
     end
-    M --> T1
-    M --> T2
-    M --> T3
-    M --> T4
-    M --> T5
-    M --> T6
 
-    P["Optional: Exploratory Analysis (notebooks/exploratory.ipynb)"] -.-> A
+    G --> T1
+    G --> T2
+    G --> T3
+    G --> T4
+    G --> T5
+    G --> T6
+    G --> T7
+
+    K["Optional: Exploratory Analysis\n(notebooks/exploratory.ipynb)"] -.-> A
+
 ```
 
-1. Module Division and Correspondence with Thesis Chapters
+# Project Documentation & Dissertation Correspondence
 
-* data_processing.py: Corresponds to the research methodology and data sources in Chapter 1. It handles data collection, cleaning, and format conversion (TEI-XML/JSON), ensuring a consistent and standardized input for subsequent analysis.
+This document details the module division, correspondence with dissertation chapters, and the overall workflow of the project, all aligned with the revised project structure.
 
-* knowledge_graph.py: Based on the content of Chapter 2, it constructs the knowledge graph of allusions. This module performs node classification and relationship design while providing visualization interfaces.
+---
 
-* syntactic_analysis.py: In accordance with Chapter 3, it analyzes the syntactic roles, dependency structures, and part-of-speech conversions of allusions within sentences.
+## 1. Module Division and Correspondence with Thesis Chapters
 
-* paragraph_analysis.py: Corresponds to Chapter 4 by analyzing allusion density, semantic themes, and rhetorical functions at the paragraph level.
+- **Chapter 1: Research Methods & Data Processing**
+  - **src/chapter1/data_processing.py**  
+    Corresponds to the research methodology and data sources outlined in Chapter 1. This module handles data collection, cleaning, and format conversion (TEI-XML/JSON), ensuring that subsequent analysis receives a consistent and standardized input.
+  - **src/chapter1/methods.py**  
+    Defines the research scope and methodological framework used in Chapter 1, including the rationale for data collection and preprocessing steps.
 
-* discourse_analysis.py: Derived from Chapter 5’s discourse structure analysis, this module explores the mechanisms of linking and responses between internal and external allusions.
+- **Chapter 2: Knowledge Graph Construction & Format Design**
+  - **src/chapter2/knowledge_graph.py**  
+    Based on Chapter 2, this module constructs the knowledge graph of allusions, performing node classification and relationship design.
+  - **src/chapter2/format_design.py**  
+    Handles the design of semantic fields and creates interfaces for converting data into interoperable formats (XML/JSON), which supports both analysis and visualization.
 
-* semantic_drift.py: Corresponds to Chapter 6 by focusing on allusion substitutions, context transformations, and semantic drifts in works on the same subject.
+- **Chapter 3: Syntactic Analysis**
+  - **src/chapter3/syntactic_analysis.py**  
+    In accordance with Chapter 3, this module analyzes the syntactic roles and dependency structures of allusions within sentences.
+  - **src/chapter3/pos_conversion.py**  
+    Focuses on part-of-speech conversions and detailed handling of syntactic transformations pertinent to the analysis.
 
-* visualization.py: Manages all visualization requirements uniformly, including the generation of knowledge graphs and statistical charts, making the presentation of results more intuitive.
+- **Chapter 4: Paragraph-Level Analysis & Rhetorical Functions**
+  - **src/chapter4/paragraph_analysis.py**  
+    Corresponds to Chapter 4 by analyzing allusion density and identifying semantic themes at the paragraph level.
+  - **src/chapter4/rhetorical_analysis.py**  
+    Explores the rhetorical and pragmatic functions of allusions within paragraphs, enhancing the understanding of stylistic devices.
 
-1. Simplicity of Structure and Maintainability
+- **Chapter 5: Discourse-Level Analysis**
+  - **src/chapter5/discourse_analysis.py**  
+    Derived from Chapter 5’s discourse structure analysis, this module investigates how allusions are linked and interact within the larger text, both internally and with external references.
+  - **src/chapter5/integration.py**  
+    Focuses on integrating the internal/external allusion relationships and mapping textual responses, ensuring a cohesive interpretation of discourse.
 
-* Clear Layering: Separates data, code, documentation, and tests, which aligns with best practices and ensures that modifications in one area do not interfere with others.
+- **Chapter 6: Semantic Drift in Allusions**
+  - **src/chapter6/semantic_drift.py**  
+    In Chapter 6, this module focuses on allusion substitutions, context transformations, and the semantic drifts observed in thematically similar works.
+  - **src/chapter6/context_transformation.py**  
+    Deals with analyzing how contextual shifts result in semantic reconfiguration, critical for understanding the drift phenomena.
 
-* Modular Design: Each analysis module corresponds to a major chapter of the thesis, covering all stages of the research while facilitating future expansion or adjustments.
+- **Chapter 7: Conclusion**
+  - **src/chapter7/conclusion.py**  
+    Represents the concluding chapter, summarizing the research findings, integrating the various analytical approaches, and discussing future prospects.
 
-* Unit Testing: A dedicated tests folder ensures that every module is covered by unit tests, promoting continuous integration and easy maintenance.
+- **Visualization Across the Project**
+  - **src/visualization.py**  
+    This module centrally manages all visualization requirements. It generates knowledge graphs, statistical charts, and other visual outputs, saving them automatically to the `output/figures` directory, while any tabulated analysis results are stored in `output/tables`. These outputs are later integrated into the final dissertation documents housed in the `thesis/` folder.
 
-* Configuration and Documentation: The config.py file along with the docs/ folder provides centralized parameters and explanations, making the project easy to understand and configure.
+---
 
-# Arrangement Explanation
+## 2. Simplicity of Structure and Maintainability
 
-1. Main Flow
+- **Clear Layering**  
+  The project is organized into distinct directories:
+  - **data/** holds raw and processed datasets.
+  - **src/** contains all core source code, divided into chapter-specific modules.
+  - **thesis/** stores the dissertation documents.
+  - **output/** is reserved for auto-generated figures and tables.
+  - **notebooks/** provides space for exploratory analysis.
+  - **tests/** contains unit tests.
+  
+  This separation aligns with best practices, ensuring that modifications in one area do not interfere with others.
 
-* main.py serves as the entry point. It first loads all configuration parameters through config.py.
+- **Modular Design**  
+  Each analysis module is compartmentalized within its corresponding chapter folder under **src/** (e.g., `src/chapter1/`, `src/chapter2/`, etc.), mirroring the dissertation chapters. This design not only covers all stages of the research but also facilitates future expansion or modifications as your study evolves.
 
-* The raw data is read from the data/raw folder and then cleaned and transformed via data_processing.py. The processed data is finally stored in the data/processed folder.
+- **Unit Testing**  
+  A dedicated **tests/** folder contains unit tests for each module (e.g., `test_chapter1.py`, `test_chapter2.py`, etc.), promoting robust continuous integration. This ensures that every change is verified for functionality, which helps maintain the long-term stability and quality of the project.
 
-* Next, the processed data is further analyzed by several analysis modules (including knowledge graph construction, syntactic analysis, paragraph analysis, discourse analysis, and semantic drift analysis).
+- **Output Integration**  
+  The **output/** directory—with subdirectories for **figures** and **tables**—centralizes all auto-generated visual content and statistical output. This arrangement supports an automated workflow where the latest graphs and tables are always embedded into the final dissertation, streamlining updates and reducing manual intervention.
 
-* The results from the analysis modules are then passed to visualization.py, which integrates them to generate various visual outputs, ultimately forming the final report.
+- **Configuration and Documentation**  
+  The **config.py** file, along with comprehensive documentation stored in the **thesis/** folder, provides centralized configuration parameters and detailed explanations of the methodology. This makes the project straightforward to understand, configure, and align with the overall dissertation content.
 
-3. Additional Components
+---
 
-* The Unit Testing branch shows that each module has corresponding test modules to ensure that each component functions correctly, thereby facilitating continuous integration and maintenance.
+## 3. Arrangement Explanation
 
-* The Exploratory Analysis section, provided as a Jupyter Notebook, offers an optional platform for research and experimentation.
+### Main Flow
+
+- **Entry Point**:  
+  `main.py` serves as the entry point. It first loads all configuration parameters from `config.py`.
+
+- **Data Ingestion and Processing**:  
+  Raw data is loaded from the `data/raw` directory, then cleaned and transformed using `src/chapter1/data_processing.py`. The processed data is stored in `data/processed`.
+
+- **Chapter-Specific Analysis**:  
+  The processed data is subsequently analyzed by modules organized by dissertation chapters (from **Chapter 1** through **Chapter 7** in the **src/** directory). Each chapter module is responsible for a specific aspect of the research, ensuring a focused and comprehensive analysis.
+
+- **Visualization and Output Generation**:  
+  The analysis results are passed to `src/visualization.py`, which consolidates them into visual outputs (such as knowledge graphs and charts). These visual assets are automatically saved in `output/figures` and any tabular data is stored in `output/tables`.
+
+- **Dissertation Integration**:  
+  Finally, the auto-generated visual outputs and tables are programmatically integrated into the dissertation documents stored in the `thesis/` folder. This ensures that your dissertation always reflects the latest analytical results.
+
+### Additional Components
+
+- **Unit Testing**:  
+  The **tests/** directory contains unit tests for each module, ensuring that every part of the analysis functions correctly. This automation supports continuous integration and helps maintain code quality.
+
+- **Exploratory Analysis**:  
+  The **notebooks/** folder houses Jupyter Notebooks for interactive exploration and experimentation, providing an additional platform for refining your analysis before final integration.
