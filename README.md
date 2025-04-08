@@ -2,44 +2,44 @@
 
 ```
 thesis-repo/
+├── README.md              # Project Overview, User Guide, and Environment Setup
+├── requirements.txt       # List of all Python package dependencies
+├── setup.py               # Setup script for packaging and installation configuration
 │
-├── README.md              # 專案簡介、使用說明與環境配置
-├── requirements.txt       # 列出所有 Python 套件依賴
-├── setup.py               # 如需打包與安裝，配置專案安裝資訊
+├── data/                  # Data-related folder
+│   ├── raw/               # Raw data sources: allusion texts, annotations, original XML, etc.
+│   └── processed/         # Processed data: TEI-XML/JSON formatted data for subsequent analysis
 │
-├── data/                  # 資料相關文件夾
-│   ├── raw/               # 原始資料來源：典故文本、注釋、原始 XML 等
-│   └── processed/         # 處理後的資料：TEI-XML、JSON 格式資料，便於後續分析
+├── docs/                  # Project documentation and design instructions
+│   └── thesis_structure.md  # Document comparing the thesis structure with the project architecture
 │
-├── docs/                  # 專案文件與設計說明
-│   └── thesis_structure.md  # 論文結構與專案架構的對照說明文件
-│
-├── notebooks/             # 用於探索性分析與快速實驗的 Jupyter 筆記本
+├── notebooks/             # Jupyter notebooks for exploratory analysis and rapid experiments
 │   └── exploratory.ipynb
 │
-├── src/                   # 專案主要程式碼
+├── src/                   # Main project source code
 │   ├── __init__.py
-│   ├── main.py            # 專案主入口，整合各模組進行流程控制
-│   ├── config.py          # 配置文件，統一管理路徑、參數、常數等
-│   ├── data_processing.py # 資料採集、清洗、格式轉換（如 XML 與 JSON 介面）
-│   ├── knowledge_graph.py # 典故知識圖譜建構：節點分類、關係設計與視覺化（對應第二章）
+│   ├── main.py            # Main entry point, integrates various modules to control the workflow
+│   ├── config.py          # Configuration file for centralized management of paths, parameters, constants, etc.
+│   ├── data_processing.py # Data collection, cleaning, and format conversion (e.g., XML and JSON interfaces)
+│   ├── knowledge_graph.py # Construction of the allusion knowledge graph: node classification, relationship design, and visualization (corresponds to Chapter 2)
 │   ├── syntactic_analysis.py  
-│   │     # 典故語法角色、依存句法分析與詞類轉換（對應第三章）
+│   │     # Analysis of allusion syntactic roles, dependency parsing, and part-of-speech conversion (corresponds to Chapter 3)
 │   ├── paragraph_analysis.py  
-│   │     # 段落層級的典故密度、主題與修辭功能分析（對應第四章）
+│   │     # Analysis of allusion density at the paragraph level, thematic elements, and rhetorical functions (corresponds to Chapter 4)
 │   ├── discourse_analysis.py  
-│   │     # 篇章結構中典故展演、內外典故關聯與回應分析（對應第五章）
+│   │     # Analysis of allusion presentation within discourse structures, internal and external allusion relationships, and responsiveness (corresponds to Chapter 5)
 │   ├── semantic_drift.py  
-│   │     # 同題異作中典故替換、語境轉化與語義漂移分析（對應第六章）
-│   └── visualization.py   # 靜態與互動式視覺化實作：知識圖譜與統計圖表展示
+│   │     # Analysis of allusion substitution, context transformation, and semantic drift in works on the same subject (corresponds to Chapter 6)
+│   └── visualization.py   # Implementation of static and interactive visualizations: knowledge graphs and statistical charts
 │
-└── tests/                 # 單元測試，確保各模組功能正確
+└── tests/                 # Unit tests to ensure the functionality of each module
     ├── test_data_processing.py
     ├── test_knowledge_graph.py
     ├── test_syntactic_analysis.py
     ├── test_paragraph_analysis.py
     ├── test_discourse_analysis.py
     └── test_semantic_drift.py
+
 ```
 
   # Arrangement Explanation
