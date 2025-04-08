@@ -1,5 +1,6 @@
 # Project Structure
 
+```
 thesis-repo/
 │
 ├── README.md              # 專案簡介、使用說明與環境配置
@@ -39,8 +40,10 @@ thesis-repo/
     ├── test_paragraph_analysis.py
     ├── test_discourse_analysis.py
     └── test_semantic_drift.py
+```
 
   # Arrangement Explanation
+
 ```mermaid
 flowchart TD
     A[Start: main.py Entry Point] --> B[Load Configuration<br/>(config.py)]
