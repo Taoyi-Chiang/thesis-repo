@@ -67,55 +67,30 @@ project/
 
 ```mermaid
 flowchart TD
-    A["Start: main.py Entry Point"] --> B["Load Configuration (config.py)"]
-    B --> C["Read Raw Data (data/raw)"]
-    C --> D["Data Preprocessing\n(src/chapter1/data_processing.py)"]
-    D --> E["Store Processed Data\n(data/processed)"]
-    E --> F["Execute Chapter Modules"]
+    %% Phase 1: Research Planning
+    A["Define Research Questions & Thesis Outline\n(Initial Dissertation Draft)"] --> B["Plan Research Requirements & Scope"]
     
-    subgraph Chapters[Chapter Modules]
-      F1["Chapter 1: Research Methods\n(src/chapter1/methods.py)"]
-      F2["Chapter 2: Knowledge Graph\n(src/chapter2/knowledge_graph.py & format_design.py)"]
-      F3["Chapter 3: Syntactic Analysis\n(src/chapter3/syntactic_analysis.py & pos_conversion.py)"]
-      F4["Chapter 4: Paragraph Analysis\n(src/chapter4/paragraph_analysis.py & rhetorical_analysis.py)"]
-      F5["Chapter 5: Discourse Analysis\n(src/chapter5/discourse_analysis.py & integration.py)"]
-      F6["Chapter 6: Semantic Drift\n(src/chapter6/semantic_drift.py & context_transformation.py)"]
-      F7["Chapter 7: Conclusion\n(src/chapter7/conclusion.py)"]
-    end
+    %% Phase 2: Development & Analysis
+    B --> C["Develop Analysis Modules\n(src/chapterX/... modules)"]
+    C --> D["Write Unit Tests\n(tests/...)"]
+    D --> E["Run Tests & Validate Outputs"]
+    E --> F["Iterate & Refine Code\n(feedback to src/)"]
+    F --> G["Execute Analysis & Generate Visuals\n(src/visualization.py)"]
+    G --> H["Save Outputs\n(output/figures & output/tables)"]
     
-    F --> F1
-    F --> F2
-    F --> F3
-    F --> F4
-    F --> F5
-    F --> F6
-    F --> F7
-
-    F1 & F2 & F3 & F4 & F5 & F6 & F7 --> G["Generate Visualizations\n(src/visualization.py)"]
-    G --> H["Save Outputs to:\noutput/figures & output/tables"]
-    H --> I["Integrate into Thesis Document\n(thesis/)"]
-    I --> J["End"]
-
-    subgraph UnitTests["Unit Testing"]
-      T1["Test Chapter 1 Modules"]
-      T2["Test Chapter 2 Modules"]
-      T3["Test Chapter 3 Modules"]
-      T4["Test Chapter 4 Modules"]
-      T5["Test Chapter 5 Modules"]
-      T6["Test Chapter 6 Modules"]
-      T7["Test Visualization Module"]
-    end
-
-    G --> T1
-    G --> T2
-    G --> T3
-    G --> T4
-    G --> T5
-    G --> T6
-    G --> T7
-
-    K["Optional: Exploratory Analysis\n(notebooks/exploratory.ipynb)"] -.-> A
-
+    %% Phase 3: Exploratory Analysis
+    J["Optional: Exploratory Analysis\n(notebooks/exploratory.ipynb)"] -.-> C
+    
+    %% Phase 4: Dissertation Writing & Integration
+    H --> K["Integrate Results into Dissertation\n(thesis/ documents)"]
+    K --> L["Review & Update Thesis Content"]
+    
+    %% Feedback Loop from Dissertation
+    L --> M["Identify Gaps/Refinement Needs"]
+    M --> C
+    
+    %% Final Release
+    L --> N["Finalize Dissertation & Publish"]
 ```
 
 # Project Documentation & Dissertation Correspondence
