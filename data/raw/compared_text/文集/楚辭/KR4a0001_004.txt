@@ -1,0 +1,1021 @@
+# -*- mode: mandoku-view -*-
+#+TITLE: 楚辭
+#+DATE: 2016-08-10 10:15:52
+#+PROPERTY: ID KR4a0001
+#+PROPERTY: BASEEDITION tls
+#+PROPERTY: JUAN 3
+#+PROPERTY: CAT 1pre-han,文藝,選集
+
+# src: CC JIUZHANG 01:01; SBBY 197; Jin 438; Huang i2; Fu 95; tr. Hawkes 156;
+# dating: 5000
+<pb:KR4a0001_tls_004-1a>¶
+** 4 九章
+
+4.1惜誦<pb:KR4a0001_tls_004-2a>¶
+惜誦以致愍兮，¶
+發憤以杼情。¶
+所作忠而言之兮，¶
+指蒼天以為正。¶
+令五帝以㭊中兮，¶
+戒六神與嚮服。¶
+俾山川以備御兮，¶
+命咎繇使聽直。¶
+
+# src: CC JIUZHANG 01:02; SBBY 198; Jin 438; Huang i2; Fu 95; tr. Hawkes 156;
+# dating: 5000
+竭忠誠以事君兮，¶
+反離群而贅肬。¶
+忘儇媚以背眾兮，¶
+待明君其知之。¶
+言與行其可迹兮，¶
+情與貌其不變。¶
+
+# src: CC JIUZHANG 01:03; SBBY 199; Jin 438; Huang i2; Fu 95; tr. Hawkes 156;
+# dating: 5000
+故相臣莫若君兮，¶
+所以證之不遠。¶
+
+# src: CC JIUZHANG 01:04; SBBY 199; Jin 438; Huang i2; Fu 95; tr. Hawkes 156;
+# dating: 5000
+吾誼先君而後身兮，¶
+羌眾人之所仇。¶
+專惟君而無他兮，¶
+又眾兆之所讎。¶
+壹心而不豫兮，¶
+羌不可保也。¶
+疾親君而無他兮，¶
+有招禍之道也。
+
+# src: CC JIUZHANG 01:05; SBBY 200; Jin 446; Huang i3; Fu 95; tr. Hawkes 157;
+# dating: 5000
+<pb:KR4a0001_tls_004-3a>¶
+思君其莫我忠兮，¶
+忽忘身之賤貧。¶
+事君而不貳兮，¶
+迷不知寵之門。¶
+忠何罪以遇罰兮，¶
+亦非余心之所志。¶
+行不群以巔越兮，¶
+又眾兆之所咍。¶
+
+# src: CC JIUZHANG 01:06; SBBY 201; Jin 446; Huang i3; Fu 95; tr. Hawkes 157;
+# dating: 5000
+紛逢尤以離謗兮，¶
+謇不可釋。¶
+情沈抑而不達兮，¶
+又蔽而莫之白。¶
+心鬱邑余佗傺兮，¶
+又莫察余之中情。¶
+固煩言不可結詒兮，¶
+願陳志而無路。¶
+
+# src: CC JIUZHANG 01:07; SBBY 202; Jin 446; Huang i3; Fu 95; tr. Hawkes 157;
+# dating: 5000
+退靜默而莫余知兮，¶
+進號呼又莫吾聞。¶
+申佗傺之煩惑兮，¶
+中悶瞀之忳忳。
+
+# src: CC JIUZHANG 01:08; SBBY 202; Jin 451; Huang i3; Fu 95; tr. Hawkes 157;
+# dating: 5000
+<pb:KR4a0001_tls_004-4a>¶
+昔余夢登天兮，¶
+魂中道而無杭。¶
+吾使厲神占之兮，¶
+曰有志極而無旁。¶
+終危獨以離異兮，¶
+曰君可思而不可恃。¶
+
+# src: CC JIUZHANG 01:09; SBBY 203; Jin 452; Huang i4; Fu 95; tr. Hawkes 157;
+# dating: 5000
+故眾口其鑠金兮，¶
+初若是而逢殆。¶
+懲於羹者而吹𩐋兮，¶
+何不變此志也？¶
+欲釋階而登天兮，¶
+猶有曩之態也。¶
+
+# src: CC JIUZHANG 01:10; SBBY 204; Jin 452; Huang i4; Fu 95; tr. Hawkes 158;
+# dating: 5000
+眾駭遽以離心兮，¶
+又何以為此伴也？¶
+同極而異路兮，¶
+又何以為此援也？¶
+晉申生之孝子兮，¶
+父信讒而不好。¶
+行婞直而不豫兮，¶
+鯀功用而不就。
+
+# src: CC JIUZHANG 01:11; SBBY 205; Jin 452; Huang i4; Fu 96; tr. Hawkes 158;
+# dating: 5000
+<pb:KR4a0001_tls_004-5a>¶
+吾聞作忠以造怨兮，¶
+忽謂之過言。¶
+九折臂而成醫兮，¶
+吾至今而知其信然。¶
+矰弋機而在上兮，¶
+罻羅張而在下。¶
+設張辟以娛君兮，¶
+願側身而無所。¶
+
+# src: CC JIUZHANG 01:12; SBBY 206; Jin 458; Huang i4; Fu 96; tr. Hawkes 158;
+# dating: 5000
+欲儃佪以干傺兮，¶
+恐重患而離尤。¶
+欲高飛而遠集兮，¶
+君罔謂汝何之？¶
+欲橫奔而失路兮，¶
+堅志而不忍。¶
+背膺牉以交痛兮，¶
+心鬱結而紆軫。¶
+
+# src: CC JIUZHANG 01:13; SBBY 207; Jin 459; Huang 85; Fu 96; tr. Hawkes 158;
+# dating: 5000
+檮木蘭以矯蕙兮，¶
+𥽿申椒以為糧。¶
+播江離與滋菊兮，¶
+願春日以為糗芳。¶
+恐情質之不信兮，¶
+故重著以自明。¶
+矯茲媚以私處兮，¶
+願曾思而遠身。
+
+# src: CC JIUZHANG 02:01; SBBY 208; Jin 466; Huang 87; Fu 99; tr. Hawkes 159;
+# dating: 5000
+<pb:KR4a0001_tls_004-6a>¶
+4.2涉江<pb:KR4a0001_tls_004-7a>¶
+余幼好此奇服兮，¶
+年既老而不衰。¶
+帶長鋏之陸離兮，¶
+冠切雲之崔嵬。¶
+被明月兮珮寶璐。¶
+
+# src: CC JIUZHANG 02:02; SBBY 209; Jin 467; Huang 87; Fu 99; tr. Hawkes 160;
+# dating: 5000
+世溷濁而莫余知兮，¶
+吾方高馳而不顧。¶
+駕青虬兮驂白螭，¶
+吾與重華遊兮瑤之圃。¶
+登崑崙兮食玉英，¶
+與天地兮同壽，¶
+與日月兮同光。¶
+
+# src: CC JIUZHANG 02:03; SBBY 210; Jin 467; Huang 87; Fu 99; tr. Hawkes 160;
+# dating: 5000
+哀南夷之莫吾知兮，¶
+旦余濟乎江湘。
+<pb:KR4a0001_tls_004-8a>¶
+乘鄂渚而反顧兮，¶
+欸秋冬之緒風。¶
+步余馬兮山皋，¶
+邸余車兮方林。¶
+乘舲船余上沅兮，¶
+齊吳榜以擊汰。¶
+
+# src: CC JIUZHANG 02:04; SBBY 211; Jin 471; Huang 88; Fu 99; tr. Hawkes 160;
+# dating: 5000
+船容與而不進兮，¶
+淹回水而疑滯。¶
+朝發枉陼兮，¶
+夕宿辰陽。¶
+苟余心其端直兮，¶
+雖僻遠之何傷。
+
+# src: CC JIUZHANG 02:05; SBBY 212; Jin 476; Huang 88; Fu 99; tr. Hawkes 160;
+# dating: 5000
+<pb:KR4a0001_tls_004-9a>¶
+入漵浦余儃佪兮，¶
+迷不知吾所如。¶
+深林杳以冥冥兮，¶
+猨狖之所居。¶
+山峻高以蔽日兮，¶
+下幽晦以多雨。¶
+霰雪紛其無垠兮，¶
+雲霏霏而承宇。¶
+
+# src: CC JIUZHANG 02:06; SBBY 212; Jin 476; Huang 88; Fu 99; tr. Hawkes 161;
+# dating: 5000
+哀吾生之無樂兮，¶
+幽獨處乎山中。¶
+吾不能變心而從俗兮，¶
+固將愁苦而終窮。
+
+# src: CC JIUZHANG 02:07; SBBY 213; Jin 479; Huang 88; Fu 99; tr. Hawkes 161;
+# dating: 5000
+<pb:KR4a0001_tls_004-10a>¶
+接輿髡首兮，¶
+桑扈臝行。¶
+忠不必用兮，¶
+賢不必以。¶
+伍子逢殃兮，¶
+比干菹醢。¶
+
+# src: CC JIUZHANG 02:08; SBBY 214; Jin 479; Huang 88; Fu 99; tr. Hawkes 161;
+# dating: 5000
+與前世而皆然兮，¶
+吾又何怨乎今之人！¶
+余將董道而不豫兮，¶
+固將重昏而終身！<pb:KR4a0001_tls_004-11a>¶
+
+# src: CC JIUZHANG 02:09; SBBY 214; Jin 4i2; Huang 89; Fu 100; tr. Hawkes 161;
+# dating: 5000
+亂曰：¶
+鸞鳥鳳皇，日以遠兮。¶
+燕雀烏鵲，巢堂壇兮。¶
+露申辛夷，死林薄兮。¶
+腥臊並御，芳不得薄兮。¶
+陰陽易位，時不當兮。¶
+懷信侘傺，¶
+忽乎吾將行兮！<pb:KR4a0001_tls_004-12a>¶
+
+# src: CC JIUZHANG 03:01; SBBY 215; Jin 487; Huang 91; Fu 102; tr. Hawkes 164;
+# dating: 5000
+4.3哀郢<pb:KR4a0001_tls_004-13a>¶
+皇天之不純命兮，¶
+何百姓之震愆？¶
+民離散而相失兮，¶
+方仲春而東遷。¶
+去故鄉而就遠兮，¶
+遵江夏以流亡。¶
+出國門而軫懷兮，¶
+甲之鼂吾以行。¶
+
+# src: CC JIUZHANG 03:02; SBBY 216; Jin 489; Huang 91; Fu 102; tr. Hawkes 164;
+# dating: 5000
+發郢都而去閭兮，¶
+荒忽其焉極？¶
+楫齊揚以容與兮，¶
+哀見君而不再得。¶
+望長楸而太息兮，¶
+涕淫淫其若霰。¶
+過夏首而西浮兮，¶
+顧龍門而不見。¶
+
+# src: CC JIUZHANG 03:03; SBBY 217; Jin 490; Huang 91; Fu 102; tr. Hawkes 164;
+# dating: 5000
+心嬋媛而傷懷兮，¶
+眇不知其所蹠。¶
+順風波以從流兮，¶
+焉洋洋而為客。¶
+淩陽侯之氾濫兮，¶
+忽翱翔之焉薄。¶
+心絓結而不解兮，¶
+思蹇產而不釋。¶
+
+# src: CC JIUZHANG 03:04; SBBY 218; Jin 495; Huang 91; Fu 102; tr. Hawkes 164;
+# dating: 5000
+將運舟而下浮兮，¶
+上洞庭而下江。¶
+去終古之所居兮，¶
+今逍遙而來東。
+<pb:KR4a0001_tls_004-14a>¶
+羌靈魂之欲歸兮，¶
+何須臾而忘反。¶
+背夏浦而西思兮，¶
+哀故都之日遠。¶
+
+# src: CC JIUZHANG 03:05; SBBY 219; Jin 495; Huang 92; Fu 102; tr. Hawkes 165;
+# dating: 5000
+登大墳以遠望兮，¶
+聊以舒吾憂心。¶
+哀州土之平樂兮，¶
+悲江介之遺風。¶
+當陵陽之焉至兮，¶
+淼南渡之焉如？¶
+曾不知夏之為丘兮，¶
+孰兩東門之可蕪？¶
+
+# src: CC JIUZHANG 03:06; SBBY 220; Jin 499; Huang 92; Fu 103; tr. Hawkes 165;
+# dating: 5000
+心不怡之長久兮，¶
+憂與愁其相接。¶
+惟郢路之遼遠兮，¶
+江與夏之不可涉。¶
+忽若不信兮，¶
+至今九年而不復。¶
+慘鬱鬱而不通兮，¶
+蹇侘傺而含慼！<pb:KR4a0001_tls_004-15a>¶
+
+# src: CC JIUZHANG 03:07; SBBY 221; Jin 503; Huang 92; Fu 103; tr. Hawkes 165;
+# dating: 5000
+外承歡之汋約兮，¶
+諶荏弱而難持。¶
+忠湛湛而願進兮，¶
+妒被離而鄣之。¶
+
+# src: CC JIUZHANG 03:08; SBBY 221; Jin 503; Huang 92; Fu 103; tr. Hawkes 165;
+# dating: 5000
+堯舜之抗行兮，¶
+瞭杳杳而薄天。¶
+眾讒人之嫉妒兮，¶
+被以不慈之偽名。¶
+
+# src: CC JIUZHANG 03:09; SBBY 221; Jin 503; Huang 92; Fu 103; tr. Hawkes 165;
+# dating: 5000
+憎慍惀之脩美兮，¶
+好夫人之忼慨。¶
+眾踥蹀而日進兮，¶
+美超遠而逾邁。
+
+# src: CC JIUZHANG 03:10; SBBY 222; Jin 506; Huang 93; Fu 103; tr. Hawkes 166;
+# dating: 5000
+<pb:KR4a0001_tls_004-16a>¶
+亂曰：¶
+曼余目以流觀兮，¶
+冀壹反之何時？¶
+鳥飛反故鄉兮，¶
+狐死必首丘。¶
+信非吾罪而棄逐兮，¶
+何日夜而忘之？<pb:KR4a0001_tls_004-17a>¶
+
+# src: CC JIUZHANG 04:01; SBBY 223; Jin 508; Huang 94; Fu 105; tr. Hawkes 166;
+# dating: 5000
+4.4抽思<pb:KR4a0001_tls_004-18a>¶
+心鬱鬱之憂思兮，¶
+獨永歎乎增傷。¶
+思蹇產之不釋兮，¶
+曼遭夜之方長。¶
+
+# src: CC JIUZHANG 04:02; SBBY 223; Jin 508; Huang 95; Fu 105; tr. Hawkes 167;
+# dating: 5000
+悲秋風之動容兮，¶
+何回極之浮浮。¶
+數惟蓀之多怒兮，¶
+傷余心之懮懮。¶
+
+# src: CC JIUZHANG 04:03; SBBY 223; Jin 508; Huang 95; Fu 105; tr. Hawkes 167;
+# dating: 5000
+願搖起而橫奔兮，¶
+覽民尤以自鎮。¶
+結微情以陳詞兮，¶
+矯以遺夫美人。¶
+
+# src: CC JIUZHANG 04:04; SBBY 224; Jin 512; Huang 95; Fu 106; tr. Hawkes 167;
+# dating: 5000
+昔君與我誠言兮，¶
+曰黃昏以為期。¶
+羌中道而回畔兮，¶
+反既有此他志。¶
+
+# src: CC JIUZHANG 04:05; SBBY 224; Jin 512; Huang 95; Fu 106; tr. Hawkes 167;
+# dating: 5000
+憍吾以其美好兮，¶
+覽余以其脩姱。¶
+與余言而不信兮，¶
+蓋為余而造怒。
+
+# src: CC JIUZHANG 04:06; SBBY 225; Jin 512; Huang 95; Fu 106; tr. Hawkes 167;
+# dating: 5000
+<pb:KR4a0001_tls_004-19a>¶
+願承閒而自察兮，¶
+心震悼而不敢；¶
+悲夷猶而冀進兮，¶
+心怛傷之憺憺。¶
+
+# src: CC JIUZHANG 04:07; SBBY 225; Jin 512; Huang 95; Fu 106; tr. Hawkes 167;
+# dating: 5000
+茲歷情以陳辭兮，¶
+蓀詳聾而不聞。¶
+固切人之不媚兮，¶
+眾果以我為患。¶
+
+# src: CC JIUZHANG 04:08; SBBY 225; Jin 516; Huang 95; Fu 106; tr. Hawkes 167;
+# dating: 5000
+初吾所陳之耿著兮，¶
+豈至今其庸亡？¶
+何毒藥之謇謇兮？¶
+願蓀美之可完。¶
+
+# src: CC JIUZHANG 04:09; SBBY 226; Jin 516; Huang 96; Fu 106; tr. Hawkes 167;
+# dating: 5000
+望三五以為像兮，¶
+指彭咸以為儀。¶
+夫何極而不至兮，¶
+故遠聞而難虧。¶
+
+# src: CC JIUZHANG 04:10; SBBY 226; Jin 516; Huang 96; Fu 106; tr. Hawkes 168;
+# dating: 5000
+善不由外來兮，¶
+名不可以虛作。¶
+孰無施而有報兮，¶
+孰不實而有穫？<pb:KR4a0001_tls_004-20a>¶
+
+# src: CC JIUZHANG 04:11; SBBY 226; Jin 520; Huang 96; Fu 106; tr. Hawkes 168;
+# dating: 5000
+少歌曰：¶
+與美人抽怨兮，¶
+并日夜而無正。¶
+憍吾以其美好兮，¶
+敖朕辭而不聽。
+
+# src: CC JIUZHANG 04:12; SBBY 227; Jin 520; Huang 96; Fu 106; tr. Hawkes 168;
+# dating: 5000
+<pb:KR4a0001_tls_004-21a>¶
+倡曰：¶
+有鳥自南兮，¶
+來集漢北。¶
+好姱佳麗兮，¶
+牉獨處此異域。¶
+既惸獨而不群兮，¶
+又無良媒在其側。¶
+
+# src: CC JIUZHANG 04:13; SBBY 227; Jin 520; Huang 96; Fu 106; tr. Hawkes 168;
+# dating: 5000
+道卓遠而日忘兮，¶
+願自申而不得。¶
+望北山而流涕兮，¶
+臨流水而太息！¶
+
+# src: CC JIUZHANG 04:14; SBBY 228; Jin 520; Huang 96; Fu 106; tr. Hawkes 168;
+# dating: 5000
+望孟夏之短夜兮，¶
+何晦明之若歲！¶
+惟郢路之遼遠兮，¶
+魂一夕而九逝。¶
+
+# src: CC JIUZHANG 04:15; SBBY 228; Jin 520; Huang 97; Fu 106; tr. Hawkes 168;
+# dating: 5000
+曾不知路之曲直兮，¶
+南指月與列星。¶
+願徑逝而未得兮，¶
+魂識路之營營。¶
+
+# src: CC JIUZHANG 04:16; SBBY 228; Jin 520; Huang 97; Fu 106; tr. Hawkes 169;
+# dating: 5000
+何靈魂之信直兮，¶
+人之心不與吾心同！¶
+理弱而媒不通兮，¶
+尚不知余之從容。
+
+# src: CC JIUZHANG 04:17; SBBY 229; Jin 528; Huang 97; Fu 106; tr. Hawkes 169;
+# dating: 5000
+<pb:KR4a0001_tls_004-22a>¶
+亂曰：¶
+長瀨湍流，泝江潭兮。¶
+狂顧南行，聊以娛心兮。¶
+軫石崴嵬，蹇吾願兮。¶
+超回志度，行隱進兮。¶
+低佪夷猶，宿北姑兮。¶
+煩冤瞀容，實沛徂兮。¶
+愁歎苦神，靈遙思兮。¶
+路遠處幽，又無行媒兮。¶
+
+# src: CC JIUZHANG 04:18; SBBY 230; Jin 528; Huang 97; Fu 107; tr. Hawkes 169;
+# dating: 5000
+道思作頌，聊以自救兮。¶
+憂心不遂，斯言誰告兮。
+
+# src: CC JIUZHANG 05:01; SBBY 230; Jin 535; Huang 99; Fu 109; tr. Hawkes 170;
+# dating: 5000
+<pb:KR4a0001_tls_004-23a>¶
+4.5懷沙<pb:KR4a0001_tls_004-24a>¶
+滔滔孟夏兮，¶
+草木莽莽。¶
+傷懷永哀兮，¶
+汩徂南土。¶
+
+# src: CC JIUZHANG 05:02; SBBY 231; Jin 535; Huang 99; Fu 109; tr. Hawkes 170;
+# dating: 5000
+眴兮杳杳，¶
+孔靜幽默。¶
+鬱結紆軫兮，¶
+離慜而長鞠。¶
+
+# src: CC JIUZHANG 05:03; SBBY 231; Jin 535; Huang 100; Fu 109; tr. Hawkes 170;
+# dating: 5000
+撫情效志兮，¶
+冤屈而自抑。
+<pb:KR4a0001_tls_004-25a>¶
+刓方以為圜兮，¶
+常度未替。¶
+
+# src: CC JIUZHANG 05:04; SBBY 231; Jin 538; Huang 100; Fu 109; tr. Hawkes 170;
+# dating: 5000
+易初本迪兮，¶
+君子所鄙。¶
+章畫志墨兮，¶
+前圖未改。¶
+
+# src: CC JIUZHANG 05:05; SBBY 232; Jin 538; Huang 100; Fu 109; tr. Hawkes 170;
+# dating: 5000
+內厚質正兮，¶
+大人所盛。¶
+巧倕不斲兮，¶
+孰察其撥正。
+
+# src: CC JIUZHANG 05:06; SBBY 232; Jin 538; Huang 100; Fu 110; tr. Hawkes 171;
+# dating: 5000
+<pb:KR4a0001_tls_004-26a>¶
+玄文處幽兮，¶
+矇瞍謂之不章；¶
+離婁微睇兮，¶
+瞽以為無明。¶
+
+# src: CC JIUZHANG 05:07; SBBY 233; Jin 538; Huang 100; Fu 110; tr. Hawkes 171;
+# dating: 5000
+變白以為黑兮，¶
+倒上以為下。¶
+鳳皇在笯兮，¶
+雞鶩翔舞。¶
+
+# src: CC JIUZHANG 05:08; SBBY 233; Jin 538; Huang 100; Fu 110; tr. Hawkes 171;
+# dating: 5000
+同糅玉石兮，¶
+一概而相量。¶
+夫惟黨人鄙固兮，¶
+羌不知余之所臧。¶
+
+# src: CC JIUZHANG 05:09; SBBY 233; Jin 545; Huang 100; Fu 110; tr. Hawkes 171;
+# dating: 5000
+任重載盛兮，¶
+陷滯而不濟。¶
+懷瑾握瑜兮，¶
+窮不知所示。¶
+
+# src: CC JIUZHANG 05:10; SBBY 234; Jin 545; Huang 101; Fu 110; tr. Hawkes 171;
+# dating: 5000
+邑犬之群吠兮，¶
+吠所怪也。¶
+非俊疑傑兮，¶
+固庸態也。¶
+
+# src: CC JIUZHANG 05:11; SBBY 234; Jin 545; Huang 101; Fu 110; tr. Hawkes 171;
+# dating: 5000
+文質疏內兮，¶
+眾不知余之異采。¶
+材朴委積兮，¶
+莫知余之所有。
+
+# src: CC JIUZHANG 05:12; SBBY 235; Jin 545; Huang 101; Fu 110; tr. Hawkes 171;
+# dating: 5000
+<pb:KR4a0001_tls_004-27a>¶
+重仁襲義兮，¶
+謹厚以為豐。¶
+重華不可遌兮，¶
+孰知余之從容！¶
+
+# src: CC JIUZHANG 05:13; SBBY 235; Jin 545; Huang 101; Fu 110; tr. Hawkes 171;
+# dating: 5000
+古固有不並兮，¶
+豈知其何故？¶
+湯禹久遠兮，¶
+邈而不可慕。¶
+
+# src: CC JIUZHANG 05:14; SBBY 235; Jin 545; Huang 101; Fu 110; tr. Hawkes 172;
+# dating: 5000
+懲連改忿兮，¶
+抑心而自強。¶
+離慜而不遷兮，¶
+願志之有像。¶
+
+# src: CC JIUZHANG 05:15; SBBY 236; Jin 545; Huang 101; Fu 110; tr. Hawkes 172;
+# dating: 5000
+進路北次兮，¶
+日昧昧其將暮。¶
+舒憂娛哀兮，¶
+限之以大故。
+
+# src: CC JIUZHANG 05:16; SBBY 236; Jin 553; Huang 101; Fu 110; tr. Hawkes 172;
+# dating: 5000
+<pb:KR4a0001_tls_004-28a>¶
+亂曰：¶
+浩浩沅湘，分流汩兮。¶
+脩路幽蔽，道遠忽兮。¶
+懷質抱情，獨無匹兮。¶
+伯樂既沒，驥焉程兮？¶
+
+# src: CC JIUZHANG 05:17; SBBY 237; Jin 553; Huang 102; Fu 110; tr. Hawkes 172;
+# dating: 5000
+萬民之生，各有所錯兮。¶
+定心廣志，余何畏懼兮？¶
+曾傷爰哀，永歎喟兮。¶
+世溷濁莫吾知，¶
+人心不可謂兮。¶
+知死不可讓，¶
+願勿愛兮。¶
+明告君子，¶
+吾將以為類兮。
+
+# src: CC JIUZHANG 06:01; SBBY 238; Jin 561; Huang 104; Fu 113; tr. Hawkes 173;
+# dating: 5000
+<pb:KR4a0001_tls_004-29a>¶
+4.6思美人<pb:KR4a0001_tls_004-30a>¶
+思美人兮，¶
+擥涕而佇眙。¶
+媒絕路阻兮，¶
+言不可結而詒。¶
+蹇蹇之煩冤兮，¶
+陷滯而不發。¶
+申旦以舒中情兮，¶
+志沈菀而莫達。¶
+
+# src: CC JIUZHANG 06:02; SBBY 239; Jin 561; Huang 104; Fu 113; tr. Hawkes 173;
+# dating: 5000
+願寄言於浮雲兮，¶
+遇豐隆而不將。¶
+因歸鳥而致辭兮，¶
+羌宿高而難當。¶
+高辛之靈盛兮，¶
+遭玄鳥而致詒。¶
+欲變節以從俗兮，¶
+媿易初而屈志。¶
+
+# src: CC JIUZHANG 06:03; SBBY 240; Jin 561; Huang 104; Fu 113; tr. Hawkes 173;
+# dating: 5000
+獨歷年而離愍兮，¶
+羌馮心猶未化。¶
+寧隱閔而壽考兮，¶
+何變易之可為！<pb:KR4a0001_tls_004-31a>¶
+知前轍之不遂兮，¶
+未改此度。¶
+車既覆而馬顛兮，¶
+蹇獨懷此異路。¶
+
+# src: CC JIUZHANG 06:04; SBBY 240; Jin 567; Huang 105; Fu 113; tr. Hawkes 174;
+# dating: 5000
+勒騏驥而更駕兮，¶
+造父為我操之。¶
+遷逡次而勿驅兮，¶
+聊假日以須時。¶
+指嶓冢之西隈兮，¶
+與纁黃以為期。
+
+# src: CC JIUZHANG 06:05; SBBY 241; Jin 570; Huang 105; Fu 113; tr. Hawkes 174;
+# dating: 5000
+<pb:KR4a0001_tls_004-32a>¶
+開春發歲兮，¶
+白日出之悠悠。¶
+吾將蕩志而愉樂兮，¶
+遵江夏以娛憂。¶
+
+# src: CC JIUZHANG 06:06; SBBY 241; Jin 570; Huang 105; Fu 113; tr. Hawkes 174;
+# dating: 5000
+擥大薄之芳茝兮，¶
+搴長洲之宿莽。¶
+惜吾不及古人兮，¶
+吾誰與玩此芳草？¶
+
+# src: CC JIUZHANG 06:07; SBBY 242; Jin 570; Huang 105; Fu 113; tr. Hawkes 174;
+# dating: 5000
+解萹薄與雜菜兮，¶
+備以為交佩。¶
+佩繽紛以繚轉兮，¶
+遂萎絕而離異。¶
+
+# src: CC JIUZHANG 06:08; SBBY 242; Jin 570; Huang 105; Fu 114; tr. Hawkes 174;
+# dating: 5000
+吾且儃佪以娛憂兮，¶
+觀南人之變態。¶
+竊快在中心兮，¶
+揚厥憑而不竢。
+
+# src: CC JIUZHANG 06:09; SBBY 242; Jin 570; Huang 105; Fu 114; tr. Hawkes 174;
+# dating: 5000
+<pb:KR4a0001_tls_004-33a>¶
+芳與澤其雜糅兮，¶
+羌芳華自中出。¶
+紛郁郁其遠承兮，¶
+滿內而外揚。¶
+情與質信可保兮，¶
+羌居蔽而聞章。¶
+
+# src: CC JIUZHANG 06:10; SBBY 243; Jin 577; Huang 106; Fu 114; tr. Hawkes 174;
+# dating: 5000
+令薜荔以為理兮，¶
+憚舉趾而緣木。¶
+因芙蓉而為媒兮，¶
+憚蹇裳而濡足。¶
+
+# src: CC JIUZHANG 06:11; SBBY 243; Jin 577; Huang 106; Fu 114; tr. Hawkes 175;
+# dating: 5000
+登高吾不說兮，¶
+入下吾不能。¶
+固朕形之不服兮，¶
+然容與而狐疑。¶
+
+# src: CC JIUZHANG 06:12; SBBY 243; Jin 577; Huang 106; Fu 114; tr. Hawkes 175;
+# dating: 5000
+廣遂前畫兮，¶
+未改此度也。¶
+命則處幽，吾將罷兮，¶
+願及白日之未暮。¶
+獨焭焭而南行兮，¶
+思彭咸之故也。
+
+# src: CC JIUZHANG 07:01; SBBY 244; Jin 5i2; Huang 107; Fu 116; tr. Hawkes 176;
+# dating: 5000
+<pb:KR4a0001_tls_004-34a>¶
+4.7惜往日<pb:KR4a0001_tls_004-35a>¶
+惜往日之曾信兮，¶
+受命詔以昭詩。¶
+奉先功以照下兮，¶
+明法度之嫌疑。¶
+國富強而法立兮，¶
+屬貞臣而日娭。¶
+
+# src: CC JIUZHANG 07:02; SBBY 245; Jin 5i2; Huang 108; Fu 116; tr. Hawkes 176;
+# dating: 5000
+秘密事之載心兮，¶
+雖過失猶弗治。¶
+心純庬而不泄兮，¶
+遭讒人而嫉之。¶
+君含怒而待臣兮，¶
+不清澈其然否。¶
+蔽晦君之聰明兮，¶
+虛惑誤又以欺。¶
+
+# src: CC JIUZHANG 07:03; SBBY 245; Jin 5i3; Huang 108; Fu 116; tr. Hawkes 176;
+# dating: 5000
+弗參驗以考實兮，¶
+遠遷臣而弗思。¶
+信讒諛之溷濁兮，¶
+盛氣志而過之。¶
+何貞臣之無辠兮，¶
+被離謗而見尤。¶
+
+# src: CC JIUZHANG 07:04; SBBY 246; Jin 588; Huang 108; Fu 116; tr. Hawkes 176;
+# dating: 5000
+慚光景之誠信兮，¶
+身幽隱而備之。¶
+臨沅湘之玄淵兮，¶
+遂自忍而沈流。¶
+卒沒身而絕名兮，¶
+惜壅君之不昭。¶
+
+# src: CC JIUZHANG 07:05; SBBY 246; Jin 588; Huang 108; Fu 116; tr. Hawkes 176;
+# dating: 5000
+君無度而弗察兮，¶
+使芳草為藪幽。¶
+焉舒情而抽信兮，¶
+恬死亡而不聊。¶
+獨鄣壅而蔽隱兮，¶
+使貞臣為無由。
+
+# src: CC JIUZHANG 07:06; SBBY 247; Jin 594; Huang 108; Fu 116; tr. Hawkes 176;
+# dating: 5000
+<pb:KR4a0001_tls_004-36a>¶
+聞百里之為虜兮，¶
+伊尹烹於庖廚。¶
+呂望屠於朝歌兮，¶
+甯戚歌而飯牛。¶
+不逢湯武與桓繆兮，¶
+世孰云而知之。¶
+吳信讒而弗味兮，¶
+
+# src: CC JIUZHANG 07:07; SBBY 247; Jin 594; Huang 109; Fu 116; tr. Hawkes 177;
+# dating: 5000
+子胥死而後憂。¶
+介子忠而立枯兮，¶
+文君寤而追求。¶
+封介山而為之禁兮，¶
+報大德之優游。¶
+
+# src: CC JIUZHANG 07:08; SBBY 248; Jin 594; Huang 109; Fu 116; tr. Hawkes 177;
+# dating: 5000
+思久故之親身兮，¶
+因縞素而哭之。¶
+或忠信而死節兮，¶
+或訑謾而不疑。¶
+弗省察而按實兮，¶
+聽讒人之虛辭。¶
+
+# src: CC JIUZHANG 07:09; SBBY 249; Jin 594; Huang 109; Fu 117; tr. Hawkes 177;
+# dating: 5000
+芳與澤其雜糅兮，¶
+孰申旦而別之？¶
+何芳草之早殀兮，¶
+微霜降而下戒。¶
+諒聰不明而蔽壅兮，¶
+使讒諛而日得。¶
+
+# src: CC JIUZHANG 07:10; SBBY 249; Jin 600; Huang 109; Fu 117; tr. Hawkes 177;
+# dating: 5000
+自前世之嫉賢兮，¶
+謂蕙若其不可佩。¶
+妒佳冶之芬芳兮，¶
+嫫母姣而自好。¶
+雖有西施之美容兮，¶
+讒妒入以自代。¶
+願陳情以白行兮，¶
+得罪過之不意。¶
+
+# src: CC JIUZHANG 07:11; SBBY 250; Jin 600; Huang 110; Fu 117; tr. Hawkes 177;
+# dating: 5000
+情冤見之日明兮，¶
+如列宿之錯置。¶
+乘騏驥而馳騁兮，¶
+無轡銜而自載；¶
+乘氾泭以下流兮，¶
+無舟楫而自備。¶
+背法度而心治兮，¶
+辟與此其無異。¶
+
+# src: CC JIUZHANG 07:12; SBBY 251; Jin 601; Huang 110; Fu 117; tr. Hawkes 178;
+# dating: 5000
+寧溘死而流亡兮，¶
+恐禍殃之有再。¶
+不畢辭而赴淵兮，¶
+惜壅君之不識。
+
+# src: CC JIUZHANG 08:01; SBBY 251; Jin 606; Huang 112; Fu 120; tr. Hawkes 178;
+# dating: 5000
+<pb:KR4a0001_tls_004-37a>¶
+4.8橘頌<pb:KR4a0001_tls_004-38a>¶
+后皇嘉樹，橘徠服兮。¶
+受命不遷，生南國兮。¶
+深固難徙，更壹志兮。¶
+
+# src: CC JIUZHANG 08:02; SBBY 252; Jin 607; Huang 113; Fu 120; tr. Hawkes 178;
+# dating: 5000
+綠葉素榮，紛其可喜兮。¶
+曾枝剡棘，圓果摶兮。¶
+青黃雜糅，文章爛兮。¶
+精色內白，¶類可任兮。
+紛縕宜脩，姱而不醜兮。
+
+# src: CC JIUZHANG 08:03; SBBY 253; Jin 611; Huang 113; Fu 120; tr. Hawkes 179;
+# dating: 5000
+<pb:KR4a0001_tls_004-39a>¶
+嗟爾幼志，有以異兮。¶
+獨立不遷，豈不可喜兮？¶
+深固難徙，廓其無求兮。¶
+蘇世獨立，橫而不流兮。¶
+
+# src: CC JIUZHANG 08:04; SBBY 253; Jin 611; Huang 113; Fu 120; tr. Hawkes 179;
+# dating: 5000
+閉心自慎，不終失過兮。¶
+秉德無私，參天地兮。¶
+願歲并謝，與長友兮。¶
+
+# src: CC JIUZHANG 08:05; SBBY 254; Jin 611; Huang 113; Fu 120; tr. Hawkes 179;
+# dating: 5000
+淑離不淫，梗其有理兮。¶
+年歲雖少，可師長兮。¶
+行比伯夷，置以為像兮。
+
+# src: CC JIUZHANG 09:01; SBBY 255; Jin 616; Huang 115; Fu 122; tr. Hawkes 180;
+# dating: 5000
+<pb:KR4a0001_tls_004-40a>¶
+4.9悲回風
+
+<pb:KR4a0001_tls_004-41a>悲回風之搖蕙兮，¶
+心冤結而內傷。¶
+物有微而隕性兮，¶
+聲有隱而先倡。¶
+夫何彭咸之造思兮，¶
+暨志介而不忘！¶
+萬變其情豈可蓋兮，¶
+孰虛偽之可長！¶
+
+# src: CC JIUZHANG 09:02; SBBY 256; Jin 616; Huang 115; Fu 122; tr. Hawkes 180;
+# dating: 5000
+鳥獸鳴以號群兮，¶
+草苴比而不芳。¶
+魚葺鱗以自別兮，¶
+蛟龍隱其文章。¶
+故荼薺不同畝兮，¶
+蘭茝幽而獨芳。¶
+惟佳人之永都兮，¶
+更統世而自貺。¶
+
+# src: CC JIUZHANG 09:03; SBBY 257; Jin 616; Huang 115; Fu 122; tr. Hawkes 180;
+# dating: 5000
+眇遠志之所及兮，¶
+憐浮雲之相羊。¶
+介眇志之所惑兮，¶
+竊賦詩之所明。
+
+# src: CC JIUZHANG 09:04; SBBY 257; Jin 626; Huang 115; Fu 122; tr. Hawkes 180;
+# dating: 5000
+<pb:KR4a0001_tls_004-42a>¶
+惟佳人之獨懷兮，¶
+折若椒以自處。¶
+曾歔欷之嗟嗟兮，¶
+獨隱伏而思慮。¶
+
+# src: CC JIUZHANG 09:05; SBBY 257; Jin 626; Huang 116; Fu 122; tr. Hawkes 1i1;
+# dating: 5000
+涕泣交而凄凄兮，¶
+思不眠以至曙。¶
+終長夜之曼曼兮，¶
+掩此哀而不去。¶
+寤從容以周流兮，¶
+聊逍遙以自恃。¶
+傷太息之愍憐兮，¶
+氣於邑而不可止。¶
+
+# src: CC JIUZHANG 09:06; SBBY 258; Jin 626; Huang 116; Fu 122; tr. Hawkes 1i1;
+# dating: 5000
+糺思心以為纕兮，¶
+編愁苦以為膺。¶
+折若木以蔽光兮，¶
+隨飄風之所仍。¶
+存髣髴而不見兮，¶
+心踊躍其若湯。¶
+撫珮衽以案志兮，¶
+超惘惘而遂行。¶
+
+# src: CC JIUZHANG 09:07; SBBY 259; Jin 627; Huang 116; Fu 122; tr. Hawkes 1i1;
+# dating: 5000
+歲曶曶其若頹兮，¶
+時亦冉冉而將至。¶
+薠蘅槁而節離兮，¶
+芳以歇而不比。¶
+憐思心之不可懲兮，¶
+證此言之不可聊。¶
+寧逝死而流亡兮，¶
+不忍為此之常愁。¶
+
+# src: CC JIUZHANG 09:08; SBBY 259; Jin 627; Huang 116; Fu 122; tr. Hawkes 1i1;
+# dating: 5000
+孤子唫而抆淚兮，¶
+放子出而不還。¶
+孰能思而不隱兮，¶
+照彭咸之所聞。
+
+# src: CC JIUZHANG 09:09; SBBY 260; Jin 636; Huang 117; Fu 122; tr. Hawkes 1i1;
+# dating: 5000
+<pb:KR4a0001_tls_004-43a>¶
+登石巒以遠望兮，¶
+路眇眇之默默。¶
+入景響之無應兮，¶
+聞省想而不可得。¶
+
+# src: CC JIUZHANG 09:10; SBBY 260; Jin 636; Huang 117; Fu 122; tr. Hawkes 1i2;
+# dating: 5000
+愁鬱鬱之無快兮，¶
+居戚戚而不可解。¶
+心鞿羈而不形兮，¶
+氣繚轉而自締。¶
+
+# src: CC JIUZHANG 09:11; SBBY 261; Jin 636; Huang 117; Fu 122; tr. Hawkes 1i2;
+# dating: 5000
+穆眇眇之無垠兮，¶
+莽芒芒之無儀。¶
+聲有隱而相感兮，¶
+物有純而不可為。¶
+藐蔓蔓之不可量兮，¶
+縹綿綿之不可紆。¶
+愁悄悄之常悲兮，¶
+翩冥冥之不可娛。¶
+
+# src: CC JIUZHANG 09:12; SBBY 261; Jin 636; Huang 117; Fu 123; tr. Hawkes 1i2;
+# dating: 5000
+淩大波而流風兮，¶
+託彭咸之所居。
+<pb:KR4a0001_tls_004-44a>¶
+上高巖之峭岸兮，¶
+處雌蜺之標顛。¶
+據青冥而攄虹兮，¶
+遂儵忽而捫天。¶
+吸湛露之浮源兮，¶
+漱凝霜之雰雰。¶
+依風穴以自息兮，¶
+忽傾寤以嬋媛。¶
+
+# src: CC JIUZHANG 09:13; SBBY 262; Jin 647; Huang 117; Fu 123; tr. Hawkes 1i2;
+# dating: 5000
+馮崑崙以瞰霧兮，¶
+隱岷山以清江。¶
+憚涌湍之礚礚兮，¶
+聽波聲之洶洶。¶
+
+# src: CC JIUZHANG 09:14; SBBY 263; Jin 647; Huang 118; Fu 123; tr. Hawkes 1i2;
+# dating: 5000
+紛容容之無經兮，¶
+罔芒芒之無紀。¶
+軋洋洋之無從兮，¶
+馳委移之焉止。¶
+漂翻翻其上下兮，¶
+翼遙遙其左右。¶
+氾潏潏其前後兮，¶
+伴張弛之信期。¶
+
+# src: CC JIUZHANG 09:15; SBBY 264; Jin 647; Huang 118; Fu 123; tr. Hawkes 1i3;
+# dating: 5000
+觀炎氣之相仍兮，¶
+窺煙液之所積。¶
+悲霜雪之俱下兮，¶
+聽潮水之相擊。¶
+借光景以往來兮，¶
+施黃棘之枉策。¶
+求介子之所存兮，¶
+見伯夷之放迹。¶
+心調度而弗去兮，¶
+刻著志之無適。
+
+# src: CC JIUZHANG 09:16; SBBY 265; Jin 660; Huang 118; Fu 123; tr. Hawkes 1i3;
+# dating: 5000
+<pb:KR4a0001_tls_004-45a>¶
+曰：¶
+吾怨往昔之所冀兮，¶
+悼來者之悐悐。¶
+浮江淮而入海兮，¶
+從子胥而自適。¶
+望大河之洲渚兮，¶
+悲申徒之抗迹。¶
+驟諫君而不聽兮，¶
+重任石之何益。¶
+心絓結而不解兮，¶
+思蹇產而不釋。
+

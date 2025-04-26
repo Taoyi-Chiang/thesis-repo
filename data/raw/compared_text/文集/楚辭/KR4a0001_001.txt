@@ -1,0 +1,665 @@
+# -*- mode: mandoku-view -*-
+#+TITLE: 楚辭
+#+DATE: 2016-08-10 10:15:52
+#+PROPERTY: ID KR4a0001
+#+PROPERTY: BASEEDITION tls
+#+PROPERTY: JUAN 0
+#+PROPERTY: CAT 1pre-han,文藝,選集
+<pb:KR4a0001_tls_001-1a>¶
+** 1 離騷經
+
+帝高陽之苗裔兮，¶
+朕皇考曰伯庸。¶
+攝提貞于孟陬兮，¶
+惟庚寅吾以降。¶
+
+# src: CC LISAO 01:02; SBBY 10; Jin 03; Huang 01; Fu 29; tr. Hawkes 68; You 18
+# dating: 5000
+皇覽揆余初度兮，¶
+肇錫余以嘉名。¶
+名余曰正則兮，¶
+字余曰靈均。¶
+
+# src: CC LISAO 01:03; SBBY 11; Jin 03; Huang 02; Fu 29; tr. Hawkes 68; You 24;
+# dating: 5000
+紛吾既有此內美兮，¶
+又重之以脩能。¶
+扈江離與辟芷兮，¶
+紉秋蘭以為佩。¶
+
+# src: CC LISAO 01:04; SBBY 13; Jin 03; Huang 02; Fu 29; tr. Hawkes 68; You 35;
+# dating: 5000
+汩余若將不及兮，¶
+恐年歲之不吾與。¶
+朝搴阰之木蘭兮，¶
+夕攬洲之宿莽。¶
+
+# src: CC LISAO 01:05; SBBY 14; Jin 03; Huang 02; Fu 29; tr. Hawkes 68; You 41;
+# dating: 5000
+日月忽其不淹兮，¶
+春與秋其代序。¶
+惟草木之零落兮，¶
+恐美人之遲暮。¶
+
+# src: CC LISAO 01:06; SBBY 14; Jin 03; Huang 02; Fu 29; tr. Hawkes 68; You 45;
+# dating: 5000
+不撫壯而棄穢兮，¶
+何不改此度？¶
+乘騏驥以馳騁兮，¶
+來吾道夫先路。
+
+# src: CC LISAO 01:07; SBBY 15; Jin 16; Huang 04; Fu 30; tr. Hawkes 69; You 50;
+# dating: 5000
+<pb:KR4a0001_tls_001-2a>¶
+昔三后之純粹兮，¶
+固眾芳之所在。¶
+雜申椒與菌桂兮，¶
+豈維紉夫蕙茝？¶
+
+# src: CC LISAO 01:08; SBBY 16; Jin 16; Huang 04; Fu 30; tr. Hawkes 69; You 59;
+# dating: 5000
+彼堯舜之耿介兮，¶
+既遵道而得路。¶
+何桀紂之猖披兮，¶
+夫唯捷徑以窘步。¶
+
+# src: CC LISAO 01:09; SBBY 17; Jin 16; Huang 04; Fu 30; tr. Hawkes 69; You 63;
+# dating: 5000
+惟夫黨人之偷樂兮，¶
+路幽昧以險隘。¶
+豈余身之憚殃兮，¶
+恐皇輿之敗績。¶
+
+# src: CC LISAO 01:10; SBBY 17; Jin 16; Huang 04; Fu 30; tr. Hawkes 69; You 65;
+# dating: 5000
+忽奔走以先後兮，¶
+及前王之踵武。¶
+荃不察余之中情兮，¶
+反信讒而齌怒。¶
+
+# src: CC LISAO 01:11; SBBY 18; Jin 16; Huang 04; Fu 30; tr. Hawkes 69; You 70;
+# dating: 5000
+余固知謇謇之為患兮，¶
+忍而不能舍也。¶
+指九天以為正兮，¶
+夫唯靈脩之故也。¶
+曰黃昏以為期兮，¶
+羌中道而改路。¶
+
+# src: CC LISAO 01:12; SBBY 19; Jin 16; Huang 05; Fu 31; tr. Hawkes 69; You 79;
+# dating: 5000
+初既與余成言兮，¶
+後悔遁而有他。¶
+余既不難夫離別兮，¶
+傷靈脩之數化。
+
+# src: CC LISAO 01:13; SBBY 20; Jin 26; Huang 06; Fu 32; tr. Hawkes 69; You i1;
+# dating: 5000
+<pb:KR4a0001_tls_001-3a>¶
+余既滋蘭之九畹兮，¶
+又樹蕙之百畝。¶
+畦留夷與揭車兮，¶
+雜杜衡與芳芷。¶
+
+# src: CC LISAO 01:14; SBBY 21; Jin 26; Huang 06; Fu 32; tr. Hawkes 69; You 91;
+# dating: 5000
+冀枝葉之峻茂兮，¶
+願竢時乎吾將刈。¶
+雖萎絕其亦何傷兮，¶
+哀眾芳之蕪穢。¶
+
+# src: CC LISAO 01:15; SBBY 21; Jin 26; Huang 06; Fu 32; tr. Hawkes 69; You 95; tr. Matthieu 47
+# dating: 5000
+眾皆競進以貪婪兮，¶
+憑不猒乎求索。¶
+羌內恕己以量人兮，¶
+各興心而嫉妒。¶
+
+# src: CC LISAO 01:16; SBBY 22; Jin 26; Huang 06; Fu 32; tr. Hawkes 70; You 99;
+# dating: 5000
+忽馳騖以追逐兮，¶
+非余心之所急。¶
+老冉冉其將至兮，¶
+恐脩名之不立。¶
+
+# src: CC LISAO 01:17; SBBY 23; Jin 26; Huang 07; Fu 32; tr. Hawkes 70; You 103;
+# dating: 5000
+朝飲木蘭之墜露兮，¶
+夕餐秋菊之落英。¶
+苟余情其信姱以練要兮，¶
+長顑頷亦何傷？¶
+
+# src: CC LISAO 01:18; SBBY 23; Jin 27; Huang 07; Fu 32; tr. Hawkes 70; You 112;
+# dating: 5000
+擥木根以結茝兮，¶
+貫薜荔之落蕊。¶
+矯菌桂以紉蕙兮，¶
+索胡繩之纚纚。¶
+
+# src: CC LISAO 01:19; SBBY 24; Jin 27; Huang 07; Fu 32; tr. Hawkes 70; You 119;
+# dating: 5000
+謇吾法夫前脩兮，¶
+非世俗之所服。¶
+雖不周於今之人兮，¶
+願依彭咸之遺則。¶
+
+# src: CC LISAO 01:20; SBBY 25; Jin 39; Huang 08; Fu 33; tr. Hawkes 70; You 129; revised tr. CH
+# dating: 5000
+長太息以掩涕兮，¶
+哀民生之多艱。¶
+余雖好脩姱以鞿羈兮，¶
+謇朝誶而夕替。¶
+
+# src: CC LISAO 01:21; SBBY 26; Jin 39; Huang 08; Fu 33; tr. Hawkes 70; You 136;
+# dating: 5000
+既替余以蕙纕兮，¶
+又申之以攬茝。¶
+亦余心之所善兮，¶
+雖九死其猶未悔。¶
+
+# src: CC LISAO 01:22; SBBY 26; Jin 39; Huang 08; Fu 33; tr. Hawkes 70; You 138;
+# dating: 5000
+怨靈脩之浩蕩兮，¶
+終不察夫民心。¶
+眾女嫉余之蛾眉兮，¶
+謠諑謂余以善淫。¶
+
+# src: CC LISAO 01:23; SBBY 27; Jin 39; Huang 09; Fu 33; tr. Hawkes 70; You 143;
+# dating: 5000
+固時俗之工巧兮，¶
+偭規矩而改錯。¶
+背繩墨以追曲兮，¶
+競周容以為度。¶
+
+# src: CC LISAO 01:24; SBBY 28; Jin 39; Huang 09; Fu 33; tr. Hawkes 70; You 146;
+# dating: 5000
+忳鬱邑余侘傺兮，¶
+吾獨窮困乎此時也。¶
+寧溘死以流亡兮，¶
+余不忍為此態也。¶
+
+# src: CC LISAO 01:25; SBBY 28; Jin 39; Huang 09; Fu 33; tr. Hawkes 71; You 149;
+# dating: 5000
+鷙鳥之不群兮，¶
+自前世而固然。¶
+何方圜之能周兮，¶
+夫孰異道而相安。¶
+
+# src: CC LISAO 01:26; SBBY 29; Jin 39; Huang 09; Fu 33; tr. Hawkes 71; You 150;
+# dating: 5000
+屈心而抑志兮，¶
+忍尤而攘詬。¶
+伏清白以死直兮，¶
+固前聖之所厚。
+
+# src: CC LISAO 01:27; SBBY 29; Jin 48; Huang 10; Fu 35; tr. Hawkes 71; You 155;
+# dating: 5000
+<pb:KR4a0001_tls_001-4a>¶
+悔相道之不察兮，¶
+延佇乎吾將反。¶
+回朕車以復路兮，¶
+及行迷之未遠。¶
+
+# src: CC LISAO 01:28; SBBY 30; Jin 48; Huang 10; Fu 35; tr. Hawkes 71; You 160;
+# dating: 5000
+步余馬於蘭皋兮，¶
+馳椒丘且焉止息。¶
+進不入以離尤兮，¶
+退將復脩吾初服。¶
+
+# src: CC LISAO 01:29; SBBY 30; Jin 48; Huang 10; Fu 35; tr. Hawkes 71; You 164;
+# dating: 5000
+製芰荷以為衣兮，¶
+集芙蓉以為裳。¶
+不吾知其亦已兮，¶
+苟余情其信芳。¶
+
+# src: CC LISAO 01:30; SBBY 31; Jin 48; Huang 11; Fu 35; tr. Hawkes 71; You 170;
+# dating: 5000
+高余冠之岌岌兮，¶
+長余佩之陸離。¶
+芳與澤其雜糅兮，¶
+唯昭質其猶未虧。¶
+
+# src: CC LISAO 01:31; SBBY 32; Jin 48; Huang 11; Fu 35; tr. Hawkes 71; You 174;
+# dating: 5000
+忽反顧以遊目兮，¶
+將往觀乎四荒。¶
+佩繽紛其繁飾兮，¶
+芳菲菲其彌章。¶
+
+# src: CC LISAO 01:32; SBBY 32; Jin 48; Huang 11; Fu 35; tr. Hawkes 71; You 178;
+# dating: 5000
+民生各有所樂兮，¶
+余獨好脩以為常。¶
+雖體解吾猶未變兮，¶
+豈余心之可懲。
+
+# src: CC LISAO 01:33; SBBY 33; Jin 55; Huang 12; Fu 35; tr. Hawkes 71; You 1i3;
+# dating: 5000
+<pb:KR4a0001_tls_001-5a>¶
+女嬃之嬋媛兮，¶
+申申其詈予。¶
+曰鯀婞直以亡身兮，¶
+終然殀乎羽之野。¶
+汝何博謇而好脩兮，¶
+紛獨有此姱節。¶
+薋菉葹以盈室兮，¶
+判獨離而不服。¶
+
+# src: CC LISAO 01:34; SBBY 35; Jin 55; Huang 12; Fu 35; tr. Hawkes 72; You 200;
+# dating: 5000
+眾不可戶說兮，¶
+孰云察余之中情。¶
+世並舉而好朋兮，¶
+夫何焭獨而不予聽。¶
+
+# src: CC LISAO 01:35; SBBY 35; Jin 62; Huang 13; Fu 36; tr. Hawkes 72; You 203;
+# dating: 5000
+依前聖以節中兮，¶
+喟憑心而歷茲。¶
+濟沅湘以南征兮，¶
+就重華而敶詞：¶
+
+# src: CC LISAO 01:36; SBBY 36; Jin 62; Huang 13; Fu 36; tr. Hawkes 72; You 210;
+# dating: 5000
+啟《九辯》與《九歌》兮，¶
+夏康娛以自縱。¶
+不顧難以圖後兮，¶
+五子用失乎家巷。¶
+
+# src: CC LISAO 01:37; SBBY 37; Jin 62; Huang 13; Fu 37; tr. Hawkes 72; You 221;
+# dating: 5000
+羿淫遊以佚畋兮，¶
+又好射夫封狐。¶
+固亂流其鮮終兮，¶
+浞又貪夫厥家。¶
+
+# src: CC LISAO 01:38; SBBY 38; Jin 62; Huang 13; Fu 37; tr. Hawkes 72; You 223;
+# dating: 5000
+澆身被服強圉兮，¶
+縱欲而不忍。¶
+日康娛而自忘兮，¶
+厥首用夫顛隕。¶
+
+# src: CC LISAO 01:39; SBBY 39; Jin 62; Huang 13; Fu 37; tr. Hawkes 72; You 226;
+# dating: 5000
+夏桀之常違兮，¶
+乃遂焉而逢殃。¶
+后辛之菹醢兮，¶
+殷宗用而不長。¶
+
+# src: CC LISAO 01:40; SBBY 40; Jin 62; Huang 13; Fu 37; tr. Hawkes 72; You 228;
+# dating: 5000
+湯禹儼而祗敬兮，¶
+周論道而莫差。¶
+舉賢而授能兮，¶
+循繩墨而不頗。¶
+
+# src: CC LISAO 01:41; SBBY 40; Jin 63; Huang 13; Fu 37; tr. Hawkes 72; You 230;
+# dating: 5000
+皇天無私阿兮，¶
+覽民德焉錯輔。¶
+夫維聖哲以茂行兮，¶
+苟得用此下土。¶
+
+# src: CC LISAO 01:42; SBBY 41; Jin 63; Huang 13; Fu 37; tr. Hawkes 73; You 233;
+# dating: 5000
+瞻前而顧後兮，¶
+相觀民之計極。¶
+夫孰非義而可用兮，¶
+孰非善而可服。¶
+
+# src: CC LISAO 01:43; SBBY 41; Jin 63; Huang 14; Fu 37; tr. Hawkes 73; You 237;
+# dating: 5000
+阽余身而危死兮，¶
+覽余初其猶未悔。¶
+不量鑿而正枘兮，¶
+固前脩以菹醢。¶
+
+# src: CC LISAO 01:44; SBBY 42; Jin 63; Huang 14; Fu 37; tr. Hawkes 73; You 240;
+# dating: 5000
+曾歔欷余鬱邑兮，¶
+哀朕時之不當。¶
+攬茹蕙以掩涕兮，¶
+霑余襟之浪浪。
+
+# src: CC LISAO 01:45; SBBY 43; Jin 80; Huang 16; Fu 39; tr. Hawkes 73; You 247;
+# dating: 5000
+<pb:KR4a0001_tls_001-6a>¶
+跪敷衽以陳辭兮，¶
+耿吾既得此中正；¶
+駟玉虬以椉鷖兮，¶
+溘埃風余上征。¶
+
+# src: CC LISAO 01:46; SBBY 44; Jin 80; Huang 16; Fu 39; tr. Hawkes 73; You 252;
+# dating: 5000
+朝發軔於蒼梧兮，¶
+夕余至乎縣圃；¶
+欲少留此靈瑣兮，¶
+日忽忽其將暮。¶
+
+# src: CC LISAO 01:47; SBBY 45; Jin 80; Huang 17; Fu 39; tr. Hawkes 73; You 257;
+# dating: 5000
+吾令羲和弭節兮，¶
+望崦嵫而勿迫。¶
+路曼曼其脩遠兮，¶
+吾將上下而求索。¶
+
+# src: CC LISAO 01:48; SBBY 46; Jin 80; Huang 17; Fu 39; tr. Hawkes 73; You 263;
+# dating: 5000
+飲余馬於咸池兮，¶
+總余轡乎扶桑。¶
+折若木以拂日兮，¶
+聊逍遙以相羊。¶
+
+# src: CC LISAO 01:49; SBBY 47; Jin 80; Huang 17; Fu 39; tr. Hawkes 73; You 270;
+# dating: 5000
+前望舒使先驅兮，¶
+後飛廉使奔屬。¶
+鸞皇為余先戒兮，¶
+雷師告余以未具。¶
+
+# src: CC LISAO 01:50; SBBY 48; Jin 80; Huang 17; Fu 39; tr. Hawkes 73; You 274;
+# dating: 5000
+吾令鳳鳥飛騰兮，¶
+繼之以日夜。¶
+飄風屯其相離兮，¶
+帥雲霓而來御。¶
+
+# src: CC LISAO 01:51; SBBY 49; Jin i1; Huang 17; Fu 39; tr. Hawkes 74; You 278;
+# dating: 5000
+紛總總其離合兮，¶
+斑陸離其上下。¶
+吾令帝閽開關兮，¶
+倚閶闔而望予。¶
+
+# src: CC LISAO 01:52; SBBY 49; Jin i1; Huang 17; Fu 39; tr. Hawkes 74; You 2i3;
+# dating: 5000
+時曖曖其將罷兮，¶
+結幽蘭而延佇。¶
+世溷濁而不分兮，¶
+好蔽美而嫉妒。¶
+
+# src: CC LISAO 01:53; SBBY 50; Jin 98; Huang 19; Fu 40; tr. Hawkes 74; You 287;
+# dating: 5000
+朝吾將濟於白水兮，¶
+登閬風而緤馬。¶
+忽反顧以流涕兮，¶
+哀高丘之無女。¶
+
+# src: CC LISAO 01:54; SBBY 50; Jin 98; Huang 19; Fu 40; tr. Hawkes 74; You 295;
+# dating: 5000
+溘吾遊此春宮兮，¶
+折瓊枝以繼佩。¶
+及榮華之未落兮，¶
+相下女之可詒。¶
+
+# src: CC LISAO 01:55; SBBY 51; Jin 98; Huang 19; Fu 40; tr. Hawkes 74; You 301;
+# dating: 5000
+吾令豐隆椉雲兮，¶
+求宓妃之所在。¶
+解佩纕以結言兮，¶
+吾令蹇脩以為理。¶
+
+# src: CC LISAO 01:57; SBBY 53; Jin 98; Huang 19; Fu 41; tr. Hawkes 74; You 315;
+# dating: 5000
+紛總總其離合兮，¶
+忽緯繣其難遷。¶
+夕歸次於窮石兮，¶
+朝濯髮乎洧盤。
+保厥美以驕傲兮，¶
+日康娛以淫遊。¶
+雖信美而無禮兮，¶
+來違棄而改求。¶
+
+# src: CC LISAO 01:58; SBBY 53; Jin 98; Huang 20; Fu 41; tr. Hawkes 74; You 319;
+# dating: 5000
+覽相觀於四極兮，¶
+周流乎天余乃下。¶
+望瑤臺之偃蹇兮，¶
+見有娀之佚女。¶
+
+# src: CC LISAO 01:59; SBBY 54; Jin 98; Huang 20; Fu 41; tr. Hawkes 74; You 324;
+# dating: 5000
+吾令鴆為媒兮，¶
+鴆告余以不好。¶
+雄鳩之鳴逝兮，¶
+余猶惡其佻巧。¶
+
+# src: CC LISAO 01:60; SBBY 55; Jin 98; Huang 20; Fu 41; tr. Hawkes 75; You 328;
+# dating: 5000
+心猶豫而狐疑兮，¶
+欲自適而不可。¶
+鳳皇既受詒兮，¶
+恐高辛之先我。¶
+
+# src: CC LISAO 01:61; SBBY 56; Jin 98; Huang 20; Fu 41; tr. Hawkes 75; You 332;
+# dating: 5000
+欲遠集而無所止兮，¶
+聊浮遊以逍遙。¶
+及少康之未家兮，¶
+留有虞之二姚。¶
+
+# src: CC LISAO 01:62; SBBY 56; Jin 98; Huang 20; Fu 41; tr. Hawkes 75; You 337;
+# dating: 5000
+理弱而媒拙兮，¶
+恐導言之不固。¶
+世溷濁而嫉賢兮，¶
+好蔽美而稱惡。¶
+
+# src: CC LISAO 01:63; SBBY 57; Jin 98; Huang 20; Fu 41; tr. Hawkes 75; You 342;
+# dating: 5000
+閨中既以邃遠兮，¶
+哲王又不寤。¶
+懷朕情而不發兮，¶
+余焉能忍與此終古。
+
+# src: CC LISAO 01:64; SBBY 57; Jin 120; Huang 22; Fu 42; tr. Hawkes 75; You 348;
+# dating: 5000
+<pb:KR4a0001_tls_001-7a>¶
+索藑茅以筳蓴兮，¶
+命靈氛為余占之。¶
+曰兩美其必合兮，¶
+孰信脩而慕之？¶
+思九州之博大兮，¶
+豈唯是其有女？¶
+
+# src: CC LISAO 01:65; SBBY 58; Jin 120; Huang 22; Fu 42; tr. Hawkes 75; You 358;
+# dating: 5000
+曰勉遠逝而無狐疑兮，¶
+孰求美而釋女？¶
+
+# src: CC LISAO 01:66; SBBY 58; Jin 120; Huang 22; Fu 42; tr. Hawkes 75; You 360;
+# dating: 5000
+何所獨無芳草兮，¶
+爾何懷乎故宇？¶
+世幽昧以昡曜兮，¶
+孰云察余之善惡。¶
+
+# src: CC LISAO 01:67; SBBY 59; Jin 120; Huang 22; Fu 43; tr. Hawkes 75; You 364;
+# dating: 5000
+民好惡其不同兮，¶
+惟此黨人其獨異。¶
+戶服艾以盈要兮，¶
+謂幽蘭其不可佩。¶
+
+# src: CC LISAO 01:68; SBBY 59; Jin 120; Huang 22; Fu 43; tr. Hawkes 75; You 367;
+# dating: 5000
+覽察草木其猶未得兮，¶
+豈珵美之能當？¶
+蘇糞壤以充幃兮，¶
+謂申椒其不芳。¶
+
+# src: CC LISAO 01:69; SBBY 60; Jin 131; Huang 23; Fu 43; tr. Hawkes 76; You 371;
+# dating: 5000
+欲從靈氛之吉占兮，¶
+心猶豫而狐疑。¶
+巫咸將夕降兮，¶
+懷椒糈而要之。¶
+
+# src: CC LISAO 01:70; SBBY 61; Jin 131; Huang 23; Fu 43; tr. Hawkes 76; You 379;
+# dating: 5000
+百神翳其備降兮，¶
+九疑繽其並迎。¶
+皇剡剡其揚靈兮，¶
+告余以吉故。¶
+
+# src: CC LISAO 01:71; SBBY 61; Jin 131; Huang 24; Fu 43; tr. Hawkes 76; You 3i4;
+# dating: 5000
+曰勉陞降以上下兮，¶
+求矩矱之所同。¶
+湯禹嚴而求合兮，¶
+摯咎繇而能調。¶
+
+# src: CC LISAO 01:72; SBBY 62; Jin 131; Huang 24; Fu 44; tr. Hawkes 76; You 392;
+# dating: 5000
+苟中情其好脩兮，¶
+又何必用夫行媒。¶
+說操築於傅巖兮，¶
+武丁用而不疑。¶
+
+# src: CC LISAO 01:73; SBBY 63; Jin 131; Huang 24; Fu 44; tr. Hawkes 76; You 399;
+# dating: 5000
+呂望之鼓刀兮，¶
+遭周文而得舉。¶
+甯戚之謳歌兮，¶
+齊桓聞以該輔。¶
+
+# src: CC LISAO 01:74; SBBY 64; Jin 131; Huang 24; Fu 44; tr. Hawkes 76; You 402;
+# dating: 5000
+及年歲之未晏兮，¶
+時亦猶其未央。¶
+恐鵜鴂之先鳴兮，¶
+使夫百草為之不芳。¶
+
+# src: CC LISAO 01:75; SBBY 65; Jin 148; Huang 24; Fu 44; tr. Hawkes 76; You 412;
+# dating: 5000
+何瓊佩之偃蹇兮，¶
+眾薆然而蔽之。¶
+惟此黨人之不諒兮，¶
+恐嫉妒而折之。¶
+
+# src: CC LISAO 01:76; SBBY 65; Jin 148; Huang 24; Fu 44; tr. Hawkes 76; You 415;
+# dating: 5000
+時繽紛其變易兮，¶
+又何可以淹留。¶
+蘭芷變而不芳兮，¶
+荃蕙化而為茅。¶
+
+# src: CC LISAO 01:77; SBBY 66; Jin 148; Huang 24; Fu 44; tr. Hawkes 76; You 418;
+# dating: 5000
+何昔日之芳草兮，¶
+今直為此蕭艾也。¶
+豈其有他故兮，¶
+莫好脩之害也。¶
+
+# src: CC LISAO 01:78; SBBY 66; Jin 148; Huang 25; Fu 44; tr. Hawkes 77; You 422;
+# dating: 5000
+余以蘭為可恃兮，¶
+羌無實而容長。¶
+委厥美以從俗兮，¶
+苟得列乎眾芳。¶
+
+# src: CC LISAO 01:79; SBBY 67; Jin 148; Huang 25; Fu 44; tr. Hawkes 77; You 426;
+# dating: 5000
+椒專佞以慢慆兮，¶
+樧又欲充夫佩幃。¶
+既干進而務入兮，¶
+又何芳之能祗。¶
+
+# src: CC LISAO 01:80; SBBY 68; Jin 148; Huang 25; Fu 44; tr. Hawkes 77; You 433;
+# dating: 5000
+固時俗之流從兮，¶
+又孰能無變化。¶
+覽椒蘭其若茲兮，¶
+又況揭車與江離。¶
+
+# src: CC LISAO 01:i1; SBBY 68; Jin 148; Huang 25; Fu 44; tr. Hawkes 77; You 438;
+# dating: 5000
+惟茲佩之可貴兮，¶
+委厥美而歷茲。¶
+芳菲菲而難虧兮，¶
+芬至今猶未沬。¶
+
+# src: CC LISAO 01:i2; SBBY 69; Jin 148; Huang 25; Fu 44; tr. Hawkes 77; You 442;
+# dating: 5000
+和調度以自娛兮，¶
+聊浮游而求女。¶
+及余飾之方壯兮，¶
+周流觀乎上下。
+
+# src: CC LISAO 01:i3; SBBY 69; Jin 159; Huang 27; Fu 46; tr. Hawkes 77; You 448;
+# dating: 5000
+<pb:KR4a0001_tls_001-8a>¶
+靈氛既告余以吉占兮，¶
+歷吉日乎吾將行。¶
+折瓊枝以為羞兮，¶
+精瓊爢以為粻。¶
+
+# src: CC LISAO 01:i4; SBBY 70; Jin 159; Huang 27; Fu 46; tr. Hawkes 77; You 453;
+# dating: 5000
+為余駕飛龍兮，¶
+雜瑤象以為車。¶
+何離心之可同兮，¶
+吾將遠逝以自疏。¶
+
+# src: CC LISAO 01:85; SBBY 70; Jin 159; Huang 27; Fu 46; tr. Hawkes 77; You 457;
+# dating: 5000
+邅吾道夫崑崙兮，¶
+路脩遠以周流。¶
+揚雲霓之晻藹兮，¶
+鳴玉鸞之啾啾。¶
+
+# src: CC LISAO 01:86; SBBY 72; Jin 159; Huang 27; Fu 46; tr. Hawkes 77; You 464;
+# dating: 5000
+朝發軔於天津兮，¶
+夕余至乎西極。¶
+鳳皇翼其承旂兮，¶
+高翱翔之翼翼。¶
+
+# src: CC LISAO 01:87; SBBY 73; Jin 160; Huang 27; Fu 46; tr. Hawkes 77; You 468;
+# dating: 5000
+忽吾行此流沙兮，¶
+遵赤水而容與。¶
+麾蛟龍使梁津兮，¶
+詔西皇使涉予。¶
+
+# src: CC LISAO 01:88; SBBY 74; Jin 160; Huang 28; Fu 46; tr. Hawkes 78; You 472;
+# dating: 5000
+路脩遠以多艱兮，¶
+騰眾車使徑待。¶
+路不周以左轉兮，¶
+指西海以為期。¶
+
+# src: CC LISAO 01:89; SBBY 74; Jin 160; Huang 28; Fu 46; tr. Hawkes 78; You 480;
+# dating: 5000
+屯余車其千乘兮，¶
+齊玉軑而並馳。¶
+駕八龍之婉婉兮，¶
+載雲旗之委蛇。¶
+
+# src: CC LISAO 01:90; SBBY 75; Jin 160; Huang 28; Fu 46; tr. Hawkes 78; You 4i3;
+# dating: 5000
+抑志而弭節兮，¶
+神高馳之邈邈。¶
+奏《九歌》而舞《韶》兮，¶
+聊假日以媮樂。¶
+
+# src: CC LISAO 01:91; SBBY 76; Jin 160; Huang 28; Fu 46; tr. Hawkes 78; You 491;
+# dating: 5000
+陟陞皇之赫戲兮，¶
+忽臨睨夫舊鄉。¶
+僕夫悲余馬懷兮，¶
+蜷局顧而不行。
+
+# src: CC LISAO 01:92; SBBY 76; Jin 160; Huang 28; Fu 46; tr. Hawkes 78; You 495;
+# dating: 5000
+<pb:KR4a0001_tls_001-9a>¶
+亂曰：¶
+已矣哉，¶
+國無人莫我知兮，¶
+又何懷乎故都？¶
+既莫足與為美政兮，¶
+吾將從彭咸之所居。
+

@@ -1,0 +1,5 @@
+# -*- mode: mandoku-view; -*-
+#+TITLE: 外臺祕要方
+#+DATE: 2015-08-24 23:04:23.617572
+#+PROPERTY: ID KR3e0015
+#+PROPERTY: BASEEDITION WYG    

@@ -1,0 +1,33 @@
+# -*- mode: mandoku-view; -*-
+#+TITLE: 續幽怪錄
+#+DATE: 2015-09-12 00:26:41.271487
+#+PROPERTY: ID KR3l0126
+#+PROPERTY: BASEEDITION SBCK    
+#+PROPERTY: WITNESS SBCK
+#+PROPERTY: JUAN 0
+#+PROPERTY: FILE SB07n0632-000續幽怪錄-目録.
+<pb:KR3l0126_SBCK_000-1a>¶
+續幽怪録目録¶
+　　　　　　　　　李　復言　編¶
+　第一卷¶
+　　楊恭政　辛公平上仙¶
+　　凉國武公李愬　薛中丞存誠¶
+　　麒麟客¶
+　第二卷¶
+　　　盧僕射從史　李岳州¶
+　　　張質　韋令公皐¶
+<pb:KR3l0126_SBCK_000-1b>¶
+　　　　鄭虢州騊夫人　薛偉¶
+　　第三卷¶
+　　　蘇州客　張庾¶
+　　　竇玉妻　房杜二相國¶
+　　　錢方義¶
+　　第四卷¶
+　　　　張逢　定婚店¶
+　　　葉令女　驢言¶
+　　　蔡榮　梁革¶
+<pb:KR3l0126_SBCK_000-2a>¶
+　　李衞公靖行雨¶
+續幽怪録目録¶
+　　　臨安府太廟前尹家書籍鋪刋行¶
+<pb:KR3l0126_SBCK_000-2b>¶

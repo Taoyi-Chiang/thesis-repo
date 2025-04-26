@@ -1,0 +1,95 @@
+# -*- mode: mandoku-view -*-
+#+TITLE: 楚辭
+#+DATE: 2016-08-10 10:15:52
+#+PROPERTY: ID KR4a0001
+#+PROPERTY: BASEEDITION tls
+#+PROPERTY: JUAN 5
+#+PROPERTY: CAT 1pre-han,文藝,選集
+
+# src: CC BUJU 01:01; SBBY 290; Jin 741; Huang 133; Fu 137; tr. Hawkes 204;
+# dating: 5000
+<pb:KR4a0001_tls_006-1a>¶
+** 6 卜居
+屈原既放，三年不得復見。¶
+竭知盡忠，¶
+而蔽鄣於讒。¶
+心煩慮亂，¶
+不知所從。¶
+
+# src: CC BUJU 01:02; SBBY 290; Jin 741; Huang 133; Fu 137; tr. Hawkes 204;
+# dating: 5000
+往見太卜鄭詹尹曰：¶
+「余有所疑，¶
+願因先生決之。」¶
+詹尹乃端策拂龜，
+曰：¶「君將何以教之？」¶
+
+# src: CC BUJU 01:03; SBBY 290; Jin 744; Huang 133; Fu 137; tr. Hawkes 204;
+# dating: 5000
+屈原曰：¶
+「吾寧悃悃款款
+朴以忠乎？¶
+將送往勞來斯無窮乎？¶
+寧誅鋤草茅
+以力耕乎？¶
+將游大人
+以成名乎？¶
+
+# src: CC BUJU 01:04; SBBY 291; Jin 744; Huang 134; Fu 137; tr. Hawkes 204;
+# dating: 5000
+寧正言不諱
+以危身乎？¶
+將從俗富貴
+以媮生乎？¶
+寧超然高舉
+以保真乎？¶
+將哫訾栗斯，¶
+喔咿儒兒
+以事婦人乎？¶
+
+# src: CC BUJU 01:05; SBBY 292; Jin 744; Huang 134; Fu 137; tr. Hawkes 205;
+# dating: 5000
+寧廉潔正直
+以自清乎？¶
+將突梯滑稽，¶
+如脂如韋，¶
+以潔楹乎？¶
+寧昂昂若千里之駒乎？¶
+將氾氾若水中之鳧乎，¶
+與波上下，¶
+偷以全吾軀乎？¶
+
+# src: CC BUJU 01:06; SBBY 292; Jin 744; Huang 134; Fu 137; tr. Hawkes 205;
+# dating: 5000
+寧與騏驥亢軛乎？¶
+將隨駑馬之迹乎？¶
+寧與黃鵠比翼乎？¶
+將與雞鶩爭食乎？¶
+此孰吉孰凶？¶
+何去何從？」¶
+
+# src: CC BUJU 01:07; SBBY 293; Jin 744; Huang 134; Fu 137; tr. Hawkes 205;
+# dating: 5000
+「世溷濁而不清，¶
+蟬翼為重，¶
+千鈞為輕；¶
+黃鍾毀棄，¶
+瓦釜雷鳴；¶
+讒人高張，¶
+賢士無名。¶
+吁嗟默默兮，¶
+誰知吾之廉貞！」¶
+
+# src: CC BUJU 01:08; SBBY 293; Jin 756; Huang 134; Fu 137; tr. Hawkes 205;
+# dating: 5000
+詹尹乃釋策而謝，曰：¶
+「夫尺有所短，¶
+寸有所長，¶
+物有所不足，¶
+智有所不明，¶
+數有所不逮，¶
+神有所不通。¶
+用君之心，¶
+行君之意，¶
+龜策誠不能知事。」
+

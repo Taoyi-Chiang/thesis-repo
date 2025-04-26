@@ -1,0 +1,592 @@
+# -*- mode: mandoku-view -*-
+#+TITLE: 楚辭
+#+DATE: 2016-08-10 10:15:52
+#+PROPERTY: ID KR4a0001
+#+PROPERTY: BASEEDITION tls
+#+PROPERTY: JUAN 2
+#+PROPERTY: CAT 1pre-han,文藝,選集
+
+# src: CC TIANWEN 01:01; SBBY 144; Jin 292; Huang 55; Fu 77; tr. Hawkes 127; You 10;
+# dating: 5000
+<pb:KR4a0001_tls_003-1a>¶
+** 3 天問
+曰：¶
+遂古之初，¶
+誰傳道之？¶
+上下未形，¶
+何由考之？¶
+冥昭瞢闇，¶
+誰能極之？¶
+馮翼惟像，¶
+何以識之？¶
+
+# src: CC TIANWEN 01:02; SBBY 145; Jin 293; Huang 55; Fu 77; tr. Hawkes 127; You 20;
+# dating: 5000
+明明闇闇，¶
+惟時何為？¶
+陰陽三合，¶
+何本何化？¶
+
+# src: CC TIANWEN 01:03; SBBY 146; Jin 293; Huang 56; Fu 77; tr. Hawkes 127; You 27;
+# dating: 5000
+圜則九重，¶
+孰營度之？¶
+惟茲何功？¶
+孰初作之？¶
+斡維焉繫？¶
+天極焉加？¶
+八柱何當？¶
+東南何虧？¶
+
+# src: CC TIANWEN 01:04; SBBY 147; Jin 293; Huang 56; Fu 77; tr. Hawkes 127; You 40;
+# dating: 5000
+九天之際，¶
+安放安屬？¶
+隅隈多有，¶
+誰知其數？¶
+
+# src: CC TIANWEN 01:05; SBBY 147; Jin 293; Huang 56; Fu 77; tr. Hawkes 127; You 44;
+# dating: 5000
+天何所沓？¶
+十二焉分？¶
+日月安屬？¶
+列星安陳？¶
+
+# src: CC TIANWEN 01:06; SBBY 148; Jin 293; Huang 56; Fu 77; tr. Hawkes 127; You 51;
+# dating: 5000
+出自湯谷，¶
+次于蒙汜。¶
+自明及晦，¶
+所行幾里？¶
+
+# src: CC TIANWEN 01:07; SBBY 149; Jin 293; Huang 56; Fu 77; tr. Hawkes 127; You 56;
+# dating: 5000
+夜光何德，¶
+死則又育？¶
+厥利維何，¶
+而顧菟在腹？¶
+
+# src: CC TIANWEN 01:08; SBBY 149; Jin 293; Huang 56; Fu 77; tr. Hawkes 127; You 67;
+# dating: 5000
+女岐無合，¶
+夫焉取九子？¶
+伯強何處？¶
+惠氣安在？¶
+
+# src: CC TIANWEN 01:09; SBBY 149; Jin 293; Huang 57; Fu 77; tr. Hawkes 127; You 74;
+# dating: 5000
+何闔而晦？¶
+何開而明？¶
+角宿未旦，¶
+曜靈安藏？<pb:KR4a0001_tls_003-2a>¶
+
+# src: CC TIANWEN 01:10; SBBY 150; Jin 307; Huang 58; Fu 77; tr. Hawkes 128; You 80;
+# dating: 5000
+不任汩鴻，¶
+師何以尚之？¶
+僉曰何憂？¶
+何不課而行之？¶
+鴟龜曳銜，¶
+鯀何聽焉？¶
+順欲成功，¶
+帝何刑焉？¶
+
+# src: CC TIANWEN 01:11; SBBY 151; Jin 307; Huang 58; Fu 77; tr. Hawkes 128; You 92;
+# dating: 5000
+永遏在羽山，¶
+夫何三年不施？¶
+伯禹愎鯀，¶
+夫何以變化？¶
+纂就前緒，¶
+遂成考功。¶
+
+# src: CC TIANWEN 01:12; SBBY 151; Jin 307; Huang 59; Fu 77; tr. Hawkes 128; You 98;
+# dating: 5000
+何續初繼業，¶
+而厥謀不同？¶
+洪泉極深，¶
+何以窴之？¶
+地方九則，¶
+何以墳之？¶
+河海應龍，¶
+何盡何歷？¶
+
+# src: CC TIANWEN 01:13; SBBY 152; Jin 307; Huang 59; Fu 77; tr. Hawkes 128; You 108;
+# dating: 5000
+鯀何所營？¶
+禹何所成？¶
+康回馮怒，¶
+墬何故以東南傾？¶
+
+# src: CC TIANWEN 01:14; SBBY 153; Jin 318; Huang 59; Fu 77; tr. Hawkes 128; You 114;
+# dating: 5000
+九州安錯？¶
+川谷何洿？¶
+東流不溢，¶
+孰知其故？¶
+
+# src: CC TIANWEN 01:15; SBBY 154; Jin 318; Huang 59; Fu 77; tr. Hawkes 128; You 122;
+# dating: 5000
+東西南北，¶
+其脩孰多？¶
+南北順橢，¶
+其衍幾何？¶
+崑崙縣圃，¶
+其凥安在？¶
+增城九重，¶
+其高幾里？¶
+四方之門，¶
+其誰從焉？¶
+
+# src: CC TIANWEN 01:16; SBBY 155; Jin 319; Huang 60; Fu 78; tr. Hawkes 128; You 130;
+# dating: 5000
+西北辟啟，¶
+何氣通焉？<pb:KR4a0001_tls_003-3a>¶
+日安不到，¶
+燭龍何照？¶
+羲和之未揚，¶
+若華何光？¶
+何所冬暖？¶
+何所夏寒？¶
+焉有石林？¶
+何獸能言？¶
+
+# src: CC TIANWEN 01:17; SBBY 157; Jin 319; Huang 60; Fu 78; tr. Hawkes 128; You 145;
+# dating: 5000
+焉有虬龍，¶
+負熊以遊？¶
+雄虺九首，¶
+儵忽焉在？¶
+何所不死？¶
+長人何守？¶
+靡蓱九衢，¶
+枲華安居？¶
+
+# src: CC TIANWEN 01:18; SBBY 159; Jin 319; Huang 60; Fu 78; tr. Hawkes 128; You 160;
+# dating: 5000
+一蛇吞象，¶
+厥大何如？¶
+黑水玄趾，¶
+三危安在？¶
+延年不死，¶
+壽何所止？¶
+鯪魚何所？¶
+鬿堆焉處？<pb:KR4a0001_tls_003-4a>¶
+
+# src: CC TIANWEN 01:19; SBBY 160; Jin 319; Huang 60; Fu 78; tr. Hawkes 129; You 171;
+# dating: 5000
+羿焉彃日？¶
+烏焉解羽？¶
+
+# src: CC TIANWEN 01:20; SBBY 161; Jin 338; Huang 62; Fu 78; tr. Hawkes 129; You 177;
+# dating: 5000
+禹之力獻功，¶
+降省下土四方，¶
+焉得彼嵞山女，¶
+而通之于台桑？¶
+閔妃匹合，¶
+厥身是繼，¶
+胡維嗜不同味，¶
+而快鼂飽？¶
+
+# src: CC TIANWEN 01:21; SBBY 162; Jin 338; Huang 63; Fu 78; tr. Hawkes 129; You 188;
+# dating: 5000
+啟代益作后，¶
+卒然離蠥，¶
+何啟惟憂，¶
+而能拘是達？¶
+
+# i#鞠，¶
+# i#
+皆歸射𥷚，而無害厥躬。¶
+
+# src: CC TIANWEN 01:22; SBBY 163; Jin 338; Huang 63; Fu 78; tr. Hawkes 129; You 195;
+# dating: 5000
+何后益作革，¶
+而禹播降？¶
+啟棘賓商，¶
+《九辯》《九歌》。¶
+何勤子屠母，¶
+而死分竟地？¶
+
+# src: CC TIANWEN 01:23; SBBY 164; Jin 338; Huang 63; Fu 78; tr. Hawkes 129; You 212;
+# dating: 5000
+帝降夷羿，¶
+革孽夏民。¶
+胡射夫河伯，¶
+而妻彼雒嬪？¶
+馮珧利決，¶
+封狶是射。¶
+
+# src: CC TIANWEN 01:24; SBBY 165; Jin 338; Huang 63; Fu 78; tr. Hawkes 129; You 218;
+# dating: 5000
+何獻蒸肉之膏，¶
+而后帝不若？¶
+浞娶純狐，¶
+眩妻爰謀。¶
+何羿之射革，¶
+而交吞揆之？¶
+
+# src: CC TIANWEN 01:25; SBBY 166; Jin 355; Huang 64; Fu 78; tr. Hawkes 129; You 227;
+# dating: 5000
+阻窮西征，¶
+巖何越焉？¶
+化為黃熊，¶
+巫何活焉？¶
+咸播秬黍，¶
+莆雚是營。¶
+何由并投，¶
+而鯀疾脩盈？¶
+
+# src: CC TIANWEN 01:26; SBBY 167; Jin 355; Huang 64; Fu 78; tr. Hawkes 130; You 240;
+# dating: 5000
+白蜺嬰茀，¶
+胡為此堂？¶
+安得夫良藥，¶
+不能固臧？¶
+天式從橫，¶
+陽離爰死。¶
+大鳥何鳴，¶
+夫焉喪厥體？¶
+
+# src: CC TIANWEN 01:27; SBBY 168; Jin 355; Huang 64; Fu 78; tr. Hawkes 130; You 248;
+# dating: 5000
+蓱號起雨，¶
+何以興之？¶
+撰體協脅，鹿
+何膺之？¶
+
+# src: CC TIANWEN 01:28; SBBY 168; Jin 355; Huang 64; Fu 78; tr. Hawkes 130; You 252;
+# dating: 5000
+鼇戴山抃，¶
+何以安之？¶
+釋舟陵行，¶
+何以遷之？¶
+惟澆在戶，¶
+何求于嫂？¶
+何少康逐犬，¶
+而顛隕厥首？¶
+
+# src: CC TIANWEN 01:29; SBBY 169; Jin 355; Huang 65; Fu 78; tr. Hawkes 130; You 258;
+# dating: 5000
+女歧縫裳，¶
+而館同爰止，¶
+何顛易厥首，¶
+而親以逢殆？¶
+湯謀易旅，¶
+何以厚之？¶
+覆舟斟尋，¶
+何道取之？¶
+
+# src: CC TIANWEN 01:30; SBBY 170; Jin 368; Huang 67; Fu 78; tr. Hawkes 130; You 270;
+# dating: 5000
+桀伐蒙山，¶
+何所得焉？¶
+妹嬉何肆，¶
+湯何殛焉？<pb:KR4a0001_tls_003-5a>¶
+
+# src: CC TIANWEN 01:31; SBBY 170; Jin 368; Huang 67; Fu 79; tr. Hawkes 130; You 273;
+# dating: 5000
+舜閔在家，¶
+父何以鱞？¶
+堯不姚告，¶
+二女何親？¶
+
+# src: CC TIANWEN 01:32; SBBY 171; Jin 368; Huang 68; Fu 79; tr. Hawkes 130; You 275;
+# dating: 5000
+厥萌在初，¶
+何所億焉！¶
+璜臺十成，¶
+誰所極焉？¶
+
+# src: CC TIANWEN 01:33; SBBY 171; Jin 368; Huang 68; Fu 79; tr. Hawkes 130; You 279;
+# dating: 5000
+登立為帝，¶
+孰道尚之？¶
+女媧有體，¶
+孰制匠之？¶
+
+# src: CC TIANWEN 01:34; SBBY 172; Jin 368; Huang 68; Fu 79; tr. Hawkes 130; You 2i4;
+# dating: 5000
+舜服厥弟，¶
+終然為害。¶
+何肆犬體，¶
+而厥身不危敗？¶
+
+# src: CC TIANWEN 01:35; SBBY 172; Jin 368; Huang 68; Fu 79; tr. Hawkes 130; You 287;
+# dating: 5000
+吳獲迄古，¶
+南嶽是止。¶
+孰期去斯，¶
+得兩男子？¶
+
+# src: CC TIANWEN 01:36; SBBY 173; Jin 368; Huang 68; Fu 79; tr. Hawkes 131; You 294;
+# dating: 5000
+緣鵠飾玉，¶
+后帝是饗。¶
+何承謀夏桀，¶
+終以滅喪？¶
+帝乃降觀，¶
+下逢伊摯。¶
+何條放致罰，¶
+而黎服大說？¶
+
+# src: CC TIANWEN 01:37; SBBY 174; Jin 379; Huang 68; Fu 79; tr. Hawkes 131; You 302;
+# dating: 5000
+簡狄在臺，嚳何宜？¶
+玄鳥致貽，女何喜？¶
+
+# src: CC TIANWEN 01:38; SBBY 174; Jin 379; Huang 69; Fu 79; tr. Hawkes 131; You 305;
+# dating: 5000
+該秉季德，¶
+厥父是臧。¶
+胡終弊于有扈，¶
+牧夫牛羊？¶
+干協時舞，¶
+何以懷之？¶
+平脅曼膚，¶
+何以肥之？¶
+
+# src: CC TIANWEN 01:39; SBBY 175; Jin 379; Huang 69; Fu 79; tr. Hawkes 131; You 321;
+# dating: 5000
+有扈牧豎，¶
+云何而逢？¶
+擊床先出，¶
+其命何從？¶
+恆秉季德，¶
+焉得夫朴牛？¶
+何往營班祿，¶
+不但還來？¶
+昏微遵迹，¶
+有狄不寧。¶
+
+# src: CC TIANWEN 01:40; SBBY 176; Jin 379; Huang 69; Fu 79; tr. Hawkes 131; You 336;
+# dating: 5000
+何繁鳥萃棘，¶
+負子肆情？¶
+眩弟並淫，¶
+危害厥兄。¶
+何變化以作詐，¶
+後嗣而逢長？¶
+
+# src: CC TIANWEN 01:41; SBBY 177; Jin 379; Huang 69; Fu 79; tr. Hawkes 131; You 347;
+# dating: 5000
+成湯東巡，¶
+有莘爰極。¶
+何乞彼小臣，¶
+而吉妃是得？¶
+水濱之木，¶
+得彼小子。¶
+
+# src: CC TIANWEN 01:42; SBBY 178; Jin 379; Huang 70; Fu 79; tr. Hawkes 131; You 350;
+# dating: 5000
+夫何惡之，¶
+媵有莘之婦？¶
+湯出重泉，¶
+夫何辠尤？¶
+不勝心伐帝，¶
+夫誰使挑之？<pb:KR4a0001_tls_003-6a>¶
+
+# src: CC TIANWEN 01:43; SBBY 178; Jin 391; Huang 72; Fu 79; tr. Hawkes 131; You 358;
+# dating: 5000
+會鼂爭盟，¶
+何踐吾期？¶
+蒼鳥群飛，¶
+孰使萃之？¶
+到擊紂躬，¶
+叔旦不嘉。¶
+何親揆發
+足，¶
+周之命以咨嗟？¶
+
+# src: CC TIANWEN 01:44; SBBY 180; Jin 391; Huang 73; Fu 79; tr. Hawkes 132; You 368;
+# dating: 5000
+授殷天下，¶
+其位安施？¶
+反成乃亡，¶
+其罪伊何？¶
+爭遣伐器，¶
+何以行之？¶
+並驅擊翼，¶
+何以將之？¶
+
+# src: CC TIANWEN 01:45; SBBY 180; Jin 391; Huang 73; Fu 79; tr. Hawkes 132; You 375;
+# dating: 5000
+昭后成遊，¶
+南土爰底。¶
+厥利惟何，¶
+逢彼白雉？¶
+
+# src: CC TIANWEN 01:46; SBBY 1i1; Jin 391; Huang 73; Fu 79; tr. Hawkes 132; You 379;
+# dating: 5000
+穆王巧梅，¶
+夫何為周流？¶
+環理天下，¶
+夫何索求？¶
+
+# src: CC TIANWEN 01:47; SBBY 1i1; Jin 391; Huang 73; Fu 79; tr. Hawkes 132; You 3i2;
+# dating: 5000
+妖夫曳衒，¶
+何號于市？¶
+周幽誰誅，¶
+焉得夫襃姒？¶
+
+# src: CC TIANWEN 01:48; SBBY 1i2; Jin 391; Huang 73; Fu 80; tr. Hawkes 132; You 386;
+# dating: 5000
+天命反側，¶
+何罰何佑？¶
+齊桓九會，¶
+卒然身殺。¶
+
+# src: CC TIANWEN 01:49; SBBY 1i3; Jin 391; Huang 74; Fu 80; tr. Hawkes 132; You 389;
+# dating: 5000
+彼王紂之躬，¶
+孰使亂惑？¶
+何惡輔弼，¶
+讒諂是服？¶
+比干何逆，¶
+而抑沈之？¶
+雷開阿順，¶
+而賜封之？¶
+
+# src: CC TIANWEN 01:50; SBBY 1i3; Jin 391; Huang 74; Fu 80; tr. Hawkes 132; You 392;
+# dating: 5000
+何聖人之一德，¶卒其異方？¶
+梅伯受醢，¶
+箕子詳狂。¶
+
+# src: CC TIANWEN 01:51; SBBY 1i4; Jin 403; Huang 74; Fu 80; tr. Hawkes 132; You 396;
+# dating: 5000
+稷維元子，¶
+帝何竺之？¶
+投之於冰上，¶
+鳥何燠之？¶
+何馮弓挾矢，¶
+殊能將之？¶
+既驚帝切激，¶
+何逢長之？¶
+
+# src: CC TIANWEN 01:52; SBBY 185; Jin 403; Huang 74; Fu 80; tr. Hawkes 133; You 406;
+# dating: 5000
+伯昌號衰，¶
+秉鞭作牧。¶
+何令徹彼岐社，¶
+命有殷國？¶
+
+# src: CC TIANWEN 01:53; SBBY 186; Jin 403; Huang 74; Fu 80; tr. Hawkes 133; You 409;
+# dating: 5000
+遷藏就岐，¶
+何能依？¶
+殷有惑婦，¶
+何所譏？¶
+
+# src: CC TIANWEN 01:54; SBBY 186; Jin 403; Huang 75; Fu 80; tr. Hawkes 133; You 413;
+# dating: 5000
+受賜茲醢，¶
+西伯上告。¶
+何親就上帝罰，¶
+殷之命以不救？¶
+
+# src: CC TIANWEN 01:55; SBBY 187; Jin 403; Huang 75; Fu 80; tr. Hawkes 133; You 416;
+# dating: 5000
+師望在肆，¶
+昌何識？¶
+鼓刀揚聲，¶
+后何喜？¶
+
+# src: CC TIANWEN 01:56; SBBY 187; Jin 403; Huang 75; Fu 80; tr. Hawkes 133; You 418;
+# dating: 5000
+武發殺殷，¶
+何所悒？¶
+載尸集戰，¶
+何所急？¶
+
+# src: CC TIANWEN 01:57; SBBY 187; Jin 410; Huang 75; Fu 80; tr. Hawkes 133; You 421;
+# dating: 5000
+伯林雉經，¶
+維其何故？¶
+何感天抑墬，¶
+夫誰畏懼？¶
+
+# src: CC TIANWEN 01:58; SBBY 188; Jin 410; Huang 75; Fu 80; tr. Hawkes 133; You 426;
+# dating: 5000
+皇天集命，¶
+惟何戒之？¶
+受禮天下，¶
+又使至代之？¶
+
+# src: CC TIANWEN 01:59; SBBY 188; Jin 410; Huang 75; Fu 80; tr. Hawkes 133; You 429;
+# dating: 5000
+初湯臣摯，¶
+後茲承輔。¶
+何卒官湯，¶
+尊食宗緒？¶
+
+# src: CC TIANWEN 01:60; SBBY 189; Jin 410; Huang 75; Fu 80; tr. Hawkes 133; You 433;
+# dating: 5000
+勳闔夢生，¶
+少離散亡。¶
+何壯武厲，¶
+能流厥嚴？¶
+
+# src: CC TIANWEN 01:61; SBBY 189; Jin 410; Huang 75; Fu 80; tr. Hawkes 133; You 437;
+# dating: 5000
+彭鏗斟雉，¶
+帝何饗？¶
+受壽永多，¶
+夫何久長？¶
+
+# src: CC TIANWEN 01:62; SBBY 190; Jin 410; Huang 76; Fu 80; tr. Hawkes 134; You 442;
+# dating: 5000
+中央共牧，¶
+后何怒？¶
+蠭蛾微命，¶
+力何固？¶
+
+# src: CC TIANWEN 01:63; SBBY 190; Jin 410; Huang 76; Fu 80; tr. Hawkes 134; You 448;
+# dating: 5000
+驚女采薇，¶
+鹿何祐？¶
+北至回水，¶
+萃何喜？¶
+
+# src: CC TIANWEN 01:64; SBBY 190; Jin 410; Huang 76; Fu 80; tr. Hawkes 134; You 453;
+# dating: 5000
+兄有噬犬，¶
+弟何欲？¶
+易之以百兩，¶
+卒無祿。
+
+# src: CC TIANWEN 01:65; SBBY 191; Jin 419; Huang 79; Fu 80; tr. Hawkes 134; You 457;
+# dating: 5000
+<pb:KR4a0001_tls_003-7a>¶
+薄暮雷電，¶
+歸何憂？¶
+厥嚴不奉，¶
+帝何求？¶
+
+# src: CC TIANWEN 01:66; SBBY 191; Jin 419; Huang 79; Fu 80; tr. Hawkes 134; You 462;
+# dating: 5000
+伏匿穴處，¶
+爰何云？¶
+荊勳作師，¶
+夫何長？¶
+
+# src: CC TIANWEN 01:67; SBBY 192; Jin 419; Huang 80; Fu 80; tr. Hawkes 134; You 467;
+# dating: 5000
+悟過改更，¶
+我又何言？¶
+吳光爭國，¶
+久余是勝。¶
+
+# src: CC TIANWEN 01:68; SBBY 192; Jin 419; Huang 80; Fu 80; tr. Hawkes 134; You 471;
+# dating: 5000
+何環穿自閭社丘陵，¶
+爰出子文？¶
+
+# src: CC TIANWEN 01:69; SBBY 192; Jin 419; Huang 80; Fu 80; tr. Hawkes 134; You 475;
+# dating: 5000
+吾告堵敖以不長。¶
+何試上自予，¶
+忠名彌彰？
+

@@ -1,0 +1,21 @@
+# -*- mode: mandoku-view; -*-
+#+TITLE: 京氏易傳
+#+DATE: 2015-09-10 22:50:21.239505
+#+PROPERTY: ID KR3g0030
+#+PROPERTY: BASEEDITION SBCK    
+#+PROPERTY: WITNESS SBCK
+#+PROPERTY: JUAN 0
+#+PROPERTY: FILE SB01n0001-000京氏易傳-目録.
+<pb:KR3g0030_SBCK_000-1a>¶
+京氏易傳目録¶
+　上卷¶
+　　乾　姤　遯　否　觀　剥　晉　大有¶
+　　震　豫　解　恒　升　井　大過　隨¶
+　　坎　節　屯　旣濟　革　豐　明夷　師¶
+　　艮　賁　大畜　損　睽　履中孚　漸¶
+　中卷¶
+　　坤　復　臨　㤗　大壯　夬　需　比¶
+　　巽小畜　家人　益　无妄　噬嗑　頥　蠱¶
+<pb:KR3g0030_SBCK_000-1b>¶
+　　離旅鼎未濟蒙渙訟同人¶
+　　兌困萃咸　蹇謙小過歸妹¶

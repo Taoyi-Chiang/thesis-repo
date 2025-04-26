@@ -1,0 +1,7 @@
+# -*- mode: mandoku-view -*-
+#+TITLE: 因話錄
+#+DATE: 2020-03-31 11:31:46.135938
+#+PROPERTY: ID KR3l0008
+#+PROPERTY: BASEEDITION WYG
+#+PROPERTY: WITNESS master    
+#+PROPERTY: JUAN 0

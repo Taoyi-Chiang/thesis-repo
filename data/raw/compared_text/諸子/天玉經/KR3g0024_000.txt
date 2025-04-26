@@ -1,0 +1,7 @@
+# -*- mode: mandoku-view -*-
+#+TITLE: 天玉經
+#+DATE: 2019-03-29 21:12:55.514800
+#+PROPERTY: ID KR3g0024
+#+PROPERTY: BASEEDITION WYG
+#+PROPERTY: WITNESS master    
+#+PROPERTY: JUAN 0
