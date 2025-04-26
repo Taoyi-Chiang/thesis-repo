@@ -1,3 +1,4 @@
+```
 classical-allusion-project/
 ├── .gitignore
 ├── environment.yml            # Conda 環境／依賴設定
@@ -55,4 +56,4 @@ classical-allusion-project/
     │   └── …  
     ├── figures/               # 論文用圖檔
     └── bibliography.bib
-
+```
