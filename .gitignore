@@ -1,2 +1,216 @@
-# 忽略所有 pickle 檔
+# ───────────────────────────────────────────────────────────────
+# 1. 作業系統產生的暫存／縮圖檔
+# ───────────────────────────────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ───────────────────────────────────────────────────────────────
+# 2. Python 相關
+# ───────────────────────────────────────────────────────────────
+# bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虛擬環境
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# 安裝紀錄
+pip-log.txt
+pip-delete-this-directory.txt
+
+# pytest / coverage
+htmlcov/
+.coverage
+.tox/
+.nox/
+.cache/
+nosetests.xml
+coverage.xml
+*,cover
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# profiling
+.prof
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# ───────────────────────────────────────────────────────────────
+# 3. 資料與模型檔案
+# ───────────────────────────────────────────────────────────────
+# Pickle、Joblib
 *.pkl
+*.pickle
+*.joblib
+
+# JSON（若你不想追蹤大型標記檔，可取消下面的註解）
+# *.json
+
+# 資料庫
+*.sqlite3
+*.db
+*.db-journal
+
+# 機器學習模型權重
+*.h5
+*.hdf5
+*.ckpt
+*.pt
+*.bin
+*.safetensors
+*.onnx
+
+# 索引 / 向量檔
+*.index
+*.idx
+*.faiss
+
+# DVC／Git LFS 指標（若使用）
+*.dvc
+*.gitattributes
+
+# ───────────────────────────────────────────────────────────────
+# 4. 建置／封裝／發佈
+# ───────────────────────────────────────────────────────────────
+# dist, build
+build/
+dist/
+eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-wheel-metadata/
+
+# wheel
+*.whl
+
+# docs
+docs/_build/
+
+# conda env export
+environment.yml
+
+# poetry
+poetry.lock
+
+# ───────────────────────────────────────────────────────────────
+# 5. IDE／編輯器
+# ───────────────────────────────────────────────────────────────
+# VSCode
+.vscode/
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Emacs
+*~
+\#*\#
+.auto-save-list/
+
+# Vim
+*.swp
+*.swo
+Session.vim
+.netrwhist
+
+# ───────────────────────────────────────────────────────────────
+# 6. 日誌／除錯／暫存
+# ───────────────────────────────────────────────────────────────
+*.log
+*.out
+*.err
+*.trace
+*.pid
+*.seed
+
+# temp
+tmp/
+temp/
+*.tmp
+
+# lock
+*.lock
+
+# ───────────────────────────────────────────────────────────────
+# 7. LaTeX／文書編譯
+# ───────────────────────────────────────────────────────────────
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.lol
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+
+# ───────────────────────────────────────────────────────────────
+# 8. 多媒體／其他大型檔案（視專案需求決定是否忽略）
+# ───────────────────────────────────────────────────────────────
+# 影片／聲音
+*.mp4
+*.avi
+*.mov
+*.mp3
+*.wav
+
+# 圖片
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# 壓縮檔
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ───────────────────────────────────────────────────────────────
+# 9. Windows 特殊
+# ───────────────────────────────────────────────────────────────
+# Visual Studio
+*.suo
+*.user
+*.vcxproj*
+*.vcproj*
+*.sln
+
+# ───────────────────────────────────────────────────────────────
+# （可依需要再添加） 
+# ───────────────────────────────────────────────────────────────
+
