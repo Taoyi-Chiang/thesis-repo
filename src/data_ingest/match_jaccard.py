@@ -12,14 +12,16 @@ PARSED_RESULTS_PATH = Path(r"D:/lufu_allusion/data/processed/parsed_results.json
 COMPARED_FOLDER_PATH = Path(r"D:/lufu_allusion/data/raw/compared_text")  # 定義包含待比對文本檔案的資料夾路徑。
 OUTPUT_JSON_PATH = Path(r"D:/lufu_allusion/data/processed/sample_match_results_jaccard_gpu.json")  # 定義輸出 JSON 檔案的路徑，用於儲存比對結果。
 CHARS_TO_REMOVE = "。，、：；！？（）〔〕「」[]『』《》〈〉\\-\\－\\(\\)\\[\\]/(),1234567890¶"  # 定義需要從文本中移除的字元。
-JACCARD_THRESHOLD = 0.4  # 定義 Jaccard 相似度閾值，只有高於此值的匹配結果才會被保留。
+JACCARD_THRESHOLD = 0.45  # 定義 Jaccard 相似度閾值，只有高於此值的匹配結果才會被保留。
 
 if torch.cuda.is_available():
     DEVICE = torch.device("cuda")  # 如果有 GPU，則將裝置設定為使用 GPU。
     print(f"✅ 偵測到 GPU: {torch.cuda.get_device_name(0)}，將使用 GPU 加速！")
+    CKIP_DEVICE = 0  # 設定 CKIP 使用的 GPU 裝置編號
 else:
     DEVICE = torch.device("cpu")  # 如果沒有 GPU，則使用 CPU。
     print("⚠️ 沒有偵測到 GPU，將使用 CPU 運算。")
+    CKIP_DEVICE = -1 # 設定 CKIP 使用 CPU
 
 # ========== 停用詞設定 ==========
 PREFIX_EXCLUDE = [
@@ -46,11 +48,11 @@ def clean_sentence(text):
     """
     清理句子中的停用詞前綴和後綴。
 
-        參數：
-        text (str): 需要清理的句子。
+    參數：
+    text (str): 需要清理的句子。
 
-        返回值：
-        str: 清理後的句子。
+    返回值：
+    str: 清理後的句子。
     """
     for prefix in PREFIX_EXCLUDE:  # 遍歷前綴停用詞列表。
         if text.startswith(prefix):  # 如果句子以某個前綴停用詞開始。
@@ -68,13 +70,13 @@ def load_parsed_results_to_df(json_path):
     """
     從 JSON 檔案載入解析後的句子，並將其轉換為 Pandas DataFrame。
 
-        參數：
-        json_path (Path): JSON 檔案的路徑。
+    參數：
+    json_path (Path): JSON 檔案的路徑。
 
-        返回值：
-        list: 包含清理後句子的列表。
+    返回值：
+    list: 包含清理後句子的列表。
     """
-    print("\U0001f4d1 正在載入原句資料...")  # 印出載入資料的提示訊息。
+    print("🔄️ 正在載入原句資料...")  # 印出載入資料的提示訊息。
     with open(json_path, encoding="utf-8") as f:  # 開啟 JSON 檔案。
         parsed_data = json.load(f)  # 將 JSON 檔案的內容載入到 parsed_data 變數中。
     records = []  # 初始化一個空列表，用於儲存清理後的句子。
@@ -92,18 +94,20 @@ def load_and_clean_compared_sentences(folder_path, chars_to_remove):
     """
     從指定資料夾載入待比對的文本檔案，並將其切分為句子。
 
-        參數：
-        folder_path (Path): 包含文本檔案的資料夾路徑。
-        chars_to_remove (str): 用於切分句子的字元。
+    參數：
+    folder_path (Path): 包含文本檔案的資料夾路徑。
+    chars_to_remove (str): 用於切分句子的字元。
 
-        返回值：
-        list: 包含清理後句子的列表。
+    返回值：
+    list: 包含清理後句子的列表。
     """
-    print("\U0001f4d1 正在載入小樣本句子...")  # 印出載入小樣本句子的提示訊息。
+    print("🔄️ 正在載入比對文本的句子...")  # 印出載入比對文本的句子的提示訊息。
     compared_sentences = []  # 初始化一個空列表，用於儲存待比對的句子。
     split_pattern = "[" + re.escape(chars_to_remove) + "]"  # 創建一個正規表達式模式，用於匹配需要移除的字元。
-    for file in folder_path.glob("*.txt"):  # 遍歷資料夾中的所有 .txt 檔案。
-        with open(file, encoding="utf-8") as f:  # 開啟文本檔案。
+
+    # 使用 rglob 遞迴搜尋所有子資料夾中的 .txt 檔案
+    for file_path in folder_path.rglob("*.txt"):  # 遍歷資料夾及其子資料夾中的所有 .txt 檔案。
+        with open(file_path, encoding="utf-8") as f:  # 開啟文本檔案。
             text = f.read()  # 讀取檔案內容。
         raw_sentences = re.split(split_pattern, text)  # 使用正規表達式將文本切分為句子。
         cleaned = [clean_sentence(s.strip()) for s in raw_sentences if s.strip()]  # 清理每個句子，並排除空白句子。
@@ -117,11 +121,11 @@ def build_vocab(all_tokens):
     """
     構建詞彙表，將每個詞彙映射到一個唯一的索引。
 
-        參數：
-        all_tokens (list): 包含所有句子中所有詞彙的列表。
+    參數：
+    all_tokens (list): 包含所有句子中所有詞彙的列表。
 
-        返回值：
-        dict: 一個字典，將每個詞彙映射到一個唯一的索引。
+    返回值：
+    dict: 一個字典，將每個詞彙映射到一個唯一的索引。
     """
     vocab = set()  # 使用集合(set)來儲存詞彙，以確保每個詞彙只出現一次。
     for tokens in all_tokens:  # 遍歷所有句子中的詞彙列表。
@@ -133,12 +137,12 @@ def vectorize_tokens(tokens_list, word2idx):
     """
     將詞彙列表轉換為向量表示。
 
-        參數：
-        tokens_list (list): 包含詞彙列表的列表，每個詞彙列表對應一個句子。
-        word2idx (dict): 詞彙到索引的映射字典。
+    參數：
+    tokens_list (list): 包含詞彙列表的列表，每個詞彙列表對應一個句子。
+    word2idx (dict): 詞彙到索引的映射字典。
 
-        返回值：
-        torch.Tensor: 一個 PyTorch 張量，其中包含句子的向量表示。
+    返回值：
+    torch.Tensor: 一個 PyTorch 張量，其中包含句子的向量表示。
     """
     vectors = torch.zeros((len(tokens_list), len(word2idx)), device=DEVICE)  # 創建一個全零張量，用於儲存向量表示。
     for i, tokens in enumerate(tokens_list):  # 遍歷每個句子的詞彙列表。
@@ -153,17 +157,17 @@ def batch_jaccard(compared_vecs, origin_vecs):
     """
     使用 GPU 加速計算批次 Jaccard 相似度。
 
-        參數：
-        compared_vecs (torch.Tensor): 待比對句子的向量表示。
-        origin_vecs (torch.Tensor): 原始句子的向量表示。
+    參數：
+    compared_vecs (torch.Tensor): 待比對句子的向量表示。
+    origin_vecs (torch.Tensor): 原始句子的向量表示。
 
-        返回值：
-        torch.Tensor: 包含 Jaccard 相似度值的矩陣。
+    返回值：
+    torch.Tensor: 包含 Jaccard 相似度值的矩陣。
     """
     intersection = torch.matmul(compared_vecs, origin_vecs.T)  # 計算交集大小，使用矩陣乘法。
     compared_sum = compared_vecs.sum(dim=1, keepdim=True)  # 計算待比對句子向量的元素和。
     origin_sum = origin_vecs.sum(dim=1, keepdim=True).T  # 計算原始句子向量的元素和。
-    union = compared_sum + origin_sum - intersection  # 計算聯集大小。
+    union = compared_sum + origin_sum - intersection + 1e-9 # 計算聯集大小，加入一個小的平滑項以避免除以零的風險。
     jaccard = intersection / union  # 計算 Jaccard 相似度。
     return jaccard  # 返回 Jaccard 相似度矩陣。
 
@@ -175,26 +179,54 @@ def main():
     compared_sentences = load_and_clean_compared_sentences(COMPARED_FOLDER_PATH, CHARS_TO_REMOVE)  # 載入並清理待比對句子。
 
     # CKIP 分詞
-    print("\U0001f680 分詞處理...")  # 印出分詞處理的提示訊息。
-    ws_driver = CkipWordSegmenter(model="bert-base")  # 初始化 CKIP 斷詞器。
+    print("🪚 分詞處理...")  # 印出分詞處理的提示訊息。
+    # 初始化 CKIP 斷詞器，並指定裝置
+    ws_driver = CkipWordSegmenter(device=CKIP_DEVICE, model="bert-base")
     origin_tokens = ws_driver(origin_sentences)  # 對原始句子進行斷詞。
     compared_tokens = ws_driver(compared_sentences)  # 對待比對句子進行斷詞。
 
     # 構建詞表和向量化
-    print("\U0001f9f0 向量化...")  # 印出向量化處理的提示訊息。
+    print("➡️ 向量化...")  # 印出向量化處理的提示訊息。
     word2idx = build_vocab(origin_tokens + compared_tokens)  # 構建包含所有詞彙的詞彙表。
     origin_vecs = vectorize_tokens(origin_tokens, word2idx)  # 將原始句子轉換為向量表示。
     compared_vecs = vectorize_tokens(compared_tokens, word2idx)  # 將待比對句子轉換為向量表示。
 
-    # 批次計算 Jaccard
-    print("\U0001f50e 計算 Jaccard 相似度...")  # 印出計算 Jaccard 相似度的提示訊息。
+    # 批次計算 Jaccard 相似度 (優化記憶體使用)
+    print("🧬 計算 Jaccard 相似度...")  # 印出計算 Jaccard 相似度的提示訊息。
     start_time = time.time()  # 紀錄開始時間
-    jaccard_matrix = batch_jaccard(compared_vecs, origin_vecs)  # 計算所有句子對之間的 Jaccard 相似度。
+    batch_size = 512  # 設定批次大小，您可以根據 GPU 記憶體情況調整這個值
+    num_compared = compared_vecs.size(0)  # 取得待比對句子的總數量
+    all_jaccard_matrices = []  # 初始化一個列表，用於儲存每個批次的 Jaccard 相似度矩陣
+
+    for i in tqdm(range(0, num_compared, batch_size), desc="Jaccard Batches"):
+        # 獲取當前批次的待比對句子向量
+        compared_batch = compared_vecs[i:i + batch_size]
+        try:
+            # 計算當前批次與所有原始句子之間的 Jaccard 相似度
+            jaccard_batch = batch_jaccard(compared_batch, origin_vecs)
+            # 將當前批次的結果移回 CPU 儲存，以減少 GPU 記憶體壓力
+            all_jaccard_matrices.append(jaccard_batch.cpu())
+        except torch.cuda.OutOfMemoryError as e:
+            print(f"⚠️ GPU 記憶體不足錯誤：{e}")
+            print(f"嘗試使用更小的批次大小：{batch_size // 2}")
+            batch_size //= 2  # 減小批次大小
+            if batch_size == 0:
+                raise RuntimeError("批次大小已降至 0，但仍然發生記憶體不足錯誤。請檢查您的 GPU 或考慮在 CPU 上運行。") from e
+            compared_batch = compared_vecs[i:i + batch_size]
+            jaccard_batch = batch_jaccard(compared_batch, origin_vecs)
+            all_jaccard_matrices.append(jaccard_batch.cpu())
+        except Exception as e:
+            print(f"⚠️ 計算 Jaccard 相似度時發生錯誤：{e}")
+            # 可以在這裡加入錯誤處理邏輯，例如跳過當前批次或儲存錯誤日誌
+            continue
+
+    # 將所有批次的 Jaccard 相似度矩陣在列的方向上拼接起來
+    jaccard_matrix = torch.cat(all_jaccard_matrices, dim=0).to(DEVICE)
     end_time = time.time()  # 紀錄結束時間
     print(f"Jaccard 相似度計算完成，耗時：{end_time - start_time:.2f} 秒")
 
     # 找最佳匹配
-    print("\U0001f50d 尋找最佳匹配...")  # 印出尋找最佳匹配的提示訊息。
+    print("💹 尋找最佳匹配...")  # 印出尋找最佳匹配的提示訊息。
     matches = []  # 初始化一個空列表，用於儲存匹配結果。
     best_scores, best_indices = jaccard_matrix.max(dim=1)  # 找到每個待比對句子與原始句子之間的最大 Jaccard 相似度，以及對應的原始句子索引。
     # best_scores: 每個待比對句子，與所有 origin_sentences 比對後，最高的相似度分數
