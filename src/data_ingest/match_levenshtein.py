@@ -1,40 +1,27 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
-match_pipeline_simple.py (updated with progress bars and logging)
+data_ingest/match_levenshtein.py
 
-Usage:
-  python match_pipeline_simple.py
-
-預設參數在檔案頂端；此版本：
- - 只對 origin-text 做前後綴排除
- - compared_text 完整清理標點後比對，不做前後綴過濾
- - 將 origin-text 與 compared-text 分別分詞後，逐一比對
+對比 origin-text.txt 裡每一句與 compared_text 底下所有 .txt 中的句子，
+相似度 ≥ 閾值的結果輸出為 JSON 格式，並回傳結構化資料供外部呼叫。
 """
 import json
-import pickle
-from pathlib import Path
-from tqdm import tqdm
-import Levenshtein
-from ckip_transformers.nlp import CkipWordSegmenter
-import logging
 import re
+from pathlib import Path
 from datetime import datetime
+import logging
+import Levenshtein
+from tqdm import tqdm
+from ckip_transformers.nlp import CkipWordSegmenter
 
-# 設定 logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s %(levelname)s: %(message)s",
-)
+# === Default parameters (可由呼叫端覆寫) ===
+SIM_THRESHOLD   = 45.0  # 相似度門檻
+DEVICE          = 0     # CKIP device id
+# 用於比較時將 compared_text 切句的分隔符
+CHARS_TO_REMOVE = "。，、：；！？（）〔〕「」[]『』《》〈〉/(),1234567890¶"
 
-# === User-adjustable defaults ===
-TEXT_INPUT = Path("D:/lufu_allusion/data/raw/origin-text.txt")      # 檔案需含 '---' 分段標記
-COMPARED_DIRS_FILE = Path("D:/lufu_allusion/data/raw/compared_text")
-OUTPUT_JSON = Path("D:/lufu_allusion/data/processed/results.json")
-CACHE_FILE = Path("D:/lufu_allusion/cache/results.pkl")
-DEVICE = 0
-SIM_THRESHOLD = 45.0
-
-# 排除字首與字尾（只對 origin-text）
+# 停用詞列表（只對 origin-text 拆句後每片段進行 strip）
 PREFIX_EXCLUDE = [
     "徒觀其","矧夫","矧乃","至夫","懿夫","蓋由我君","重曰","是知","夫其","懿其","所以",
     "想夫","其始也","當其","況復","時則","至若","豈獨","若乃","今則","乃知","既而","嗟乎",
@@ -54,136 +41,175 @@ PREFIX_EXCLUDE = [
     "滅明乃","遂","悲夫","安得","故得","且見其","是何","莫不","士有","知其","未若"
 ]
 SUFFIX_EXCLUDE = ["曰", "哉", "矣", "也", "矣哉"]
-CHARS_TO_REMOVE = "。，、：；！？（）〔〕「」[]『』《》〈〉/(),1234567890¶"
 
-# === 功能函式 ===
+# -----------------------------------------------------------------------------
+# 日誌設定
+logging.basicConfig(level=logging.INFO,
+                    format="%(asctime)s %(levelname)s: %(message)s")
 
-def load_raw_text(path: Path) -> str:
-    return path.read_text(encoding='utf-8')
+# origin-text cleaning: 僅移除前後標籤，不去除標點
+def strip_prefix_suffix(text: str) -> str:
+    original = text
+    changed = True
+    while changed:
+        changed = False
+        for p in PREFIX_EXCLUDE:
+            # 僅剝除長度至少2的前綴，以免誤刪單字
+            if len(p) <= 1:
+                continue
+            if text.startswith(p):
+                stripped = text[len(p):].lstrip()
+                logging.debug(f"Stripped prefix '{p}' from '{original}' -> '{stripped}'")
+                text = stripped
+                changed = True
+                break
+    changed = True
+    while changed:
+        changed = False
+        for s in SUFFIX_EXCLUDE:
+            if len(s) <= 1:
+                continue
+            if text.endswith(s):
+                stripped = text[:-len(s)].rstrip()
+                logging.debug(f"Stripped suffix '{s}' from '{original}' -> '{stripped}'")
+                text = stripped
+                changed = True
+                break
+    return text
 
+# 解析 origin-text.txt 為標題、作者、內文列表，並跳過 "賦篇：" / "賦家：" 標籤行 為標題、作者、內文列表，並跳過 "賦篇：" / "賦家：" 標籤行
+def load_raw_docs(path: Path) -> list[dict]:
+    lines = path.read_text(encoding='utf-8').splitlines()
+    logging.info(f"Reading origin document from {path} ({len(lines)} lines)")
+    sections, buf = [], []
+    for ln in lines:
+        if ln.strip() == '---':
+            if buf:
+                sections.append(buf)
+                buf = []
+        else:
+            buf.append(ln)
+    if buf:
+        sections.append(buf)
+    logging.info(f"Split into {len(sections)} sections by '---'")
 
-def parse_documents(raw_text: str) -> list[dict]:
     docs = []
-    for seg in raw_text.split('---'):
-        seg = seg.strip()
-        if not seg:
-            continue
-        lines = seg.splitlines()
-        title = lines[0].split('：',1)[1].strip() if '：' in lines[0] else lines[0]
-        author = lines[1].split('：',1)[1].strip() if len(lines)>1 and '：' in lines[1] else ''
-        content = '\n'.join(lines[2:]).strip()
+    for idx, sec in enumerate(sections, 1):
+        title = sec[0].split('：',1)[1].strip() if '：' in sec[0] else sec[0].strip()
+        author = sec[1].split('：',1)[1].strip() if len(sec)>1 and '：' in sec[1] else ''
+        content_lines = []
+        for ln in sec[2:]:
+            if ln.startswith('賦篇：') or ln.startswith('賦家：'):
+                logging.debug(f"Skipped label in section {idx}: {ln}")
+                continue
+            content_lines.append(ln)
+        content = '\n'.join(content_lines)
         docs.append({'title': title, 'author': author, 'content': content})
+    logging.info(f"Loaded {len(docs)} docs from origin-text")
     return docs
 
+# 拆句並清洗 origin 句子（保留標點，用於分詞）
+def split_and_clean_sentences(docs: list[dict]) -> list[str]:
+    origin_sents = []
+    for d in docs:
+        parts = re.split(r'[。，！？；]', d['content'])
+        logging.debug(f"Doc '{d['title']}' split into {len(parts)} parts")
+        for p in parts:
+            txt = p.strip()
+            if not txt:
+                continue
+            txt = strip_prefix_suffix(txt)
+            if txt:
+                origin_sents.append(txt)
+    logging.info(f"Extracted {len(origin_sents)} origin sentences")
+    return origin_sents
 
-def clean_text(text: str) -> str:
-    return ''.join(ch for ch in text if ch not in CHARS_TO_REMOVE).strip()
-
-
-def skip_prefix_suffix(text: str) -> bool:
-    return any(text.startswith(p) for p in PREFIX_EXCLUDE) or any(text.endswith(s) for s in SUFFIX_EXCLUDE)
-
-
-def load_compared_sentences(path: Path) -> tuple[list[str], list[tuple]]:
-    paths = [path] if path.is_dir() else [Path(x.strip()) for x in path.read_text(encoding='utf-8').splitlines()]
+# 載入並切句 compared_text 底下所有 txt，分隔符為 CHARS_TO_REMOVE
+def load_compared_sentences(compared_dir: Path) -> tuple[list[str], list[tuple]]:
+    files = list(compared_dir.rglob('*.txt'))
+    logging.info(f"Found {len(files)} compared text files in {compared_dir}")
     sents, meta = [], []
-    for p in paths:
-        for f in p.rglob('*.txt'):
-            for idx, ln in enumerate(f.read_text(encoding='utf-8').splitlines()):
-                txt = clean_text(ln)
-                if not txt:
-                    continue
-                sents.append(txt)
-                meta.append((p.name, f.stem, idx))
+    sep_pattern = f"[{re.escape(CHARS_TO_REMOVE)}]"
+    logging.debug(f"Splitting compared text using pattern: {sep_pattern}")
+    for f in files:
+        raw = f.read_text(encoding='utf-8')
+        parts = re.split(sep_pattern, raw)
+        logging.debug(f"File {f.name} split into {len(parts)} parts by CHARS_TO_REMOVE")
+        for idx, part in enumerate(parts):
+            txt = part.strip()
+            if not txt:
+                continue
+            sents.append(txt)
+            meta.append((f.parent.name, f.stem, idx))
+    logging.info(f"Loaded {len(sents)} compared sentences")
     return sents, meta
 
-segmenter = None
-
+# CKIP 分詞
+_segmenter = None
 def init_segmenter(device: int):
-    global segmenter
-    segmenter = CkipWordSegmenter(device=device)
-    logging.info(f"✅ CKIP initialized on device {device}")
+    global _segmenter
+    _segmenter = CkipWordSegmenter(device=device)
+    logging.info(f"CKIP initialized on device {device}")
 
-
-def segment_batch(texts: list[str], batch_size: int = 1000) -> list[str]:
+def segment_batch(texts: list[str], batch_size: int=500) -> list[str]:
     out = []
-    for i in tqdm(range(0, len(texts), batch_size), desc="Segmenting", unit="批次"):
-        batch = texts[i:i+batch_size]
-        tok = segmenter(batch, show_progress=False)
-        out.extend([" ".join(t) for t in tok])
+    for i in tqdm(range(0, len(texts), batch_size), desc="Segmenting", unit="batch"):
+        toks = _segmenter(texts[i:i+batch_size], show_progress=False)
+        out.extend([" ".join(t) for t in toks])
+    logging.info(f"Segmented {len(out)} sentences into tokens")
     return out
 
-
-def compute_matches(orig_tokens, comp_tokens, comp_meta, threshold):
+# 比對相似度
+def compute_matches(orig_tokens: list[str], comp_tokens: list[str], comp_meta: list[tuple], threshold: float) -> list[dict]:
+    logging.info(f"Matching with threshold {threshold}%")
     matches = []
-    for i, o in enumerate(tqdm(orig_tokens, desc="比對 origin", unit="句")):
-        for j, c in enumerate(tqdm(comp_tokens, desc="比對 compared", unit="句", leave=False)):
+    for i, o in enumerate(tqdm(orig_tokens, desc="Matching origin", unit="sent")):
+        for j, c in enumerate(comp_tokens):
             sim = Levenshtein.ratio(o, c) * 100
             if sim >= threshold:
                 matches.append({
                     'origin_index': i,
                     'comp_meta': comp_meta[j],
-                    'similarity': sim,
+                    'similarity': round(sim,1),
                     'origin_token': o,
                     'comp_token': c
                 })
+    logging.info(f"Found {len(matches)} total matches")
     return matches
 
-
-def load_cache(path: Path):
-    return pickle.loads(path.read_bytes())
-
-
-def save_cache(data, path: Path):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_bytes(pickle.dumps(data))
-
-
-def main():
-    # 1. parse origin-text, apply prefix/suffix filter
-    raw = load_raw_text(TEXT_INPUT)
-    docs = parse_documents(raw)
-    origin_sents = []
-    for d in docs:
-        for ln in d['content'].splitlines():
-            txt = clean_text(ln)
-            if txt and not skip_prefix_suffix(txt):
-                origin_sents.append(txt)
-    logging.info(f"✅ {len(origin_sents)} origin sentences after filter")
-
-    # 2. load and clean compared-text (no prefix/suffix skip)
-    comp_sents, comp_meta = load_compared_sentences(COMPARED_DIRS_FILE)
-    logging.info(f"✅ {len(comp_sents)} compared sentences loaded")
-
-    # 3. segment both
-    init_segmenter(DEVICE)
+# 核心函式
+def retrieve_direct_allusions(origin_path: Path, compared_dir: Path, device: int = DEVICE, threshold: float = SIM_THRESHOLD) -> dict:
+    logging.info(f"Start retrieval: origin={origin_path}, compared={compared_dir}")
+    docs = load_raw_docs(origin_path)
+    origin_sents = split_and_clean_sentences(docs)
+    comp_sents, comp_meta = load_compared_sentences(compared_dir)
+    init_segmenter(device)
     orig_tokens = segment_batch(origin_sents)
     comp_tokens = segment_batch(comp_sents)
+    matches = compute_matches(orig_tokens, comp_tokens, comp_meta, threshold)
+    return {'docs': docs, 'matches': matches}
 
-    # 4. compute or load cache
-    if CACHE_FILE.exists():
-        matches = load_cache(CACHE_FILE)
-        logging.info(f"✅ Loaded {len(matches)} matches from cache")
-    else:
-        matches = compute_matches(orig_tokens, comp_tokens, comp_meta, SIM_THRESHOLD)
-        save_cache(matches, CACHE_FILE)
-        logging.info(f"✅ Computed and cached {len(matches)} matches")
-
-    # 5. write results
-    OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
-        json.dump({'docs': docs, 'matches': matches}, f, ensure_ascii=False, indent=2)
-    logging.info(f"✅ Results written to {OUTPUT_JSON}")
-
+# CLI
 if __name__ == '__main__':
     start = datetime.now()
-    logging.info(f"🔄 程式啟動，開始時間：{start}")
+    logging.info(f"Program start: {start}")
     try:
-        main()
-    except Exception:
-        logging.exception("💥 程式中發生未預期錯誤")
+        # 設定檔案路徑
+        origin = Path(r"C:\Users\TAOYI CHIANG\OneDrive\桌面\origin-text-test.txt")
+        compared_dir = Path(r"C:\Users\TAOYI CHIANG\OneDrive\桌面\compared_text")
+        output_json = Path(r"D:\lufu_allusion\data\processed\results.json")
+
+        # 執行檢索
+        result = retrieve_direct_allusions(origin, compared_dir)
+
+        # 寫入 JSON
+        output_json.parent.mkdir(parents=True, exist_ok=True)
+        output_json.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+        logging.info(f"Results saved to {output_json}")
+    except Exception as e:
+        logging.exception("Unexpected error during CLI execution")
         raise
     finally:
         end = datetime.now()
-        logging.info(f"✅ 程式結束，結束時間：{end}，總耗時：{end - start}")
-        print("\n🎉 🎉 🎉  全部執行完畢！")
+        logging.info(f"Program end: {end} (elapsed {end - start})")
+print("\n🎉 Done!")
