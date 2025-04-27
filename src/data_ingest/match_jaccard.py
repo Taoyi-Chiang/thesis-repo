@@ -11,7 +11,7 @@ import time
 
 # ========== 使用者設定 ==========
 PARSED_RESULTS_PATH = Path(r"D:/lufu_allusion/data/processed/parsed_results.json")
-COMPARED_FOLDER_PATH = Path(r"D:\lufu_allusion\data\raw\compared_text")
+COMPARED_FOLDER_PATH = Path(r"D:/lufu_allusion/data/raw/compared_text")
 OUTPUT_JSON_PATH = Path(r"D:/lufu_allusion/data/processed/sample_match_results_jaccard_gpu.json")
 CHARS_TO_REMOVE = "。，、：；！？（）〔〕「」[]『』《》〈〉\\-\\－\\(\\)\\[\\]/(),1234567890¶"
 JACCARD_THRESHOLD = 0.4
