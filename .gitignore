@@ -65,7 +65,7 @@ coverage.xml
 *.joblib
 
 # JSON（若你不想追蹤大型標記檔，可取消下面的註解）
-# *.json
+*.json
 
 # 資料庫
 *.sqlite3
