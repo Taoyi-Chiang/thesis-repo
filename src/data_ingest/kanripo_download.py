@@ -2,7 +2,7 @@ import os
 import requests
 import zipfile
 
-# 多個（或一個） repository 名稱列表
+# 本研究運用的對比文獻資料列表
 categories = {
     "十三經": [
         "KR1d0026", # 儀禮 
