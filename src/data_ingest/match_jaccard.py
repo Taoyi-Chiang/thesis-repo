@@ -1,11 +1,12 @@
 import json  # 導入 json 模組，用於處理 JSON 格式的資料。
 import re  # 導入 re 模組，用於處理正規表達式，進行字串匹配和處理。
 from pathlib import Path  # 處理檔案路徑。
-from tqdm import tqdm  # 顯示進度條。
+from tqdm import tqdm  # 導入 tqdm 模組，用於顯示進度條。
 import torch  # PyTorch，用於深度學習和 GPU 加速。
 from ckip_transformers.nlp import CkipWordSegmenter  # CKIP 斷詞器。
 import gc  # 垃圾回收。
 from torch.utils.data import DataLoader, TensorDataset # 導入 PyTorch DataLoader，用於更方便地處理資料批次。
+import time # 引入 time 模組
 
 # ========== 使用者設定 ==========
 PARSED_RESULTS_PATH = Path(r"D:/lufu_allusion/data/processed/parsed_results.json")  # 定義已處理的 JSON 檔案路徑，該檔案包含原始句子。
@@ -25,8 +26,25 @@ else:
     CKIP_DEVICE = -1  # 設定 CKIP 斷詞器使用 CPU。
 
 # ========== 停用詞設定 ==========
-PREFIX_EXCLUDE = [...]  # 定義需要排除的前綴詞列表（目前為空，可根據需要添加）。
-SUFFIX_EXCLUDE = ["曰", "哉", "矣", "也", "矣哉"]  # 定義需要排除的後綴詞列表。
+PREFIX_EXCLUDE = [  # 設定需要從句首移除的詞彙前綴，以提高比對的準確性。
+    "徒觀其", "矞夫", "矞乃", "至夫", "懿夫", "蓋由我君", "重曰", "是知", "夫其", "懿其", "所以",
+    "想夫", "其始也", "當其", "況復", "時則", "至若", "豈獨", "若乃", "今則", "乃知", "既而", "嗟乎",
+    "故我后", "觀夫", "然而", "爾乃", "是以", "原夫", "曷若", "斯則", "於時", "方今", "亦何必", "若然",
+    "客有", "至於", "則知", "且夫", "斯乃", "況", "於是", "覩夫", "且彼", "豈若", "已而", "始也", "故",
+    "然則", "豈如我", "豈不以", "我國家", "其工者", "所謂", "今吾君", "及夫", "爾其", "將以", "可以",
+    "今", "國家", "然後", "向非我后", "則有", "彼", "惜乎", "由是", "乃言曰", "若夫", "亦何用", "不然",
+    "嘉其", "今則", "徒美夫", "故能", "有探者曰", "惜如", "而況", "逮夫", "誠夫", "於戲", "洎乎", "伊昔",
+    "則將", "今則", "況今", "士有", "暨乎", "亦何辨夫", "俾夫", "亦猶", "瞻夫", "時也", "固知", "足以",
+    "矞國家", "比乎", "亦由", "觀其", "將俾乎", "聖人", "君子", "於以", "乃", "斯蓋", "噫", "夫惟",
+    "高皇帝", "帝既", "嘉其", "始則", "又安得", "其", "儒有", "當是時也", "夫然", "宜乎", "故其", "國家",
+    "爾其始也", "今我國家", "是時", "有司", "向若", "我皇", "故王者", "則", "鄒子", "孰", "暨夫", "用能",
+    "故將", "況其", "故宜", "王者", "聖上", "先王", "乃有", "況乃", "別有", "今者", "固宜", "皇上", "且其",
+    "徒觀夫", "帝堯以", "始其", "倏而", "乃曰", "向使", "漢武帝", "先是", "他日", "乃命", "觀乎", "國家以",
+    "墨子", "借如", "足以", "上乃", "嗚呼", "昔伊", "先賢", "遂使", "豈比夫", "固其", "況有", "魯恭王", "皇家",
+    "吾君是時", "知", "周穆王", "則有", "是用", "乃言曰", "及", "故夫", "矞乎", "夫以", "寧令", "如", "然則",
+    "滅明乃", "遂", "悲夫", "安得", "故得", "且見其", "是何", "莫不", "士有", "知其", "未若"
+]
+SUFFIX_EXCLUDE = ["曰", "哉", "矣", "也", "矣哉", "乎", "焉"]  # 設定需要從句尾移除的詞彙後綴，以提高比對的準確性。
 
 def clean_sentence(text):
     """
@@ -96,7 +114,7 @@ def load_compared_sentences(folder_path, chars_to_remove):
     return all_sents  # 返回包含待比對句子的列表。
 
 # ========== 分詞函式 ==========
-def segment_in_batches(sentences, segmenter, batch_size=100):
+def segment_in_batches(sentences, segmenter, batch_size=100, text_type=""):
     """
     將句子分成批次進行斷詞處理。
 
@@ -104,17 +122,27 @@ def segment_in_batches(sentences, segmenter, batch_size=100):
         sentences (list): 包含需要斷詞的句子的列表。
         segmenter (CkipWordSegmenter): CKIP 斷詞器物件。
         batch_size (int): 每個批次包含的句子數量。
+        text_type (str): 標示文本類型，例如 "原始文本" 或 "比對文本"。
 
     Returns:
         list: 包含斷詞結果的列表，每個元素都是一個詞語列表。
     """
     all_tokens = []  # 初始化一個空列表，用於儲存所有句子的斷詞結果。
-    for i in range(0, len(sentences), batch_size):  # 迭代處理所有句子，每次處理一個批次。
-        batch = sentences[i:i+batch_size]  # 獲取當前批次的句子。
-        toks = segmenter(batch)  # 使用 CKIP 斷詞器對當前批次的句子進行斷詞。
-        all_tokens.extend(toks)  # 將當前批次的斷詞結果添加到列表中。
-        del toks, batch  # 刪除不再需要的變數，釋放記憶體。
-        torch.cuda.empty_cache(); gc.collect()  # 清空 GPU 快取記憶體，並執行垃圾回收。
+    total_sentences = len(sentences)  # 獲取總句子數
+    start_time = time.time()  # 記錄開始時間
+
+    with tqdm(total=total_sentences, desc=f"分詞處理 ({text_type})") as pbar:  # 在進度條中顯示文本類型
+        for i in range(0, total_sentences, batch_size):  # 迭代處理所有句子，每次處理一個批次。
+            batch = sentences[i:i+batch_size]  # 獲取當前批次的句子。
+            toks = segmenter(batch, show_progress=False)  # 使用 CKIP 斷詞器對當前批次的句子進行斷詞，停用進度條。
+            all_tokens.extend(toks)  # 將當前批次的斷詞結果添加到列表中。
+            del toks  # 刪除不再需要的變數，釋放記憶體。
+            torch.cuda.empty_cache(); gc.collect()  # 清空 GPU 快取記憶體，並執行垃圾回收。
+            pbar.update(len(batch))  # 更新進度條
+            del batch  # 刪除 batch變數
+
+    end_time = time.time()
+    print(f"  分詞處理完成，總耗時: {end_time - start_time:.2f} 秒")
     return all_tokens  # 返回包含所有句子斷詞結果的列表。
 
 # ========== 詞彙表與向量化 ==========
@@ -180,8 +208,8 @@ def main():
 
     print("🪚 分詞處理...")  # 印出分詞處理開始的訊息。
     ws = CkipWordSegmenter(device=CKIP_DEVICE, model="bert-base")  # 初始化 CKIP 斷詞器。
-    origin_tokens = segment_in_batches(origin_sents, ws, batch_size=100)  # 對原始句子進行分詞。
-    compared_tokens = segment_in_batches(compared_sents, ws, batch_size=100)  # 對待比對句子進行分詞。
+    origin_tokens = segment_in_batches(origin_sents, ws, batch_size=100, text_type="原始文本")  # 對原始句子進行分詞，並標示文本類型。
+    compared_tokens = segment_in_batches(compared_sents, ws, batch_size=100, text_type="比對文本")  # 對待比對句子進行分詞，並標示文本類型。
     del ws; torch.cuda.empty_cache(); gc.collect()  # 刪除斷詞器物件，清空 GPU 快取記憶體，並執行垃圾回收。
 
     print("➡️ 建構詞彙...")  # 印出建構詞彙表開始的訊息。
@@ -199,42 +227,45 @@ def main():
     print("🧪 Batch Jaccard & 匹配...")  # 印出 Jaccard 相似度計算和匹配開始的訊息。
     matches = []  # 初始化一個空列表，用於儲存匹配結果。
     bs = 256  # 設定批次大小。
-    total_batches = (len(compared_tokens)+bs-1)//bs  # 計算總批次數。
-    pbar = tqdm(total=total_batches, desc="總進度")  # 初始化進度條。
+    total_compared_sentences = len(compared_tokens)  # 總共要比對的句子數量
+    start_time = time.time()
 
     # 使用 DataLoader 處理 compared_tokens
     compared_dataset = TensorDataset(torch.arange(len(compared_tokens)))  # 創建一個包含 compared_tokens 索引的 TensorDataset。
     compared_loader = DataLoader(compared_dataset, batch_size=bs, shuffle=False)  # 使用 DataLoader 載入 compared_tokens 的索引。
 
-    for batch_indices in compared_loader:  # 迭代處理每個批次的索引。
-        batch_start = batch_indices[0][0].item()  # 獲取當前批次的起始索引。
-        batch_end = min(batch_start + bs, len(compared_tokens))  # 計算當前批次的結束索引。
-        batch_tokens = compared_tokens[batch_start:batch_end]  # 獲取當前批次的斷詞結果。
+    with tqdm(total=total_compared_sentences, desc="Jaccard & 匹配") as pbar:
+        for batch_indices in compared_loader:  # 迭代處理每個批次的索引。
+            batch_start = batch_indices[0][0].item()  # 獲取當前批次的起始索引。
+            batch_end = min(batch_start + bs, len(compared_tokens))  # 計算當前批次的結束索引。
+            batch_tokens = compared_tokens[batch_start:batch_end]  # 獲取當前批次的斷詞結果。
 
-        # **注意：這裡 comp_vecs 大小也受 bs 與 vocab_size 影響，確保 bs 不超過可用 GPU 記憶體**
-        comp_vecs = vectorize_tokens(batch_tokens, word2idx, device=DEVICE)  # 將當前批次的斷詞結果轉換成向量表示。
-        try:
-            jacc = batch_jaccard(comp_vecs, origin_vecs)  # 計算當前批次與原始句子之間的 Jaccard 相似度。
-        except torch.cuda.OutOfMemoryError:  # 如果發生 GPU 記憶體不足的錯誤。
+            # **注意：這裡 comp_vecs 大小也受 bs 與 vocab_size 影響，確保 bs 不超過可用 GPU 記憶體**
+            comp_vecs = vectorize_tokens(batch_tokens, word2idx, device=DEVICE)  # 將當前批次的斷詞結果轉換成向量表示。
+            try:
+                jacc = batch_jaccard(comp_vecs, origin_vecs)  # 計算當前批次與原始句子之間的 Jaccard 相似度。
+            except torch.cuda.OutOfMemoryError:  # 如果發生 GPU 記憶體不足的錯誤。
+                torch.cuda.empty_cache(); gc.collect()  # 清空 GPU 快取記憶體，並執行垃圾回收。
+                bs = max(bs//2, 1)  # 將批次大小減半，最小為 1。
+                print(f"⚠️ OOM，降到 bs={bs}")  # 印出記憶體不足的訊息，並顯示新的批次大小。
+                compared_loader = DataLoader(compared_dataset, batch_size=bs, shuffle=False)  # 更新 DataLoader 的批次大小。
+                pbar.total = total_compared_sentences // bs + (total_compared_sentences % bs != 0)  # 更新進度條總數
+                pbar.refresh()
+                continue  # 跳到下一個批次的處理。
+            scores, idxs = jacc.max(1)  # 獲取每個待比對句子與原始句子之間的最大 Jaccard 相似度，以及對應的原始句子索引。
+            for idx_in_batch, (s, scr, idx_o) in enumerate(zip(batch_tokens, scores.tolist(), idxs.tolist())):  # 迭代處理批次中的每個句子及其匹配結果。
+                if scr >= JACCARD_THRESHOLD:  # 如果相似度超過設定的閾值。
+                    matches.append({  # 將匹配結果以字典形式儲存。
+                        "Compared句子": compared_sents[batch_start + idx_in_batch],  # 使用原始索引獲取 compared_sents
+                        "對應原句": origin_sents[idx_o],  # 儲存對應的原始句子。
+                        "Jaccard相似度": scr  # 儲存 Jaccard 相似度分數。
+                    })
+            del comp_vecs, jacc  # 刪除不再需要的變數，釋放記憶體。
             torch.cuda.empty_cache(); gc.collect()  # 清空 GPU 快取記憶體，並執行垃圾回收。
-            bs = max(bs//2, 1)  # 將批次大小減半，最小為 1。
-            print(f"⚠️ OOM，降到 bs={bs}")  # 印出記憶體不足的訊息，並顯示新的批次大小。
-            compared_loader = DataLoader(compared_dataset, batch_size=bs, shuffle=False)  # 更新 DataLoader 的批次大小。
-            pbar.total = (len(compared_tokens) + bs - 1) // bs;  # 更新進度條的總批次數。
-            pbar.refresh()  # 刷新進度條。
-            continue  # 跳到下一個批次的處理。
-        scores, idxs = jacc.max(1)  # 獲取每個待比對句子與原始句子之間的最大 Jaccard 相似度，以及對應的原始句子索引。
-        for idx_in_batch, (s, scr, idx_o) in enumerate(zip(batch_tokens, scores.tolist(), idxs.tolist())):  # 迭代處理批次中的每個句子及其匹配結果。
-            if scr >= JACCARD_THRESHOLD:  # 如果相似度超過設定的閾值。
-                matches.append({  # 將匹配結果以字典形式儲存。
-                    "Compared句子": compared_sents[batch_start + idx_in_batch],  # 使用原始索引獲取 compared_sents
-                    "對應原句": origin_sents[idx_o],  # 儲存對應的原始句子。
-                    "Jaccard相似度": scr  # 儲存 Jaccard 相似度分數。
-                })
-        del comp_vecs, jacc  # 刪除不再需要的變數，釋放記憶體。
-        torch.cuda.empty_cache(); gc.collect()  # 清空 GPU 快取記憶體，並執行垃圾回收。
-        pbar.update(1)  # 更新進度條。
-    pbar.close()  # 關閉進度條。
+            pbar.update(len(batch_tokens))  # 更新進度條。
+
+    end_time = time.time()
+    print(f"  Jaccard & 匹配完成，總耗時: {end_time - start_time:.2f} 秒")  
 
     print(f"✅ 完成，共 {len(matches)} 筆結果，保存中...")  # 印出匹配完成和開始儲存的訊息。
     json.dump(matches, OUTPUT_JSON_PATH.open('w', encoding='utf-8'), ensure_ascii=False, indent=2)  # 將匹配結果以 JSON 格式寫入檔案，ensure_ascii=False 確保中文不被轉義，indent=2 使輸出更易讀。
