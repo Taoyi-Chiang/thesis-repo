@@ -66,6 +66,7 @@ coverage.xml
 
 # JSON（若你不想追蹤大型標記檔，可取消下面的註解）
 *.json
+!data/processed/parsed_results.json
 
 # 資料庫
 *.sqlite3
