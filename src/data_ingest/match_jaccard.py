@@ -11,12 +11,12 @@ import cupy as cp  # GPU acceleration with CuPy
 
 # ========== 使用者設定 (一處可控) ==========
 PARSED_RESULTS_PATH = Path(r"D:/lufu_allusion/data/processed/parsed_results.json") # 設定為原句資料輸入路徑
-COMPARED_FOLDER_PATH = Path(r"D:/lufu_allusion/data/raw/compared_text/諸子") # 設定為比對資料夾輸入路徑
-OUTPUT_JSON_PATH = Path(r"D:/lufu_allusion/data/processed/ZI_match_results_jaccard.json") # 設定為比對結果輸出路徑
+COMPARED_FOLDER_PATH = Path(r"D:/lufu_allusion/data/raw/compared_text/文集") # 設定為比對資料夾輸入路徑
+OUTPUT_JSON_PATH = Path(r"D:/lufu_allusion/data/processed/WEN_match_results_jaccard.json") # 設定為比對結果輸出路徑
 CHARS_TO_REMOVE = "。，、：；！？（）〔〕「」[]『』《》〈〉\\#\\-\\－\\(\\)\\[\\]\\]\\/(),1234567890¶" # 比對資料清洗字元
 JACCARD_THRESHOLD = 0.7       # 相似度閾值，可調整
-BATCH_SIZE = 4096             # 用戶可調整的批次大小
-MIN_BATCH_SIZE = 512          # 最小批次大小
+BATCH_SIZE = 8192             # 用戶可調整的批次大小
+MIN_BATCH_SIZE = 1024          # 最小批次大小
 # ORIGIN_CHUNK_SIZE will be set dynamically after tokenization
 ORIGIN_CHUNK_SIZE = None      # placeholder
 
