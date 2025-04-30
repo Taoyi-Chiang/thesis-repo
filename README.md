@@ -15,7 +15,6 @@
 │   │   └─ ZI_match_results_jaccard.json       # 「諸子」Jaccard 相似度結果
 │   └─ raw/                          # 未處理原始資料，請勿覆寫
 │       ├─ origin-text.txt             # 原始待比對文本
-│       ├─ sample_allusion.csv         # 範例典故對應表
 │       └─ compared_text/              # 比對語料庫
 │           ├─ 十三經/                   # 《十三經》文本集
 │           ├─ 史書/                     # 各類史書文本
@@ -38,6 +37,7 @@
 │       └─ table-example.png
 ├─ sample-thesis/                  # 範例小論文資料與格式
 │   ├─ sample-mini-thesis.csv
+│   ├─ sample-mini-thesis.md
 │   └─ sample-mini-thesis.md
 ├─ scripts/                        # 一鍵執行流程腳本
 │   ├─ build_graphs.py               # 生成知識網絡圖
