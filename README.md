@@ -1,64 +1,23 @@
 ```
-📙lufu_allusion
-┣ 📂.git
-┣ 📂.vscode
-┃ ┗ 📜settings.json
-┣ 📂cache
-┃ ┗ 📜results.pkl
-┣ 📂data
-┃ ┣ 📂processed
-┃ ┃ ┣ 📜JING_match_results_jaccard.json
-┃ ┃ ┣ 📜parsed_results.json
-┃ ┃ ┣ 📜SHI_match_results_jaccard.json
-┃ ┃ ┃ 📜WEN_match_results_jaccard.json
-┃ ┃ ┗ 📜ZI_match_results_jaccard.json
-┃ ┗ 📂raw
-┃   ┣ 📂compared_text
-┃   ┃ ┣ 📂十三經
-┃   ┃ ┣ 📂史書
-┃   ┃ ┣ 📂文集
-┃   ┃ ┗ 📂諸子
-┃   ┣ 📜origin-text.txt
-┃   ┗ 📜sample_allusion.csv
-┣ 📂docs
-┃ ┗ 📜architecture.md
-┣ 📂notebook
-┃ ┣ 📜01_introduction.ipynb
-┃ ┣ 📜02_network.ipynb
-┃ ┣ 📜03_sentence.ipynb
-┃ ┣ 📜04_paragraph.ipynb
-┃ ┣ 📜05_article.ipynb
-┃ ┣ 📜06_temporal_dynamics.ipynb
-┃ ┗ 📜07_conclusion.ipynb
-┣ 📂outputs
-┃ ┣ 📂figures
-┃ ┃ ┗ 📜figure-example.csv
-┃ ┗ 📂tables
-┃   ┗ 📜table-example.png
-┣ 📂sample-thesis
-┃ ┣ 📜sample-mini-thesis.csv
-┃ ┗ 📜sample-mini-thesis.md
-┣ 📂scripts
-┃ ┣ 📜build_graphs.py
-┃ ┣ 📜run_csv_to_tei.py
-┃ ┗ 📜run_markov_chain.py
-┣ 📂src
-┃ ┣ 📂data_ingest
-┃ ┃ ┣ 📜kanripo_download.py
-┃ ┃ ┣ 📜match_jaccard.py
-┃ ┃ ┗ 📜txt-to-json.py
-┃ ┣ 📂markov_analysis
-┃ ┃ ┗ 📜markov_model.py
-┃ ┣ 📂utils
-┃ ┃ ┗ 📜helpers.py
-┃ ┣ 📂visualization
-┃ ┃ ┗ 📜viz_utils.py
-┃ ┗ 📂xml_conversion
-┃   ┗ 📜converter.py
-┣ 📂thesis
-┃ ┗ 📜bibliography.bib
-┣ 📜.gitignore
-┣ 📜environment.yml
-┣ 📜LICENSE
-┗ 📜README.md
+project-root/
+├── data/                     ← 核心資料夾
+│   ├── raw/                  ← 【原始資料】
+│   │   ├── origin-text.txt   ← 原始待比對文本
+│   │   └── compared_text/    ← 比對素材檔案夾（史書、經典等）
+│   └── processed/            ← 【處理後資料】
+│       ├── parsed_results.json ← CKIP 分詞與清洗後的 JSON
+│       └── results.json      ← 相似度比對最終輸出
+├── src/                      ← 程式碼主目錄
+│   └── data_ingest/          ← 【資料攝取與預處理】
+│       ├── match_jaccard.py    ← Jaccard 比對腳本
+│       ├── match_levenshtein.py← Levenshtein 比對腳本
+│       └── match_pipeline_simple.py ← 進階整合管線
+├── notebooks/                ← 【實驗筆記】
+│   ├── segmentation.ipynb      ← 斷詞實驗
+│   └── similarity_analysis.ipynb ← 相似度探索
+├── docs/                     ← 【文件與報告】
+│   └── usage_guide.md         ← 使用教學
+├── .gitignore                ← 排除文件設定
+├── README.md                 ← 專案概覽與執行步驟
+└── requirements.txt          ← Python 相依套件列表
 ```
