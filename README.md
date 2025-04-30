@@ -1,9 +1,6 @@
 ## 專案目錄與說明
 
 ```
-## 專案目錄與說明
-
-```plaintext
 ┣ .git/                           # Git 版本控制資料夾，由 Git 自動管理
 ┣ .vscode/                        # VS Code 工作區設定
 ┃ ┗ settings.json                 # 外掛、格式化等設定
@@ -65,5 +62,4 @@
 ┣ environment.yml                 # Conda 環境設定
 ┣ LICENSE                         # 授權條款
 ┗ README.md                       # 專案總覽與快速開始
-```
 ```
