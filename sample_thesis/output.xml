@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="fu" xml:id="fu1">
+        <head>稼如雲賦以「農夫望歲歡以滌場」為韻</head>
+        <p>作者：張仲素</p>
+        <div type="paragraph" xml:id="fu1.p1">
+          <lg xml:id="fu1.p1.g1">
+            <l xml:id="fu1.p1.g1.l1">天何言哉</l>
+            <l xml:id="fu1.p1.g1.l2">歲云秋矣</l>
+          </lg>
+          <lg xml:id="fu1.p1.g2">
+            <l xml:id="fu1.p1.g2.l3">臨甫田而一望</l>
+            <l xml:id="fu1.p1.g2.l4">見多稼之具美</l>
+          </lg>
+          <lg xml:id="fu1.p1.g3">
+            <l xml:id="fu1.p1.g3.l5">亙平野而雲鬱</l>
+            <l xml:id="fu1.p1.g3.l6">覆高原而黛起</l>
+          </lg>
+          <lg xml:id="fu1.p1.g4">
+            <l xml:id="fu1.p1.g4.l7">九土用康</l>
+            <l xml:id="fu1.p1.g4.l8">兆人賴止</l>
+          </lg>
+          <lg xml:id="fu1.p1.g5">
+            <l xml:id="fu1.p1.g5.l9">豈非協風中律</l>
+            <l xml:id="fu1.p1.g5.l10">農祥順軌</l>
+          </lg>
+          <lg xml:id="fu1.p1.g6">
+            <l xml:id="fu1.p1.g6.l11">土牛作候而不愆</l>
+            <l xml:id="fu1.p1.g6.l12">銅雀載鳴而有以</l>
+          </lg>
+        </div>
+        <div type="paragraph" xml:id="fu1.p2">
+          <lg xml:id="fu1.p2.g7">
+            <l xml:id="fu1.p2.g7.l13">徒觀其千畝既良</l>
+            <l xml:id="fu1.p2.g7.l14">萬頃式臧</l>
+          </lg>
+          <lg xml:id="fu1.p2.g8">
+            <l xml:id="fu1.p2.g8.l15">興有渰而混色</l>
+            <l xml:id="fu1.p2.g8.l16">霑霡霂以齊芳</l>
+          </lg>
+          <lg xml:id="fu1.p2.g9">
+            <l xml:id="fu1.p2.g9.l17">雜非煙與非霧</l>
+            <l xml:id="fu1.p2.g9.l18">乍漠漠以蒼蒼</l>
+          </lg>
+          <lg xml:id="fu1.p2.g10">
+            <l xml:id="fu1.p2.g10.l19">孰克辨乎帝力</l>
+            <l xml:id="fu1.p2.g10.l20">咸自嘉於我疆</l>
+          </lg>
+          <lg xml:id="fu1.p2.g11">
+            <l xml:id="fu1.p2.g11.l21">御田祖之神</l>
+            <l xml:id="fu1.p2.g11.l22">時聞擊鼓</l>
+            <l xml:id="fu1.p2.g11.l23">樂農夫之慶</l>
+            <l xml:id="fu1.p2.g11.l24">且見築場</l>
+          </lg>
+        </div>
+        <div type="paragraph" xml:id="fu1.p3">
+          <lg xml:id="fu1.p3.g12">
+            <l xml:id="fu1.p3.g12.l25">察彼近郊</l>
+            <l xml:id="fu1.p3.g12.l26">知夫四裔</l>
+          </lg>
+          <lg xml:id="fu1.p3.g13">
+            <l xml:id="fu1.p3.g13.l27">何山苗之能植</l>
+            <l xml:id="fu1.p3.g13.l28">伊隰桑之尚蔽</l>
+          </lg>
+          <lg xml:id="fu1.p3.g14">
+            <l xml:id="fu1.p3.g14.l29">豐滋漫若</l>
+            <l xml:id="fu1.p3.g14.l30">用表於播時</l>
+            <l xml:id="fu1.p3.g14.l31">悅茂油然</l>
+            <l xml:id="fu1.p3.g14.l32">寧憂於晚歲</l>
+          </lg>
+        </div>
+        <div type="paragraph" xml:id="fu1.p4">
+          <lg xml:id="fu1.p4.g15">
+            <l xml:id="fu1.p4.g15.l33">矧乃華實云就</l>
+            <l xml:id="fu1.p4.g15.l34">堅好不渝</l>
+          </lg>
+          <lg xml:id="fu1.p4.g16">
+            <l xml:id="fu1.p4.g16.l35">豈茨梁之足喻</l>
+            <l xml:id="fu1.p4.g16.l36">若薈蔚之將敷</l>
+          </lg>
+          <lg xml:id="fu1.p4.g17">
+            <l xml:id="fu1.p4.g17.l37">知艱難垂戒於往哲</l>
+            <l xml:id="fu1.p4.g17.l38">務藨蔉在勸於鄙夫</l>
+          </lg>
+          <lg xml:id="fu1.p4.g18">
+            <l xml:id="fu1.p4.g18.l39">爰協古公之政</l>
+            <l xml:id="fu1.p4.g18.l40">式宏管氏之虞</l>
+          </lg>
+        </div>
+        <div type="paragraph" xml:id="fu1.p5">
+          <lg xml:id="fu1.p5.g19">
+            <l xml:id="fu1.p5.g19.l41">至夫實穎蓁蓁</l>
+            <l xml:id="fu1.p5.g19.l42">厥田上上</l>
+          </lg>
+          <lg xml:id="fu1.p5.g20">
+            <l xml:id="fu1.p5.g20.l43">膏陰潤以蕃庶</l>
+            <l xml:id="fu1.p5.g20.l44">矗朝隮之異狀</l>
+          </lg>
+          <lg xml:id="fu1.p5.g21">
+            <l xml:id="fu1.p5.g21.l45">邱陵共秀</l>
+            <l xml:id="fu1.p5.g21.l46">且聞束皙之詩</l>
+            <l xml:id="fu1.p5.g21.l47">黍稷盈疇</l>
+            <l xml:id="fu1.p5.g21.l48">更鬱仲宣之望</l>
+          </lg>
+        </div>
+        <div type="paragraph" xml:id="fu1.p6">
+          <lg xml:id="fu1.p6.g22">
+            <l xml:id="fu1.p6.g22.l49">懿夫白露凝冷</l>
+            <l xml:id="fu1.p6.g22.l50">清風戒寒</l>
+          </lg>
+          <lg xml:id="fu1.p6.g23">
+            <l xml:id="fu1.p6.g23.l51">是刈是獲</l>
+            <l xml:id="fu1.p6.g23.l52">式燕且歡</l>
+          </lg>
+          <lg xml:id="fu1.p6.g24">
+            <l xml:id="fu1.p6.g24.l53">諒遺滯之足利</l>
+            <l xml:id="fu1.p6.g24.l54">思京坻而可觀</l>
+          </lg>
+        </div>
+        <div type="paragraph" xml:id="fu1.p7">
+          <lg xml:id="fu1.p7.g25">
+            <l xml:id="fu1.p7.g25.l55">蓋由我君勤儉所彰</l>
+            <l xml:id="fu1.p7.g25.l56">純嘏屢錫</l>
+          </lg>
+          <lg xml:id="fu1.p7.g26">
+            <l xml:id="fu1.p7.g26.l57">運璿衡之冥數</l>
+            <l xml:id="fu1.p7.g26.l58">煥玉燭而昌歷</l>
+          </lg>
+          <lg xml:id="fu1.p7.g27">
+            <l xml:id="fu1.p7.g27.l59">分地而嘉穀用登</l>
+            <l xml:id="fu1.p7.g27.l60">報天而犧牛在滌</l>
+          </lg>
+          <lg xml:id="fu1.p7.g28">
+            <l xml:id="fu1.p7.g28.l61">下臣睹而作頌</l>
+            <l xml:id="fu1.p7.g28.l62">敢歎美於成績</l>
+          </lg>
+        </div>
+        <div type="paragraph" xml:id="fu1.p8">
+          <lg xml:id="fu1.p8.g29">
+            <l xml:id="fu1.p8.g29.l63">重曰</l>
+            <l xml:id="fu1.p8.g29.l64">望如雲兮我稼既同</l>
+            <l xml:id="fu1.p8.g29.l65">除其穢兮田具是功</l>
+          </lg>
+          <lg xml:id="fu1.p8.g30">
+            <l xml:id="fu1.p8.g30.l66">既庭又碩兮將表歲終</l>
+            <l xml:id="fu1.p8.g30.l67">喜有秋兮可以勞農</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <annotationList>
+      <annotation xml:id="ann4" target="#fu1.p1.g1.l1">
+        <label>天何言哉</label>
+        <note type="gloss">天何言哉？四時行焉，百物生焉，天何言哉？</note>
+        <note type="source">《論語．陽貨》</note>
+      </annotation>
+      <annotation xml:id="ann5" target="#fu1.p1.g2.l3">
+        <label>甫田</label>
+        <note type="gloss">倬彼甫田，歲取十千。</note>
+        <note type="source">《詩．小雅．甫田》</note>
+      </annotation>
+      <annotation xml:id="ann6" target="#fu1.p1.g2.l4">
+        <label>多稼</label>
+        <note type="gloss">大田多稼、既種既戒。</note>
+        <note type="source">《詩．小雅．大田》</note>
+      </annotation>
+      <annotation xml:id="ann7" target="#fu1.p1.g4.l7">
+        <label>九土</label>
+        <note type="gloss">共工氏之伯九有也，其子曰后土，能平九土。</note>
+        <note type="source">《國語．魯語上》</note>
+      </annotation>
+      <annotation xml:id="ann8" target="#fu1.p1.g4.l8">
+        <label>兆人</label>
+        <note type="gloss">一人有慶，兆民賴之。</note>
+        <note type="source">《書．呂刑》</note>
+      </annotation>
+      <annotation xml:id="ann9" target="#fu1.p1.g5.l9">
+        <label>協風</label>
+        <note type="gloss">先時五日，瞽告有協風至。</note>
+        <note type="source">《國語．周語上》</note>
+      </annotation>
+      <annotation xml:id="ann10" target="#fu1.p1.g5.l10">
+        <label>農祥</label>
+        <note type="gloss">古者太史順時覛土，陽癉憤盈，土氣震發，農祥晨正。</note>
+        <note type="source">《國語．周語上》</note>
+      </annotation>
+      <annotation xml:id="ann11" target="#fu1.p1.g6.l11">
+        <label>土牛作候</label>
+        <note type="gloss">（案：季冬之月）命有司大難，旁磔，出土牛，以送寒氣。</note>
+        <note type="source">《禮記．月令》</note>
+      </annotation>
+      <annotation xml:id="ann12" target="#fu1.p1.g6.l12">
+        <label>銅雀載鳴</label>
+        <note type="gloss">古歌云：長安城西有雙闕，上有雙銅雀，一鳴五穀成，再鳴五穀熟。</note>
+        <note type="source">《三輔黃圖．建章宮》</note>
+      </annotation>
+      <annotation xml:id="ann13" target="#fu1.p2.g10.l19">
+        <label>帝力</label>
+        <note type="gloss">日出而作，日入而息，鑿井而飲，耕田而食，帝力於我何有哉。</note>
+        <note type="source">《樂府詩集．雜歌謠辭一．擊壤歌》</note>
+      </annotation>
+      <annotation xml:id="ann14" target="#fu1.p2.g10.l20">
+        <label>我疆</label>
+        <note type="gloss">我疆我理、南東其畝。</note>
+        <note type="source">《詩．小雅．信南山》</note>
+      </annotation>
+      <annotation xml:id="ann15" target="#fu1.p2.g11.l21">
+        <label>田祖之神</label>
+        <note type="gloss">琴瑟擊鼓，以御田祖。</note>
+        <note type="source">《詩．小雅．甫田》</note>
+      </annotation>
+      <annotation xml:id="ann16" target="#fu1.p2.g11.l22">
+        <label>擊鼓</label>
+        <note type="gloss">琴瑟擊鼓，以御田祖。</note>
+        <note type="source">《詩．小雅．甫田》</note>
+      </annotation>
+      <annotation xml:id="ann17" target="#fu1.p2.g11.l23">
+        <label>農夫之慶</label>
+        <note type="gloss">我田既臧，農夫之慶。</note>
+        <note type="source">《詩．小雅．甫田》</note>
+      </annotation>
+      <annotation xml:id="ann18" target="#fu1.p2.g11.l24">
+        <label>築場</label>
+        <note type="gloss">九月築場圃、十月納禾稼。</note>
+        <note type="source">《詩．豳風．七月》</note>
+      </annotation>
+      <annotation xml:id="ann19" target="#fu1.p3.g12.l25">
+        <label>近郊</label>
+        <note type="gloss">以宅田、士田、賈田，任近郊之地。</note>
+        <note type="source">《周禮．地官．載師》</note>
+      </annotation>
+      <annotation xml:id="ann20" target="#fu1.p3.g12.l26">
+        <label>四裔</label>
+        <note type="gloss">流共工於幽州 ，放驩兜於崇山 ，竄三苗於三危 ，殛鯀於羽山 。</note>
+        <note type="source">《書．舜典》</note>
+      </annotation>
+      <annotation xml:id="ann21" target="#fu1.p3.g13.l27">
+        <label>山苗</label>
+        <note type="gloss">鬱鬱澗底松，離離山上苗……世胄躡高位，英俊沈下僚。</note>
+        <note type="source">左思〈詠史之二〉</note>
+      </annotation>
+      <annotation xml:id="ann22" target="#fu1.p3.g13.l28">
+        <label>隰桑</label>
+        <note type="gloss">隰桑有阿、其葉有難。……隰桑有阿、其葉有沃。……隰桑有阿、其葉有幽。</note>
+        <note type="source">《詩．小雅．都人士》</note>
+      </annotation>
+      <annotation xml:id="ann23" target="#fu1.p4.g15.l33">
+        <label>華實</label>
+        <note type="gloss">華實蔽野，黍稷盈疇。</note>
+        <note type="source">王粲〈登樓賦〉</note>
+      </annotation>
+      <annotation xml:id="ann24" target="#fu1.p4.g15.l34">
+        <label>堅好</label>
+        <note type="gloss">實堅實好，實穎實栗。</note>
+        <note type="source">《詩．大雅．生民》</note>
+      </annotation>
+      <annotation xml:id="ann25" target="#fu1.p4.g16.l35">
+        <label>茨梁</label>
+        <note type="gloss">曾孫之稼、如茨如梁。</note>
+        <note type="source">《詩．小雅．甫田》</note>
+      </annotation>
+      <annotation xml:id="ann26" target="#fu1.p4.g16.l36">
+        <label>薈蔚</label>
+        <note type="gloss">薈兮蔚兮，南山朝隮。</note>
+        <note type="source">《詩．曹風．候人》</note>
+      </annotation>
+      <annotation xml:id="ann27" target="#fu1.p4.g18.l39">
+        <label>古公之政</label>
+        <note type="gloss">古公亶父，來朝走馬，率西水滸，至於岐下。</note>
+        <note type="source">《詩．大雅．緜》</note>
+      </annotation>
+      <annotation xml:id="ann28" target="#fu1.p4.g18.l40">
+        <label>管氏之虞</label>
+        <note type="gloss">管仲既任政相齊，以區區之齊在海濱，通貨積財，富國彊兵，與俗同好惡。故其稱曰：「倉廩實而知禮節，衣食足而知榮辱，上服度則六親固。四維不張，國乃滅亡。下令如流水之原，令順民心。」故論卑而易行。俗之所欲，因而予之；俗之所否，因而去之。</note>
+        <note type="source">《史記．管晏列傳》</note>
+      </annotation>
+      <annotation xml:id="ann29" target="#fu1.p5.g19.l41">
+        <label>實穎</label>
+        <note type="gloss">實堅實好，實穎實栗。</note>
+        <note type="source">《詩．大雅．生民》</note>
+      </annotation>
+      <annotation xml:id="ann30" target="#fu1.p5.g19.l42">
+        <label>厥田</label>
+        <note type="gloss">厥土惟黃壤，厥田惟上上，厥賦中下。</note>
+        <note type="source">《書．禹貢》</note>
+      </annotation>
+      <annotation xml:id="ann31" target="#fu1.p5.g20.l43">
+        <label>蕃庶</label>
+        <note type="gloss">康侯用錫馬蕃庶，晝日三接。</note>
+        <note type="source">《易．晉》</note>
+      </annotation>
+      <annotation xml:id="ann32" target="#fu1.p5.g20.l44">
+        <label>朝隮</label>
+        <note type="gloss">薈兮蔚兮，南山朝隮。</note>
+        <note type="source">《詩．曹風．候人》</note>
+      </annotation>
+      <annotation xml:id="ann33" target="#fu1.p5.g20.l44">
+        <label>異狀</label>
+        <note type="gloss">物有同狀而異所者，有異狀而同所者，可別也。</note>
+        <note type="source">《荀子．正名》</note>
+      </annotation>
+      <annotation xml:id="ann34" target="#fu1.p5.g21.l46">
+        <label>束皙之詩</label>
+        <note type="gloss">黮黮重雲，輯輯和風。黍華陵巔，麥秀丘中。靡田不播，九穀斯豐。奕奕玄霄，濛濛甘霤。黍發稠華，亦挺其秀。靡田不殖，九穀斯茂。無高不播，無下不殖。芒芒其稼，參參其穡。稸我王委，充我民食。玉燭陽明，顯猷翼翼。</note>
+        <note type="source">束皙〈補亡詩．華黍〉</note>
+      </annotation>
+      <annotation xml:id="ann35" target="#fu1.p5.g21.l47">
+        <label>黍稷盈疇</label>
+        <note type="gloss">華實蔽野，黍稷盈疇。</note>
+        <note type="source">王粲〈登樓賦〉</note>
+      </annotation>
+      <annotation xml:id="ann36" target="#fu1.p5.g21.l48">
+        <label>仲宣之望</label>
+        <note type="gloss">登茲樓以四望兮，聊暇日以銷憂。</note>
+        <note type="source">王粲〈登樓賦〉</note>
+      </annotation>
+      <annotation xml:id="ann38" target="#fu1.p6.g23.l52">
+        <label>式燕且歡</label>
+        <note type="gloss">上下通情，式宴且盤。</note>
+        <note type="source">張衡〈東京賦〉</note>
+      </annotation>
+      <annotation xml:id="ann39" target="#fu1.p6.g24.l53">
+        <label>遺滯</label>
+        <note type="gloss">下罔遺滯，焦朽斯華。</note>
+        <note type="source">傅玄〈答程曉〉</note>
+      </annotation>
+      <annotation xml:id="ann40" target="#fu1.p6.g24.l54">
+        <label>京坻</label>
+        <note type="gloss">曾孫之庾、如坻如京。</note>
+        <note type="source">《詩．小雅．甫田》</note>
+      </annotation>
+      <annotation xml:id="ann41" target="#fu1.p7.g25.l56">
+        <label>純嘏屢錫</label>
+        <note type="gloss">錫爾純嘏，子孫其湛。</note>
+        <note type="source">《詩．小雅．賓之初筵》</note>
+      </annotation>
+      <annotation xml:id="ann42" target="#fu1.p7.g26.l57">
+        <label>璿衡</label>
+        <note type="gloss">不能仰協璿衡，用調玉燭，傍慰蒼生，以安黔首。</note>
+        <note type="source">《陳書‧世祖紀》</note>
+      </annotation>
+      <annotation xml:id="ann43" target="#fu1.p7.g26.l58">
+        <label>玉燭</label>
+        <note type="gloss">四氣和謂之玉燭。</note>
+        <note type="source">《爾雅‧釋天》</note>
+      </annotation>
+      <annotation xml:id="ann44" target="#fu1.p7.g27.l59">
+        <label>嘉穀</label>
+        <note type="gloss">稷降播種，農殖嘉穀。</note>
+        <note type="source">《書．呂刑》</note>
+      </annotation>
+      <annotation xml:id="ann45" target="#fu1.p7.g27.l60">
+        <label>犧牛</label>
+        <note type="gloss">天子以犧牛，諸侯以肥牛。</note>
+        <note type="source">《禮記．曲禮下》</note>
+      </annotation>
+      <annotation xml:id="ann46" target="#fu1.p8.g30.l66">
+        <label>庭又碩</label>
+        <note type="gloss">既庭且碩、曾孫是若。</note>
+        <note type="source">《詩．小雅．大田》</note>
+      </annotation>
+    </annotationList>
+  </standOff>
+</TEI>
