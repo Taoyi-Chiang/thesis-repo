@@ -67,6 +67,10 @@ coverage.xml
 # JSON（若你不想追蹤大型標記檔，可取消下面的註解）
 *.json
 !data/processed/parsed_results.json
+!JING_match_jaccard_results.json
+!SHI_match_jaccard_results.json
+!ZI_match_jaccard_results.json
+!WEN_match_jaccard_results.json
 
 # 資料庫
 *.sqlite3
