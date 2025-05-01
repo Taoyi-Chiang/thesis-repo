@@ -109,18 +109,18 @@ def flatten_to_df(parsed_results):
 
 # === 主程式 ===
 # 請換成你的檔案路徑
-file_path = r"D:\lufu_allusion\data\raw\origin-text.txt"
+file_path = r"D:/lufu_allusion/sample_thesis/sample_doc.txt"
 
 # 執行流程
 texts = parse_txt_file(file_path)
 parsed_results = parse_texts(texts)
 
 # 儲存路徑
-output_dir = Path(r"D:\lufu_allusion\data\processed")
+output_dir = Path(r"D:/lufu_allusion/sample_thesis")
 output_dir.mkdir(parents=True, exist_ok=True)  # 如果資料夾不存在，自動建立
 
 # 要儲存的檔案名稱
-output_file = output_dir / "parsed_results.json"
+output_file = output_dir / "sample_parsed_results.json" # 預設名稱 "parsed_results.json"
 
 # 把 parsed_results 儲存成 JSON
 with open(output_file, "w", encoding="utf-8") as f:
