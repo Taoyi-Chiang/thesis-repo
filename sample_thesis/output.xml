@@ -114,7 +114,7 @@
             <l xml:id="fu1.p6.g22.l50">清風戒寒</l>
           </lg>
           <lg xml:id="fu1.p6.g23">
-            <l xml:id="fu1.p6.g23.l51">是刈是獲</l>
+            <l xml:id="fu1.p6.g23.l51">是刈是穫</l>
             <l xml:id="fu1.p6.g23.l52">式燕且歡</l>
           </lg>
           <lg xml:id="fu1.p6.g24">
@@ -320,6 +320,11 @@
         <label>仲宣之望</label>
         <note type="gloss">登茲樓以四望兮，聊暇日以銷憂。</note>
         <note type="source">王粲〈登樓賦〉</note>
+      </annotation>
+      <annotation xml:id="ann37" target="#fu1.p6.g23.l51">
+        <label>是刈是穫</label>
+        <note type="gloss">耕種之，茠鉏之，刈穫之。</note>
+        <note type="source">《顏氏家訓‧涉務》</note>
       </annotation>
       <annotation xml:id="ann38" target="#fu1.p6.g23.l52">
         <label>式燕且歡</label>
