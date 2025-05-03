@@ -38,7 +38,7 @@
 ├─ sample-thesis/                  # 範例小論文資料與格式
 │   ├─ sample-mini-thesis.csv
 │   ├─ sample-mini-thesis.md
-│   └─ sample-mini-thesis.md
+│   └─ sample_doc.md
 ├─ scripts/                        # 一鍵執行流程腳本
 │   ├─ build_graphs.py               # 生成知識網絡圖
 │   ├─ run_csv_to_tei.py             # CSV → TEI-XML 轉換管線
