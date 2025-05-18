@@ -73,7 +73,7 @@ coverage.xml
 !ZI_match_jaccard_results.json
 !WEN_match_jaccard_results.json
 !parsed_results_tokens_ckip.json
-!observed_parsed_results_tokens_ckip_corrected.json
+!manual_parsed_results_tokens_ckip.json
 
 # 資料庫
 *.sqlite3
