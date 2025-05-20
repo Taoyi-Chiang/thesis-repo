@@ -11,7 +11,7 @@ PARSED_RESULTS_PATH = Path(r"D:/lufu_allusion/data/processed/parsed_results.json
 COMPARED_FOLDER_PATH = Path(r"D:/lufu_allusion/data/raw/compared_text/")
 OUTPUT_JSON_PATH = Path(r"D:/lufu_allusion/data/processed/ALL_match_results_jaccard.json")
 # 包含半形空格
-CHARS_TO_REMOVE = "。，、：；！？（）〔〕「」[]『』《》〈〉\\#\\-\\－\\(\\)\\[\\]\\]\\\\/ ,.:;!?~1234567890¶"
+CHARS_TO_REMOVE = "﹔。，、：；！？（）〔〕「」[]『』《》〈〉\\#\\-\\－\\(\\)\\[\\]\\]\\\\/ ,.:;!?~1234567890¶"
 JACCARD_THRESHOLD = 0.7
 BATCH_SIZE = 8192  # 可調整批次大小
 
